@@ -63,7 +63,11 @@ async def process_session(session_dir: str, config: dict) -> dict:
         language=config["speechmatics"].get("language", "en"),
         operating_point=config["speechmatics"].get("operating_point", "standard"),
     )
-    emotion_svc = OllamaEmotion(host=host, model=model)
+    emotion_svc = OllamaEmotion(
+        host=host,
+        model=model,
+        video_config=config.get("video_emotion", {}),
+    )
     biomarker_svc = ThymiaBiomarker()
     coach = OllamaCoaching(
         host=host,
@@ -91,7 +95,11 @@ async def process_session(session_dir: str, config: dict) -> dict:
     log.info("[process] -------- STAGE 2: Emotion (Ollama) + Biomarker (thymia) in parallel --------")
     stage_start = _time.monotonic()
     emotion, biomarker = await asyncio.gather(
-        emotion_svc.analyse(str(audio_path), transcript),
+        emotion_svc.analyse(
+            str(audio_path),
+            transcript,
+            video_path=str(folder / video_file) if video_file else None,
+        ),
         biomarker_svc.analyse(str(audio_path), transcript),
     )
     log.info(

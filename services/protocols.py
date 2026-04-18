@@ -121,6 +121,7 @@ class EmotionService(Protocol):
         self,
         audio_path: str,
         transcript: TranscriptionResult,
+        video_path: str | None = None,
     ) -> EmotionResult: ...
 
 

@@ -1,0 +1,7 @@
+dist
+docs
+emotieffcpplib
+emotiefflib
+models
+tests
+training_and_examples
