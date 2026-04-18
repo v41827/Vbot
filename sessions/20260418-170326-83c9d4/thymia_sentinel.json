@@ -1,0 +1,1538 @@
+{
+  "policy_results": [
+    {
+      "t": 426065.669509333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 2,
+        "timestamp": 1776528211.298747,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 1,
+          "timestamp": " 2s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "No biomarker data is available for this first segment, so we cannot assess mood or stress levels yet. The user has not provided any explicit emotional content, and the text is incomplete. We remain attentive and ready to explore well\u2011being when more information emerges.",
+          "biomarker_summary": {
+            "interpretation": "unknown"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_yet_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Gently ask how the user is feeling when the conversation naturally allows it, and listen with empathy.",
+            "for_human_reviewer": "No biomarker data available at this point; continue monitoring for future signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "initial",
+            "segment_number": 1,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "No biomarker data is available for this first segment, so we cannot assess mood or stress levels yet. The user has not provided any explicit emotional content, and the text is incomplete. We remain attentive and ready to explore well\u2011being when more information emerges.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "unknown",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_yet_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Gently ask how the user is feeling when the conversation naturally allows it, and listen with empathy.",
+              "for_human_reviewer": "No biomarker data available at this point; continue monitoring for future signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426067.360621666,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 4,
+        "timestamp": 1776528212.9898503,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 2,
+          "timestamp": " 4s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user\u2019s current message is a brief request to copy the transcript, with no indication of mood or emotional content. No biomarker data is available for this segment, so we cannot detect any elevated signals. The conversation remains neutral and routine.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "request"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the request and provide the transcript if appropriate. Keep the tone friendly and supportive.",
+            "for_human_reviewer": "No additional information needed at this time.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 2,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s current message is a brief request to copy the transcript, with no indication of mood or emotional content. No biomarker data is available for this segment, so we cannot detect any elevated signals. The conversation remains neutral and routine.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the request and provide the transcript if appropriate. Keep the tone friendly and supportive.",
+              "for_human_reviewer": "No additional information needed at this time.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426068.534822916,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 6,
+        "timestamp": 1776528214.1655838,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 3,
+          "timestamp": " 5s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user is simply requesting a transcript and has not shared any information about their mood or wellbeing. With no biomarker data available, there is no indication of elevated signals or distress. The conversation remains neutral and routine.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "transcript request"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and offer further assistance if needed. If the user later shares more about how they\u2019re feeling, be ready to respond with warmth and attentiveness.",
+            "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood disclosures.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 3,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user is simply requesting a transcript and has not shared any information about their mood or wellbeing. With no biomarker data available, there is no indication of elevated signals or distress. The conversation remains neutral and routine.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "transcript request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and offer further assistance if needed. If the user later shares more about how they\u2019re feeling, be ready to respond with warmth and attentiveness.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood disclosures.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426069.602622541,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 8,
+        "timestamp": 1776528215.2238967,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 4,
+          "timestamp": " 6s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages contain only repeated fragments and do not provide any indication of mood or emotional state. With no biomarker data available, the conversation remains at a baseline level of wellbeing awareness.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "background"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue engaging with the user in a friendly manner. No special attention to wellbeing is required at this time.",
+            "for_human_reviewer": "No concerns to flag. The conversation remains at a baseline level.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 4,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages contain only repeated fragments and do not provide any indication of mood or emotional state. With no biomarker data available, the conversation remains at a baseline level of wellbeing awareness.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "background"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue engaging with the user in a friendly manner. No special attention to wellbeing is required at this time.",
+              "for_human_reviewer": "No concerns to flag. The conversation remains at a baseline level.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426070.718035333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 10,
+        "timestamp": 1776528216.342022,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 5,
+          "timestamp": " 7s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages are fragmented and do not contain any content that indicates mood or emotional state. No biomarker data is available for this segment, so there is no basis for concern or for a higher alert level.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "transcript request"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+            "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood or biomarker signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 5,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are fragmented and do not contain any content that indicates mood or emotional state. No biomarker data is available for this segment, so there is no basis for concern or for a higher alert level.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "transcript request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood or biomarker signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426071.784890291,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 12,
+        "timestamp": 1776528217.4074223,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 6,
+          "timestamp": " 8s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages are primarily a repetition of a request to copy a transcript and a brief mention that a biomarker signal works. No mood or wellbeing language is present, and no biomarker data were supplied. Therefore, there is no indication of emotional distress or a need for heightened attention.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "transcript"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything else they\u2019d like to discuss.",
+            "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood cues.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 6,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are primarily a repetition of a request to copy a transcript and a brief mention that a biomarker signal works. No mood or wellbeing language is present, and no biomarker data were supplied. Therefore, there is no indication of emotional distress or a need for heightened attention.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything else they\u2019d like to discuss.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood cues.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426072.849301583,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 14,
+        "timestamp": 1776528218.4778903,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 7,
+          "timestamp": " 9s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages are fragmented and focus on technical aspects of the transcript and biomarker signal. No mood or wellbeing language is present, and no biomarker data was supplied for this segment. Therefore, there is no indication of emotional distress or a need for heightened support at this moment.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "transcript",
+              "biomarker"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+            "for_human_reviewer": "No additional observations needed at this time.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 7,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are fragmented and focus on technical aspects of the transcript and biomarker signal. No mood or wellbeing language is present, and no biomarker data was supplied for this segment. Therefore, there is no indication of emotional distress or a need for heightened support at this moment.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript",
+                "biomarker"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+              "for_human_reviewer": "No additional observations needed at this time.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426073.937664416,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 16,
+        "timestamp": 1776528219.562534,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 8,
+          "timestamp": " 10s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The voice emotion data shows a calm, neutral tone with minimal happiness, and no other mood or wellness biomarkers are present. The user\u2019s text does not reveal any emotional content or distress. Therefore, the conversation remains at a baseline level of wellbeing.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "transcript"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for sharing.",
+            "for_human_reviewer": "No additional attention required at this time.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 8,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The voice emotion data shows a calm, neutral tone with minimal happiness, and no other mood or wellness biomarkers are present. The user\u2019s text does not reveal any emotional content or distress. Therefore, the conversation remains at a baseline level of wellbeing.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for sharing.",
+              "for_human_reviewer": "No additional attention required at this time.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426075.206439,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 18,
+        "timestamp": 1776528220.8370726,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 9,
+          "timestamp": " 11s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user is discussing a technical issue and the voice emotion data shows a calm, neutral tone with minimal positive affect. No mood or wellbeing topics have been raised, and no elevated biomarkers are present. Therefore, the conversation is clear of any signals that would prompt additional attention.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue to assist with the user\u2019s technical questions and maintain a friendly, supportive tone.",
+            "for_human_reviewer": "No additional concerns noted.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 9,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user is discussing a technical issue and the voice emotion data shows a calm, neutral tone with minimal positive affect. No mood or wellbeing topics have been raised, and no elevated biomarkers are present. Therefore, the conversation is clear of any signals that would prompt additional attention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue to assist with the user\u2019s technical questions and maintain a friendly, supportive tone.",
+              "for_human_reviewer": "No additional concerns noted.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426076.278928333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 20,
+        "timestamp": 1776528221.9093437,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 10,
+          "timestamp": " 13s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user is discussing a technical issue with a video and biomarker signal, and the voice emotion data shows a calm, neutral tone with almost no happiness. No mood or wellbeing topics have been raised, and no elevated wellbeing or mood indicators are present. Therefore, the conversation remains at a baseline level of attention.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "video",
+              "biomarker"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation as usual, offering help with the technical issue if needed. No special mood\u2011support prompts are required at this time.",
+            "for_human_reviewer": "No concerns to flag. The user is not expressing distress or mood issues.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 10,
+            "timestamp": "13s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user is discussing a technical issue with a video and biomarker signal, and the voice emotion data shows a calm, neutral tone with almost no happiness. No mood or wellbeing topics have been raised, and no elevated wellbeing or mood indicators are present. Therefore, the conversation remains at a baseline level of attention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "video",
+                "biomarker"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation as usual, offering help with the technical issue if needed. No special mood\u2011support prompts are required at this time.",
+              "for_human_reviewer": "No concerns to flag. The user is not expressing distress or mood issues.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426077.937677291,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 22,
+        "timestamp": 1776528223.5619001,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 11,
+          "timestamp": " 14s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user\u2019s speech is focused on technical details about a video and biomarker signal. Voice emotion shows a calm, neutral tone with no signs of distress or elevated affect. No mood or wellbeing topics have been mentioned, and no other biomarker data is available. Therefore, the conversation is currently clear of any indicators that would prompt a more attentive or supportive stance.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "video",
+              "biomarker"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation about the technical aspects. When a natural opening arises, gently ask how the user is feeling to keep the dialogue open and supportive.",
+            "for_human_reviewer": "No immediate concerns; maintain routine monitoring.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 11,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s speech is focused on technical details about a video and biomarker signal. Voice emotion shows a calm, neutral tone with no signs of distress or elevated affect. No mood or wellbeing topics have been mentioned, and no other biomarker data is available. Therefore, the conversation is currently clear of any indicators that would prompt a more attentive or supportive stance.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "video",
+                "biomarker"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation about the technical aspects. When a natural opening arises, gently ask how the user is feeling to keep the dialogue open and supportive.",
+              "for_human_reviewer": "No immediate concerns; maintain routine monitoring.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426079.187961625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 24,
+        "timestamp": 1776528224.8186278,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 12,
+          "timestamp": " 15s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages focus on technical aspects of the biomarker system and contain no indication of emotional distress. Voice emotion scores are overwhelmingly neutral, suggesting a calm tone. With no mood or wellness indicators present, the conversation remains at a baseline level of wellbeing.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "system status"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for emotional sharing.",
+            "for_human_reviewer": "No immediate concern; continue monitoring for any future mood disclosures.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 12,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages focus on technical aspects of the biomarker system and contain no indication of emotional distress. Voice emotion scores are overwhelmingly neutral, suggesting a calm tone. With no mood or wellness indicators present, the conversation remains at a baseline level of wellbeing.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "system status"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for emotional sharing.",
+              "for_human_reviewer": "No immediate concern; continue monitoring for any future mood disclosures.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426080.679963375,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 26,
+        "timestamp": 1776528226.3090646,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 13,
+          "timestamp": " 17s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Distress and fatigue signals are slightly above baseline, though the user has not yet shared how they feel.",
+            "Voice remains largely neutral with minimal positive affect."
+          ],
+          "rationale": "The biomarker data shows a moderate level of distress and fatigue, but the user\u2019s text does not mention mood or emotional state. This suggests an opportunity for the agent to gently inquire about well\u2011being while remaining supportive.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.99,
+            "distress": 0.55,
+            "stress": 0.28,
+            "burnout": 0.04,
+            "low_self_esteem": 0.27,
+            "fatigue": 0.5,
+            "interpretation": "moderately elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical discussion about biomarker system"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a warm tone and consider asking the user how they are feeling or if anything is on their mind. Acknowledge that the system is noticing some signals of mild distress and fatigue, and invite them to share if they wish.",
+            "for_human_reviewer": "The user has not yet discussed mood, but biomarker data indicates moderate distress and fatigue. No urgent clinical concern is evident.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 13,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Distress and fatigue signals are slightly above baseline, though the user has not yet shared how they feel.",
+              "Voice remains largely neutral with minimal positive affect."
+            ],
+            "rationale": "The biomarker data shows a moderate level of distress and fatigue, but the user\u2019s text does not mention mood or emotional state. This suggests an opportunity for the agent to gently inquire about well\u2011being while remaining supportive.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.55,
+              "interpretation": "moderately elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical discussion about biomarker system"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a warm tone and consider asking the user how they are feeling or if anything is on their mind. Acknowledge that the system is noticing some signals of mild distress and fatigue, and invite them to share if they wish.",
+              "for_human_reviewer": "The user has not yet discussed mood, but biomarker data indicates moderate distress and fatigue. No urgent clinical concern is evident.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426081.803347916,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 28,
+        "timestamp": 1776528227.4317422,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 14,
+          "timestamp": " 18s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Moderate distress signal (0.55)",
+            "Moderate fatigue signal (0.50)",
+            "Low happiness and high neutral voice emotion"
+          ],
+          "rationale": "The user\u2019s voice emotion remains calm and neutral, but wellness biomarkers indicate a moderate level of distress and fatigue. The user has not explicitly discussed mood, so the elevated signals are noted as a cue for gentle inquiry rather than a sign of immediate crisis.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.94,
+            "<unk>": 0.04,
+            "distress": 0.55,
+            "stress": 0.28,
+            "burnout": 0.04,
+            "low_self_esteem": 0.27,
+            "fatigue": 0.5,
+            "interpretation": "moderately elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical troubleshooting",
+              "video playback",
+              "biomarker feedback"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation with a gentle, open question about how the user is feeling today. Acknowledge the technical discussion and invite them to share any concerns or emotions they might have. Keep the tone warm and supportive.",
+            "for_human_reviewer": "The user shows moderate distress and fatigue signals but has not yet discussed mood. No urgent intervention is required; monitor for any changes in future segments.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 14,
+            "timestamp": "18s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Moderate distress signal (0.55)",
+              "Moderate fatigue signal (0.50)",
+              "Low happiness and high neutral voice emotion"
+            ],
+            "rationale": "The user\u2019s voice emotion remains calm and neutral, but wellness biomarkers indicate a moderate level of distress and fatigue. The user has not explicitly discussed mood, so the elevated signals are noted as a cue for gentle inquiry rather than a sign of immediate crisis.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.55,
+              "interpretation": "moderately elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical troubleshooting",
+                "video playback",
+                "biomarker feedback"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation with a gentle, open question about how the user is feeling today. Acknowledge the technical discussion and invite them to share any concerns or emotions they might have. Keep the tone warm and supportive.",
+              "for_human_reviewer": "The user shows moderate distress and fatigue signals but has not yet discussed mood. No urgent intervention is required; monitor for any changes in future segments.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426082.952869375,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 30,
+        "timestamp": 1776528228.577974,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 15,
+          "timestamp": " 19s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Elevated distress signal at 0.55",
+            "Moderate fatigue at 0.50",
+            "Neutral voice with minimal happiness"
+          ],
+          "rationale": "The user\u2019s recent biomarker readings show a moderate level of distress and fatigue, while other wellness indicators remain low. The user has not yet shared how they feel, so the pattern suggests a need for gentle attention rather than immediate escalation.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.94,
+            "<unk>": 0.04,
+            "distress": 0.55,
+            "stress": 0.28,
+            "burnout": 0.04,
+            "low_self_esteem": 0.27,
+            "fatigue": 0.5,
+            "interpretation": "moderately elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical troubleshooting",
+              "biomarker status"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation about the technical aspects, and when a natural pause occurs, gently ask how the user is feeling today. Offer a supportive tone and acknowledge that the biomarker signals suggest some level of stress or fatigue.",
+            "for_human_reviewer": "No urgent action required; monitor for any shift toward higher distress or new self\u2011reported feelings.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "incremental_update",
+            "segment_number": 15,
+            "timestamp": "19s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Elevated distress signal at 0.55",
+              "Moderate fatigue at 0.50",
+              "Neutral voice with minimal happiness"
+            ],
+            "rationale": "The user\u2019s recent biomarker readings show a moderate level of distress and fatigue, while other wellness indicators remain low. The user has not yet shared how they feel, so the pattern suggests a need for gentle attention rather than immediate escalation.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.55,
+              "interpretation": "moderately elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical troubleshooting",
+                "biomarker status"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation about the technical aspects, and when a natural pause occurs, gently ask how the user is feeling today. Offer a supportive tone and acknowledge that the biomarker signals suggest some level of stress or fatigue.",
+              "for_human_reviewer": "No urgent action required; monitor for any shift toward higher distress or new self\u2011reported feelings.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426084.199993208,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 32,
+        "timestamp": 1776528229.8278944,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 16,
+          "timestamp": " 20s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Elevated distress signal at 0.55",
+            "Moderate fatigue at 0.50",
+            "Neutral voice with minimal positive affect"
+          ],
+          "rationale": "The biomarker data shows a slightly elevated distress level and moderate fatigue, while the user has not yet shared how they feel. The voice remains largely neutral, suggesting the user is not expressing strong emotions in this segment. This pattern fits a Level 1 scenario where the agent should remain attentive and gently invite the user to share their feelings if they wish.",
+          "biomarker_summary": {
+            "happy": 0.01,
+            "neutral": 0.94,
+            "<unk>": 0.04,
+            "distress": 0.55,
+            "stress": 0.28,
+            "burnout": 0.04,
+            "low_self_esteem": 0.27,
+            "fatigue": 0.5,
+            "interpretation": "slightly elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical discussion of biomarker system",
+              "video functionality"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue to engage with the user about the biomarker system, and when a natural pause occurs, gently ask how they are feeling today. Offer a supportive tone and validate any emotions they may share.",
+            "for_human_reviewer": "The user shows modest distress and fatigue signals but has not yet discussed mood. No immediate escalation is required, but keep an eye on any future expressions of discomfort.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 16,
+            "timestamp": "20s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Elevated distress signal at 0.55",
+              "Moderate fatigue at 0.50",
+              "Neutral voice with minimal positive affect"
+            ],
+            "rationale": "The biomarker data shows a slightly elevated distress level and moderate fatigue, while the user has not yet shared how they feel. The voice remains largely neutral, suggesting the user is not expressing strong emotions in this segment. This pattern fits a Level 1 scenario where the agent should remain attentive and gently invite the user to share their feelings if they wish.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.55,
+              "interpretation": "slightly elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical discussion of biomarker system",
+                "video functionality"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue to engage with the user about the biomarker system, and when a natural pause occurs, gently ask how they are feeling today. Offer a supportive tone and validate any emotions they may share.",
+              "for_human_reviewer": "The user shows modest distress and fatigue signals but has not yet discussed mood. No immediate escalation is required, but keep an eye on any future expressions of discomfort.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "error": null
+}

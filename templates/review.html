@@ -3,75 +3,76 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Voice awareness — review</title>
-<link rel="stylesheet" href="/static/css/style.css" />
+<title>Buzzline — session review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body, #root { margin: 0; padding: 0; width: 100%; height: 100%; background: #F6F2EA; }
+  * { box-sizing: border-box; }
+  ::selection { background: #F4D9C7; }
+  body { font-family: 'Geist', system-ui, sans-serif; color: #141413; }
+
+  #review-loading {
+    position: fixed; inset: 0; background: #F6F2EA; z-index: 50;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px;
+  }
+  #review-loading.hidden { display: none; }
+  #review-loading .line {
+    font-family: 'Instrument Serif', serif; font-size: 32px; color: #141413;
+    letter-spacing: -0.5px;
+  }
+  #review-loading .sub { font-size: 13px; color: #8A857D; }
+  #review-loading .dot {
+    width: 10px; height: 10px; border-radius: 999px; background: #D97757;
+    animation: breath 1.6s ease-in-out infinite;
+  }
+  @keyframes breath { 0%,100% { opacity: 0.3; transform: scale(0.8); } 50% { opacity: 1; transform: scale(1.2); } }
+
+  #review-error {
+    position: fixed; inset: 0; background: #F6F2EA; z-index: 50;
+    display: none; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+    padding: 40px; text-align: center;
+  }
+  #review-error.show { display: flex; }
+  #review-error h2 { font-family: 'Instrument Serif', serif; font-size: 36px; margin: 0; color: #141413; }
+  #review-error pre { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #8A857D; max-width: 520px; white-space: pre-wrap; }
+  #review-error a {
+    display: inline-block; margin-top: 8px; padding: 10px 22px;
+    background: #141413; color: #F6F2EA; text-decoration: none;
+    border-radius: 999px; font-size: 14px;
+  }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+
+<script type="text/babel" src="/ui/tokens.jsx"></script>
+<script type="text/babel" src="/ui/atoms.jsx"></script>
+<script type="text/babel" src="/ui/orb.jsx"></script>
+<script type="text/babel" src="/ui/review-screen.jsx"></script>
 </head>
-<body class="review">
-<header class="top">
-  <div class="brand">
-    <div class="logo">◎</div>
-    <div>
-      <h1>Session review</h1>
-      <p class="muted" id="session-id">Session {{ session_id }}</p>
-    </div>
-  </div>
-  <nav>
-    <a class="pill" href="/train">New session</a>
-    <a class="pill ghost" href="/">Live mode</a>
-  </nav>
-</header>
-
-<div id="loading" class="loading">
-  <div class="spinner"></div>
-  <p class="muted">Analysing your session. This takes about 30 seconds.</p>
+<body>
+<div id="review-loading">
+  <div class="dot"></div>
+  <div class="line">Reviewing your session.</div>
+  <div class="sub">Transcribing, reading biomarkers, drafting your tips. About 30 seconds.</div>
 </div>
 
-<div id="review" class="review-grid" hidden>
-  <section class="panel score-panel">
-    <div class="score-number" id="score-number">—</div>
-    <div class="muted small">Session score</div>
-    <div class="score-summary" id="score-summary"></div>
-    <div class="strengths" id="strengths"></div>
-  </section>
-
-  <section class="panel tips-panel">
-    <div class="panel-title">Three things to try</div>
-    <ol class="tips" id="tips"></ol>
-  </section>
-
-  <section class="panel video-panel">
-    <div class="panel-title">Playback</div>
-    <video id="video" class="player" controls playsinline></video>
-    <div class="track-wrap">
-      <div class="track-label muted small">Volume</div>
-      <canvas id="volume-canvas" class="track"></canvas>
-    </div>
-    <div class="track-wrap">
-      <div class="track-label muted small">Emotion</div>
-      <div id="emotion-track" class="emotion-track"></div>
-    </div>
-  </section>
-
-  <section class="panel transcript-panel">
-    <div class="panel-title">Transcript <span class="muted small">(click a word to jump)</span></div>
-    <div id="transcript" class="transcript"></div>
-  </section>
-
-  <section class="panel biomarker-panel">
-    <div class="panel-title">Signals</div>
-    <div id="biomarkers" class="biomarkers"></div>
-  </section>
+<div id="review-error">
+  <h2>Something went wrong.</h2>
+  <pre id="review-error-detail"></pre>
+  <a href="/train">Try another session</a>
 </div>
 
-<div id="failure" class="panel failure" hidden>
-  <div class="panel-title">Something went wrong</div>
-  <pre id="failure-detail" class="muted small"></pre>
-  <a href="/train" class="btn">Try again</a>
-</div>
+<div id="root"></div>
 
 <script>
   window.SESSION_ID = {{ session_id | tojson }};
 </script>
-<script src="/static/js/review.js"></script>
+
+<script type="text/babel" src="/static/js/ui-review.jsx"></script>
 </body>
 </html>

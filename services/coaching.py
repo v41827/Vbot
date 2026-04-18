@@ -20,7 +20,7 @@ log = logging.getLogger(__name__)
 
 _SYSTEM = """You are a warm, practical vocal coach.
 
-You receive a short training session: a transcript, an emotion timeline, biomarkers, and a volume timeline (dBFS). Your job is to give the speaker 3 concrete, specific tips they can apply next time.
+You receive a short training session: the scenario the speaker was practising, a transcript (with word-level timings), an emotion timeline, voice biomarkers, live Thymia Sentinel biomarker signals (distress, confidence, fatigue, engagement etc.), and a volume timeline (dBFS). Your job is to give the speaker three concrete, specific tips they can apply next time.
 
 Return ONLY a JSON object with this shape:
 {
@@ -35,6 +35,8 @@ Return ONLY a JSON object with this shape:
 Rules:
 - Sentence case. No em dashes.
 - Be specific. Quote short phrases from the transcript where useful.
+- If the scenario is provided, tailor the tips to that context (standup / interview / pitch).
+- Use the biomarker signals (distress, confidence etc.) to inform your read of the delivery, but do not quote raw numbers back at the user.
 - Never shame. Frame everything as an invitation.
 - UK English."""
 
@@ -62,12 +64,21 @@ class OllamaCoaching:
         emotion: EmotionResult,
         biomarker: BiomarkerResult,
         volume_timeline: list[dict[str, float]],
+        scenario: dict | None = None,
+        thymia_live: dict | None = None,
     ) -> CoachingReport:
         import time as _time
         client = self._client_inst()
         volume_stats = _volume_stats(volume_timeline)
+        # Give the coach the full word-level transcript, the scenario context,
+        # and the rolling Thymia signals so it can ground its tips in real data.
         payload = {
+            "scenario": scenario or None,
             "transcript": transcript.text,
+            "transcript_words": [
+                {"t": round(w.start, 2), "end": round(w.end, 2), "text": w.text}
+                for w in (transcript.words or [])
+            ][:600],
             "duration_seconds": transcript.duration_seconds,
             "word_count": len(transcript.words),
             "emotion_dominant": emotion.dominant,
@@ -76,6 +87,7 @@ class OllamaCoaching:
                 for p in emotion.timeline
             ],
             "biomarker": biomarker.to_dict(),
+            "thymia_live_signals": _thymia_signal_timeline(thymia_live),
             "volume_stats": volume_stats,
         }
         serialized = json.dumps(payload)

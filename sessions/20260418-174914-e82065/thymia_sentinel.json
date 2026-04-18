@@ -1,0 +1,2682 @@
+{
+  "policy_results": [
+    {
+      "t": 428813.936563625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 2,
+        "timestamp": 1776530958.942041,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 1,
+          "timestamp": " 2s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "No biomarker data or mood information is available in this first snippet, so we cannot identify any signals of concern. The conversation has not yet touched on wellbeing topics.",
+          "biomarker_summary": {
+            "interpretation": "no data"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Gently ask how the user is feeling when the conversation naturally moves toward personal topics.",
+            "for_human_reviewer": "No biomarker data available; baseline assessment pending further information.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "initial",
+            "segment_number": 1,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "No biomarker data or mood information is available in this first snippet, so we cannot identify any signals of concern. The conversation has not yet touched on wellbeing topics.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "no data",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Gently ask how the user is feeling when the conversation naturally moves toward personal topics.",
+              "for_human_reviewer": "No biomarker data available; baseline assessment pending further information.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428828.023687625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 4,
+        "timestamp": 1776530971.1824203,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 2,
+          "timestamp": " 14s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "high",
+          "concerns": [],
+          "rationale": "The current segment contains only brief, non\u2011contextual text and no biomarker data. With no mood or wellness signals available, we cannot identify any elevated patterns. The conversation does not yet touch on feelings or activities, so the agent can remain attentive and continue to explore the user\u2019s state in a gentle way.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "unknown"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation, and when a natural opening arises, ask how the user is feeling in a warm, non\u2011pressuring way.",
+            "for_human_reviewer": "No concerns detected; keep monitoring for any emerging signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 2,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "high"
+            },
+            "concerns": [],
+            "rationale": "The current segment contains only brief, non\u2011contextual text and no biomarker data. With no mood or wellness signals available, we cannot identify any elevated patterns. The conversation does not yet touch on feelings or activities, so the agent can remain attentive and continue to explore the user\u2019s state in a gentle way.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "unknown"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation, and when a natural opening arises, ask how the user is feeling in a warm, non\u2011pressuring way.",
+              "for_human_reviewer": "No concerns detected; keep monitoring for any emerging signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428828.563727125,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 6,
+        "timestamp": 1776530973.2547548,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 3,
+          "timestamp": " 16s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [
+            "Conversation content is very brief and does not include any discussion of mood or wellbeing."
+          ],
+          "rationale": "The current segment contains only a short, fragmented statement with no accompanying biomarker data. Because no mood or wellness signals are available, we cannot identify any potential concerns. The user has not yet shared how they are feeling, so the conversation remains in an early, neutral stage.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "incomplete"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Gently invite the user to share how they are feeling or what they\u2019d like to talk about next. Keep the tone warm and open.",
+            "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood or biomarker signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 3,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [
+              "Conversation content is very brief and does not include any discussion of mood or wellbeing."
+            ],
+            "rationale": "The current segment contains only a short, fragmented statement with no accompanying biomarker data. Because no mood or wellness signals are available, we cannot identify any potential concerns. The user has not yet shared how they are feeling, so the conversation remains in an early, neutral stage.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "incomplete"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Gently invite the user to share how they are feeling or what they\u2019d like to talk about next. Keep the tone warm and open.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood or biomarker signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428831.337866,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 8,
+        "timestamp": 1776530976.2203999,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 4,
+          "timestamp": " 19s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [
+            "User is asking about their own confidence, indicating a potential interest in self\u2011perception."
+          ],
+          "rationale": "The user has not shared any mood or wellbeing information and no biomarker data is available. The brief question about confidence does not signal distress or a need for immediate support.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "self\u2011perception"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle invitation to share how they\u2019re feeling today and acknowledge that confidence can fluctuate. Keep the tone supportive and open.",
+            "for_human_reviewer": "No immediate concern; continue monitoring for any mood or wellbeing cues in future segments.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 4,
+            "timestamp": "0-19s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [
+              "User is asking about their own confidence, indicating a potential interest in self\u2011perception."
+            ],
+            "rationale": "The user has not shared any mood or wellbeing information and no biomarker data is available. The brief question about confidence does not signal distress or a need for immediate support.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "self\u2011perception"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle invitation to share how they\u2019re feeling today and acknowledge that confidence can fluctuate. Keep the tone supportive and open.",
+              "for_human_reviewer": "No immediate concern; continue monitoring for any mood or wellbeing cues in future segments.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428831.89949625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 10,
+        "timestamp": 1776530977.3808477,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 5,
+          "timestamp": " 20s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [
+            "User is expressing uncertainty about their confidence, but no other mood or distress signals are present."
+          ],
+          "rationale": "The user\u2019s brief statement focuses on self\u2011confidence rather than a broader emotional state. With no biomarker data available, there is no indication of elevated mood or wellness signals. The conversation does not reveal any distress or negative affect, so a gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "self\u2011perception"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Ask gently how they\u2019re feeling about their confidence and offer encouraging feedback. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "No immediate concern; continue monitoring for any emerging mood signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 5,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [
+              "User is expressing uncertainty about their confidence, but no other mood or distress signals are present."
+            ],
+            "rationale": "The user\u2019s brief statement focuses on self\u2011confidence rather than a broader emotional state. With no biomarker data available, there is no indication of elevated mood or wellness signals. The conversation does not reveal any distress or negative affect, so a gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "self\u2011perception"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Ask gently how they\u2019re feeling about their confidence and offer encouraging feedback. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "No immediate concern; continue monitoring for any emerging mood signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428833.184371333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 12,
+        "timestamp": 1776530978.7410967,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 6,
+          "timestamp": " 22s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [
+            "User mentions feeling unsure about their confidence."
+          ],
+          "rationale": "The user is reflecting on their own confidence level, but no mood or biomarker data is available to indicate broader emotional states. This is a neutral observation that can be followed up with gentle curiosity.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self-perception",
+              "confidence"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Ask gently how they feel about their confidence and offer supportive feedback. Keep the tone warm and non-judgmental.",
+            "for_human_reviewer": "No immediate concern; note that the user is expressing self-doubt about confidence.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 6,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [
+              "User mentions feeling unsure about their confidence."
+            ],
+            "rationale": "The user is reflecting on their own confidence level, but no mood or biomarker data is available to indicate broader emotional states. This is a neutral observation that can be followed up with gentle curiosity.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self-perception",
+                "confidence"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Ask gently how they feel about their confidence and offer supportive feedback. Keep the tone warm and non-judgmental.",
+              "for_human_reviewer": "No immediate concern; note that the user is expressing self-doubt about confidence.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428834.703493208,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 14,
+        "timestamp": 1776530980.331229,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 7,
+          "timestamp": " 23s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Voice emotion indicates a high level of sadness (0.95).",
+            "User expresses uncertainty about their confidence."
+          ],
+          "rationale": "The user\u2019s speech shows a pronounced sad tone, and they mention feeling unsure about their confidence. While they haven\u2019t explicitly described their mood, the vocal signal suggests a possible emotional discomfort that merits gentle attention.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "self\u2011perception"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s self\u2011doubt with empathy, say something like, \u2018It sounds like you\u2019re feeling a bit unsure about how you\u2019re coming across. That\u2019s completely normal. Would you like to talk more about what\u2019s on your mind?\u2019 This invites a gentle exploration of feelings without pressure.",
+            "for_human_reviewer": "High sad vocal tone noted; user has not explicitly discussed mood. Monitor for any further expressions of discomfort.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 7,
+            "timestamp": "23s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Voice emotion indicates a high level of sadness (0.95).",
+              "User expresses uncertainty about their confidence."
+            ],
+            "rationale": "The user\u2019s speech shows a pronounced sad tone, and they mention feeling unsure about their confidence. While they haven\u2019t explicitly described their mood, the vocal signal suggests a possible emotional discomfort that merits gentle attention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "self\u2011perception"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s self\u2011doubt with empathy, say something like, \u2018It sounds like you\u2019re feeling a bit unsure about how you\u2019re coming across. That\u2019s completely normal. Would you like to talk more about what\u2019s on your mind?\u2019 This invites a gentle exploration of feelings without pressure.",
+              "for_human_reviewer": "High sad vocal tone noted; user has not explicitly discussed mood. Monitor for any further expressions of discomfort.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428836.26760325,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 16,
+        "timestamp": 1776530981.8186545,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 8,
+          "timestamp": " 24s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad voice emotion (0.95) suggests the user may be feeling down or uncertain.",
+            "The user mentions not feeling very confident, indicating possible self\u2011doubt."
+          ],
+          "rationale": "The voice biomarker shows a notably elevated sad tone, and the user\u2019s wording about confidence aligns with a mild negative affect. No other clinical indicators are present, so a supportive, attentive stance is appropriate.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self-confidence",
+              "activity pace"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question about how they\u2019re feeling today, acknowledge their self\u2011doubt, and provide a supportive tone. Keep the conversation light and encouraging.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s mention of lacking confidence; no immediate escalation needed.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 8,
+            "timestamp": "24s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad voice emotion (0.95) suggests the user may be feeling down or uncertain.",
+              "The user mentions not feeling very confident, indicating possible self\u2011doubt."
+            ],
+            "rationale": "The voice biomarker shows a notably elevated sad tone, and the user\u2019s wording about confidence aligns with a mild negative affect. No other clinical indicators are present, so a supportive, attentive stance is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self-confidence",
+                "activity pace"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question about how they\u2019re feeling today, acknowledge their self\u2011doubt, and provide a supportive tone. Keep the conversation light and encouraging.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s mention of lacking confidence; no immediate escalation needed.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428837.75208525,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 18,
+        "timestamp": 1776530983.3032553,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 9,
+          "timestamp": " 26s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad voice emotion (0.95) and user\u2019s self\u2011reported lack of confidence suggest a possible emotional tone that hasn\u2019t been explicitly discussed yet."
+          ],
+          "rationale": "The user\u2019s voice shows a notably elevated sad signal, and they mention feeling unsure about their confidence. While they haven\u2019t directly described mood, the emotional tone indicates a gentle need for attention and validation.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "task progress"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Ask gently how they\u2019re feeling and acknowledge their self\u2011doubt. Offer supportive language and invite them to share more if they wish.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence; no urgent intervention needed.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 9,
+            "timestamp": "26s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad voice emotion (0.95) and user\u2019s self\u2011reported lack of confidence suggest a possible emotional tone that hasn\u2019t been explicitly discussed yet."
+            ],
+            "rationale": "The user\u2019s voice shows a notably elevated sad signal, and they mention feeling unsure about their confidence. While they haven\u2019t directly described mood, the emotional tone indicates a gentle need for attention and validation.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "sad": 0.95,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "task progress"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Ask gently how they\u2019re feeling and acknowledge their self\u2011doubt. Offer supportive language and invite them to share more if they wish.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence; no urgent intervention needed.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428842.101784125,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 20,
+        "timestamp": 1776530984.775423,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 10,
+          "timestamp": " 27s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad tone in voice (0.95) without explicit mention of mood"
+          ],
+          "rationale": "The user\u2019s speech pattern and repeated phrasing suggest uncertainty about confidence, while the voice emotion analysis indicates a notably sad tone. Because the user has not directly discussed how they feel, this is a cue for the agent to be attentive and gently explore their emotional state.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "confidence",
+              "workload",
+              "self-perception"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question such as, \u2018I hear you\u2019re feeling a bit unsure\u2014how are you feeling today?\u2019 and validate their self\u2011doubt. Keep the tone warm and non\u2011judgmental, and be ready to listen if they share more.",
+            "for_human_reviewer": "The user\u2019s voice shows a strong sad tone but no explicit mood disclosure. A brief check\u2011in about their emotional state would be appropriate.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 10,
+            "timestamp": "27s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad tone in voice (0.95) without explicit mention of mood"
+            ],
+            "rationale": "The user\u2019s speech pattern and repeated phrasing suggest uncertainty about confidence, while the voice emotion analysis indicates a notably sad tone. Because the user has not directly discussed how they feel, this is a cue for the agent to be attentive and gently explore their emotional state.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "confidence",
+                "workload",
+                "self-perception"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question such as, \u2018I hear you\u2019re feeling a bit unsure\u2014how are you feeling today?\u2019 and validate their self\u2011doubt. Keep the tone warm and non\u2011judgmental, and be ready to listen if they share more.",
+              "for_human_reviewer": "The user\u2019s voice shows a strong sad tone but no explicit mood disclosure. A brief check\u2011in about their emotional state would be appropriate.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428842.681111083,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 22,
+        "timestamp": 1776530986.3816185,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 11,
+          "timestamp": " 29s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad voice emotion detected (0.95)",
+            "User expresses lack of confidence and a sense of slowness"
+          ],
+          "rationale": "The voice emotion shows a notably elevated sad signal, and the user\u2019s words hint at self\u2011doubt. While mood has not been explicitly discussed, these cues suggest a gentle need for supportive attention.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "workload"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in such as, \"It sounds like you\u2019re feeling a bit unsure\u2014how are you holding up today?\" Validate their feelings and keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "The user shows a high sad vocal tone but has not explicitly mentioned mood. Continue to monitor for any further expressions of distress.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 11,
+            "timestamp": "29s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad voice emotion detected (0.95)",
+              "User expresses lack of confidence and a sense of slowness"
+            ],
+            "rationale": "The voice emotion shows a notably elevated sad signal, and the user\u2019s words hint at self\u2011doubt. While mood has not been explicitly discussed, these cues suggest a gentle need for supportive attention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "workload"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in such as, \"It sounds like you\u2019re feeling a bit unsure\u2014how are you holding up today?\" Validate their feelings and keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "The user shows a high sad vocal tone but has not explicitly mentioned mood. Continue to monitor for any further expressions of distress.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428843.211035416,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 24,
+        "timestamp": 1776530987.7293456,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 12,
+          "timestamp": " 30s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User\u2019s voice shows a high level of sadness (0.95)",
+            "User mentions feeling less confident, which may hint at underlying discomfort"
+          ],
+          "rationale": "The voice emotion data indicates a notably elevated sad tone, yet the user has not directly discussed mood or wellbeing. The conversation focuses on confidence and workload, suggesting a possible mismatch between expressed confidence and underlying affect. A gentle, supportive approach is appropriate to explore how the user is feeling without pressing for details.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated sad voice"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "confidence",
+              "workload"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re feeling a bit unsure. How are you feeling today?\" Validate their experience and keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence. No immediate escalation needed, but keep an eye on any further mood disclosures.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 12,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User\u2019s voice shows a high level of sadness (0.95)",
+              "User mentions feeling less confident, which may hint at underlying discomfort"
+            ],
+            "rationale": "The voice emotion data indicates a notably elevated sad tone, yet the user has not directly discussed mood or wellbeing. The conversation focuses on confidence and workload, suggesting a possible mismatch between expressed confidence and underlying affect. A gentle, supportive approach is appropriate to explore how the user is feeling without pressing for details.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated sad voice",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "confidence",
+                "workload"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re feeling a bit unsure. How are you feeling today?\" Validate their experience and keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence. No immediate escalation needed, but keep an eye on any further mood disclosures.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428844.838207791,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 26,
+        "timestamp": 1776530989.1094851,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 13,
+          "timestamp": " 32s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad voice emotion (0.95) suggests the user may be feeling down or uneasy.",
+            "The user mentions feeling not very confident, which could be a subtle hint at low mood.",
+            "The conversation includes a positive statement (\u201cI love that\u201d) that may indicate a mixed emotional tone."
+          ],
+          "rationale": "The voice biomarker shows a notably elevated sad signal, but the user has not explicitly described their mood. The text also hints at self\u2011doubt. This pattern fits a scenario where mood has not yet been discussed but there is a clear emotional cue. A gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated sad voice"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "daily workload"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s comment about feeling unsure and gently ask how they\u2019re feeling today. Offer a supportive tone and validate their experience. If they share more, listen attentively and keep the conversation warm.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s subtle expression of low confidence. No immediate escalation needed, but keep an eye on any further emotional cues.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 13,
+            "timestamp": "32s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad voice emotion (0.95) suggests the user may be feeling down or uneasy.",
+              "The user mentions feeling not very confident, which could be a subtle hint at low mood.",
+              "The conversation includes a positive statement (\u201cI love that\u201d) that may indicate a mixed emotional tone."
+            ],
+            "rationale": "The voice biomarker shows a notably elevated sad signal, but the user has not explicitly described their mood. The text also hints at self\u2011doubt. This pattern fits a scenario where mood has not yet been discussed but there is a clear emotional cue. A gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated sad voice",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "daily workload"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s comment about feeling unsure and gently ask how they\u2019re feeling today. Offer a supportive tone and validate their experience. If they share more, listen attentively and keep the conversation warm.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s subtle expression of low confidence. No immediate escalation needed, but keep an eye on any further emotional cues.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428845.389441791,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 28,
+        "timestamp": 1776530990.564106,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 14,
+          "timestamp": " 33s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sadness signal in voice",
+            "User expresses uncertainty about confidence and a sense of being slowed by workload"
+          ],
+          "rationale": "The voice emotion shows a notably elevated sad signal, yet the user has not directly described feeling sad or depressed. The user\u2019s comments about confidence and workload suggest some self\u2011doubt, which aligns with a mild mood concern. A gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "workload"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledging their sense of being slowed and encouraging them to share more if they wish. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence; no immediate escalation needed, but monitor for any further signs of distress.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 14,
+            "timestamp": "33s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sadness signal in voice",
+              "User expresses uncertainty about confidence and a sense of being slowed by workload"
+            ],
+            "rationale": "The voice emotion shows a notably elevated sad signal, yet the user has not directly described feeling sad or depressed. The user\u2019s comments about confidence and workload suggest some self\u2011doubt, which aligns with a mild mood concern. A gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "workload"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledging their sense of being slowed and encouraging them to share more if they wish. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s expressed lack of confidence; no immediate escalation needed, but monitor for any further signs of distress.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428846.499934791,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 30,
+        "timestamp": 1776530991.7719777,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 15,
+          "timestamp": " 35s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad voice emotion (0.95) throughout the segment",
+            "User expresses uncertainty about confidence, suggesting possible self\u2011doubt"
+          ],
+          "rationale": "The voice emotion shows a notably elevated sad signal, yet the user has not explicitly described feeling sad or low. Their comments about confidence and workload hint at mild frustration or self\u2011questioning. This pattern fits a Level\u00a01 scenario where the system should remain attentive and gently explore how the user is feeling.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated sad voice"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "workload",
+              "general pacing"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_yet_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question such as, \"It sounds like you might be feeling a bit down. How are you doing today?\" and listen attentively. Acknowledge their effort and reassure them that it\u2019s okay to share how they\u2019re feeling. Keep the tone warm and supportive.",
+            "for_human_reviewer": "Note the consistently high sad voice signal and the user\u2019s indirect references to confidence. No immediate escalation needed, but continue to monitor for any further expressions of distress.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 15,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad voice emotion (0.95) throughout the segment",
+              "User expresses uncertainty about confidence, suggesting possible self\u2011doubt"
+            ],
+            "rationale": "The voice emotion shows a notably elevated sad signal, yet the user has not explicitly described feeling sad or low. Their comments about confidence and workload hint at mild frustration or self\u2011questioning. This pattern fits a Level\u00a01 scenario where the system should remain attentive and gently explore how the user is feeling.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated sad voice",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "workload",
+                "general pacing"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_yet_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question such as, \"It sounds like you might be feeling a bit down. How are you doing today?\" and listen attentively. Acknowledge their effort and reassure them that it\u2019s okay to share how they\u2019re feeling. Keep the tone warm and supportive.",
+              "for_human_reviewer": "Note the consistently high sad voice signal and the user\u2019s indirect references to confidence. No immediate escalation needed, but continue to monitor for any further expressions of distress.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428847.901153625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 32,
+        "timestamp": 1776530993.3414857,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 16,
+          "timestamp": " 36s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad vocal tone (0.95) suggests a noticeable emotional tone.",
+            "User mentions feeling less confident and a slow pace, indicating some self\u2011doubt.",
+            "Positive statements (\u201cI love it\u201d) coexist with the sad tone, hinting at a mixed emotional state."
+          ],
+          "rationale": "The voice emotion shows a consistently high sad signal, while the user\u2019s words reveal a mix of uncertainty and enjoyment. This pattern fits a level\u20111 scenario where the agent should remain attentive and gently explore how the user is feeling without assuming clinical distress.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "self\u2011confidence",
+              "daily workload"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "moderate",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re feeling a bit unsure right now. How are you holding up today?\" Validate the user\u2019s positive moments and keep the tone warm and supportive.",
+            "for_human_reviewer": "Note the consistently high sad vocal tone and the user\u2019s mixed statements about confidence. No immediate escalation needed, but continue to monitor for any shift toward more pronounced negative signals.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 16,
+            "timestamp": "36s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad vocal tone (0.95) suggests a noticeable emotional tone.",
+              "User mentions feeling less confident and a slow pace, indicating some self\u2011doubt.",
+              "Positive statements (\u201cI love it\u201d) coexist with the sad tone, hinting at a mixed emotional state."
+            ],
+            "rationale": "The voice emotion shows a consistently high sad signal, while the user\u2019s words reveal a mix of uncertainty and enjoyment. This pattern fits a level\u20111 scenario where the agent should remain attentive and gently explore how the user is feeling without assuming clinical distress.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "self\u2011confidence",
+                "daily workload"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "moderate",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re feeling a bit unsure right now. How are you holding up today?\" Validate the user\u2019s positive moments and keep the tone warm and supportive.",
+              "for_human_reviewer": "Note the consistently high sad vocal tone and the user\u2019s mixed statements about confidence. No immediate escalation needed, but continue to monitor for any shift toward more pronounced negative signals.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428849.339414666,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 34,
+        "timestamp": 1776530994.9406602,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 17,
+          "timestamp": " 37s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Voice emotion indicates a notably elevated sad tone",
+            "User\u2019s statements about confidence and pace suggest some underlying unease"
+          ],
+          "rationale": "The user\u2019s speech shows a high sad voice signal, yet they have not explicitly described feeling sad or other mood states. This pattern suggests a subtle or unspoken emotional tone that the agent can gently acknowledge and explore.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "activities",
+              "background"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "moderate"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is feeling, acknowledging that their voice sounds a bit sad. Keep the tone warm and non\u2011judgmental, and invite them to share more if they wish.",
+            "for_human_reviewer": "Note the high sad voice signal and the lack of explicit mood disclosure; a follow\u2011up question about emotional state could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 17,
+            "timestamp": "37s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Voice emotion indicates a notably elevated sad tone",
+              "User\u2019s statements about confidence and pace suggest some underlying unease"
+            ],
+            "rationale": "The user\u2019s speech shows a high sad voice signal, yet they have not explicitly described feeling sad or other mood states. This pattern suggests a subtle or unspoken emotional tone that the agent can gently acknowledge and explore.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "activities",
+                "background"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "moderate"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is feeling, acknowledging that their voice sounds a bit sad. Keep the tone warm and non\u2011judgmental, and invite them to share more if they wish.",
+              "for_human_reviewer": "Note the high sad voice signal and the lack of explicit mood disclosure; a follow\u2011up question about emotional state could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428852.970388375,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 36,
+        "timestamp": 1776530998.537205,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 18,
+          "timestamp": " 39s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High sad emotion detected in voice",
+            "User expresses uncertainty about confidence while also showing positive comments"
+          ],
+          "rationale": "The voice signal shows a notably elevated sad tone, yet the user has not explicitly described their mood. This suggests a gentle opportunity for the agent to check in about how the user is feeling without assuming distress.",
+          "biomarker_summary": {
+            "sad": 0.95,
+            "<unk>": 0.04,
+            "interpretation": "notably elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence",
+              "daily routine",
+              "food preferences"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question such as, \"It sounds like you might be feeling a bit unsure. How are you doing today?\" and listen attentively to any cues. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high sad voice signal and the user\u2019s mixed statements about confidence. A follow\u2011up check\u2011in could be helpful if the pattern persists.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 18,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High sad emotion detected in voice",
+              "User expresses uncertainty about confidence while also showing positive comments"
+            ],
+            "rationale": "The voice signal shows a notably elevated sad tone, yet the user has not explicitly described their mood. This suggests a gentle opportunity for the agent to check in about how the user is feeling without assuming distress.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "notably elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence",
+                "daily routine",
+                "food preferences"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question such as, \"It sounds like you might be feeling a bit unsure. How are you doing today?\" and listen attentively to any cues. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high sad voice signal and the user\u2019s mixed statements about confidence. A follow\u2011up check\u2011in could be helpful if the pattern persists.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428855.365824625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 38,
+        "timestamp": 1776531000.4233613,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 19,
+          "timestamp": " 43s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High fatigue signal (0.97) suggests the user may be feeling physically worn out.",
+            "Moderate distress (0.64) and slightly elevated stress (0.35) indicate some level of tension.",
+            "Voice emotion shifted from a strong sad signal in earlier segments to a very happy signal now, showing a possible change in affect."
+          ],
+          "rationale": "The user\u2019s recent statements hint at self\u2011doubt about confidence, but no explicit mood description has been provided. Biomarkers show a notable fatigue level and moderate distress, which together suggest the user might be experiencing some weariness. The sudden rise in happy voice emotion could reflect a brief positive moment or a social presentation. Overall, the pattern fits a Level\u202f1 profile where the agent should remain attentive and supportive.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "distress moderately elevated, fatigue notably elevated, stress slightly elevated, low self\u2011esteem low"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence, daily workload, food preferences"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledge the fatigue, and suggest small breaks or rest if they\u2019re feeling overwhelmed. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in could be helpful if the pattern persists.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 19,
+            "timestamp": "43s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High fatigue signal (0.97) suggests the user may be feeling physically worn out.",
+              "Moderate distress (0.64) and slightly elevated stress (0.35) indicate some level of tension.",
+              "Voice emotion shifted from a strong sad signal in earlier segments to a very happy signal now, showing a possible change in affect."
+            ],
+            "rationale": "The user\u2019s recent statements hint at self\u2011doubt about confidence, but no explicit mood description has been provided. Biomarkers show a notable fatigue level and moderate distress, which together suggest the user might be experiencing some weariness. The sudden rise in happy voice emotion could reflect a brief positive moment or a social presentation. Overall, the pattern fits a Level\u202f1 profile where the agent should remain attentive and supportive.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "fatigue": 0.97,
+              "low_self_esteem": 0.26,
+              "interpretation": "distress moderately elevated, fatigue notably elevated, stress slightly elevated, low self\u2011esteem low",
+              "critical_symptoms": [
+                "fatigue (0.97)"
+              ]
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence, daily workload, food preferences"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledge the fatigue, and suggest small breaks or rest if they\u2019re feeling overwhelmed. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in could be helpful if the pattern persists.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428856.7196485,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 40,
+        "timestamp": 1776531002.2772088,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 20,
+          "timestamp": " 45s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High fatigue signal (0.97)",
+            "Moderate distress (0.64)",
+            "User expresses mixed confidence and enjoyment",
+            "Voice emotion shows strong happiness despite fatigue"
+          ],
+          "rationale": "The user\u2019s recent speech is upbeat and positive, yet the wellness biomarkers reveal significant fatigue and a moderate level of distress. Because the user has not explicitly discussed mood or emotional state, this pattern suggests a need for gentle attention rather than immediate escalation.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "fatigue notably elevated, distress moderately elevated, stress slightly elevated, low self\u2011esteem slightly elevated, burnout low"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "self\u2011confidence, daily routine, food enjoyment"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "not_yet_discussed",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, especially regarding energy levels. Acknowledge the positive moments they shared and invite them to talk about any challenges or fatigue they\u2019re experiencing. Keep the tone warm and supportive.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals alongside a positive vocal tone. No immediate clinical concern, but a follow\u2011up check\u2011in about rest and workload could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 20,
+            "timestamp": "45s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High fatigue signal (0.97)",
+              "Moderate distress (0.64)",
+              "User expresses mixed confidence and enjoyment",
+              "Voice emotion shows strong happiness despite fatigue"
+            ],
+            "rationale": "The user\u2019s recent speech is upbeat and positive, yet the wellness biomarkers reveal significant fatigue and a moderate level of distress. Because the user has not explicitly discussed mood or emotional state, this pattern suggests a need for gentle attention rather than immediate escalation.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "fatigue": 0.97,
+              "low_self_esteem": 0.26,
+              "interpretation": "fatigue notably elevated, distress moderately elevated, stress slightly elevated, low self\u2011esteem slightly elevated, burnout low",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "self\u2011confidence, daily routine, food enjoyment"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, especially regarding energy levels. Acknowledge the positive moments they shared and invite them to talk about any challenges or fatigue they\u2019re experiencing. Keep the tone warm and supportive.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals alongside a positive vocal tone. No immediate clinical concern, but a follow\u2011up check\u2011in about rest and workload could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428858.629530458,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 42,
+        "timestamp": 1776531004.2118473,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 21,
+          "timestamp": " 46s",
+          "level": 2,
+          "alert": "supportive",
+          "confidence": "medium",
+          "concerns": [
+            "High fatigue signal (0.97) indicating possible exhaustion",
+            "Moderately elevated distress (0.64) alongside a positive tone",
+            "User mentions feeling less confident despite overall upbeat language"
+          ],
+          "rationale": "The user\u2019s voice and text suggest a mix of positive moments and subtle signs of weariness. The elevated fatigue and distress scores, together with a self\u2011reported lack of confidence, point to a need for gentle, supportive attention.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "distress notably elevated, fatigue notably elevated, stress slightly elevated, low_self_esteem low, happiness high"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "confidence, pace of work, personal enjoyment"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "moderate",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is managing their workload and energy. Acknowledge the positive moments they shared and invite them to talk more about what\u2019s making them feel a bit unsure. Suggest simple self\u2011care ideas like short breaks or a quick stretch if fatigue feels overwhelming.",
+            "for_human_reviewer": "Note the elevated fatigue and distress signals; a follow\u2011up conversation could explore whether these are temporary or part of a longer pattern.",
+            "urgency": "supportive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 21,
+            "timestamp": "46s",
+            "classification": {
+              "level": 2,
+              "alert": "supportive",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High fatigue signal (0.97) indicating possible exhaustion",
+              "Moderately elevated distress (0.64) alongside a positive tone",
+              "User mentions feeling less confident despite overall upbeat language"
+            ],
+            "rationale": "The user\u2019s voice and text suggest a mix of positive moments and subtle signs of weariness. The elevated fatigue and distress scores, together with a self\u2011reported lack of confidence, point to a need for gentle, supportive attention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "low_self_esteem": 0.26,
+              "fatigue": 0.97,
+              "interpretation": "distress notably elevated, fatigue notably elevated, stress slightly elevated, low_self_esteem low, happiness high",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "confidence, pace of work, personal enjoyment"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "moderate",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is managing their workload and energy. Acknowledge the positive moments they shared and invite them to talk more about what\u2019s making them feel a bit unsure. Suggest simple self\u2011care ideas like short breaks or a quick stretch if fatigue feels overwhelming.",
+              "for_human_reviewer": "Note the elevated fatigue and distress signals; a follow\u2011up conversation could explore whether these are temporary or part of a longer pattern.",
+              "urgency": "supportive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428860.921817458,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 44,
+        "timestamp": 1776531006.4968746,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 22,
+          "timestamp": " 48s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Noticeable fatigue signal",
+            "Moderate distress level",
+            "Positive vocal tone despite expressed lack of confidence"
+          ],
+          "rationale": "The user\u2019s voice shows a high happy tone while they mention feeling less confident and a slow pace. The wellness biomarkers indicate moderate distress and a very high fatigue level, suggesting the user may be managing a lot of tasks. This pattern is consistent with a mild mismatch between self\u2011reported confidence and vocal affect, but it does not signal a crisis. A gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "moderately elevated distress, notably elevated fatigue, high happiness"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "activities",
+              "self\u2011perception",
+              "daily routine"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is managing their workload and fatigue. Acknowledge their feelings of uncertainty about confidence, and invite them to share more if they wish. Keep the tone warm and non\u2011judgmental, and suggest small rest breaks or self\u2011care ideas if appropriate.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in after a few interactions could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 22,
+            "timestamp": "48s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Noticeable fatigue signal",
+              "Moderate distress level",
+              "Positive vocal tone despite expressed lack of confidence"
+            ],
+            "rationale": "The user\u2019s voice shows a high happy tone while they mention feeling less confident and a slow pace. The wellness biomarkers indicate moderate distress and a very high fatigue level, suggesting the user may be managing a lot of tasks. This pattern is consistent with a mild mismatch between self\u2011reported confidence and vocal affect, but it does not signal a crisis. A gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "fatigue": 0.97,
+              "low_self_esteem": 0.26,
+              "interpretation": "moderately elevated distress, notably elevated fatigue, high happiness",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "activities",
+                "self\u2011perception",
+                "daily routine"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is managing their workload and fatigue. Acknowledge their feelings of uncertainty about confidence, and invite them to share more if they wish. Keep the tone warm and non\u2011judgmental, and suggest small rest breaks or self\u2011care ideas if appropriate.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in after a few interactions could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428863.255627458,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 46,
+        "timestamp": 1776531008.795689,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 23,
+          "timestamp": " 51s",
+          "level": 2,
+          "alert": "supportive",
+          "confidence": "medium",
+          "concerns": [
+            "High fatigue signal",
+            "Moderately elevated distress",
+            "Mild mismatch between self\u2011reported confidence and vocal happiness"
+          ],
+          "rationale": "The user mentions feeling unsure about confidence and describes a slow pace, while the voice emotion is strongly happy. Fatigue is notably high and distress is above the moderate threshold, suggesting the user may be carrying a lot of activity and feeling worn. The overall pattern indicates a need for gentle, supportive attention rather than clinical intervention.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "notably elevated fatigue, notably elevated distress, slightly elevated stress, high happiness"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "self\u2011confidence",
+              "daily routine",
+              "food enjoyment"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "mild",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is managing their energy and workload. Acknowledge the positive moments they shared (e.g., enjoying granola) while validating their feelings of uncertainty. Encourage small rest breaks or self\u2011care practices if fatigue feels overwhelming.",
+            "for_human_reviewer": "Note the high fatigue and distress signals; a follow\u2011up conversation about workload and rest may be helpful.",
+            "urgency": "supportive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 23,
+            "timestamp": "51s",
+            "classification": {
+              "level": 2,
+              "alert": "supportive",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High fatigue signal",
+              "Moderately elevated distress",
+              "Mild mismatch between self\u2011reported confidence and vocal happiness"
+            ],
+            "rationale": "The user mentions feeling unsure about confidence and describes a slow pace, while the voice emotion is strongly happy. Fatigue is notably high and distress is above the moderate threshold, suggesting the user may be carrying a lot of activity and feeling worn. The overall pattern indicates a need for gentle, supportive attention rather than clinical intervention.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "low_self_esteem": 0.26,
+              "fatigue": 0.97,
+              "interpretation": "notably elevated fatigue, notably elevated distress, slightly elevated stress, high happiness",
+              "critical_symptoms": [
+                "fatigue (0.97)"
+              ]
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "self\u2011confidence",
+                "daily routine",
+                "food enjoyment"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "mild",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is managing their energy and workload. Acknowledge the positive moments they shared (e.g., enjoying granola) while validating their feelings of uncertainty. Encourage small rest breaks or self\u2011care practices if fatigue feels overwhelming.",
+              "for_human_reviewer": "Note the high fatigue and distress signals; a follow\u2011up conversation about workload and rest may be helpful.",
+              "urgency": "supportive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428865.1362235,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 48,
+        "timestamp": 1776531010.7614362,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 24,
+          "timestamp": " 53s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Elevated fatigue signal (0.97)",
+            "Moderate distress (0.64) and stress (0.35)",
+            "User mentions feeling not very confident despite positive statements"
+          ],
+          "rationale": "The user\u2019s voice shows a high happy tone but the wellness biomarkers indicate notable fatigue and moderate distress. The user has briefly discussed confidence and a sense of being overwhelmed, which aligns with the fatigue and distress signals. No clinical thresholds for depression or anxiety are present, so a level\u20111 attentive stance is appropriate.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "moderately elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "self\u2011confidence",
+              "daily workload",
+              "positive moments"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "concordance",
+            "agreement_level": "moderate",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer gentle check\u2011ins about how fatigue is affecting their day, suggest small breaks or rest, and acknowledge their feelings of being overwhelmed. Keep the tone warm and supportive.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals; continue to monitor for any changes in mood or additional symptoms.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 24,
+            "timestamp": "53s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Elevated fatigue signal (0.97)",
+              "Moderate distress (0.64) and stress (0.35)",
+              "User mentions feeling not very confident despite positive statements"
+            ],
+            "rationale": "The user\u2019s voice shows a high happy tone but the wellness biomarkers indicate notable fatigue and moderate distress. The user has briefly discussed confidence and a sense of being overwhelmed, which aligns with the fatigue and distress signals. No clinical thresholds for depression or anxiety are present, so a level\u20111 attentive stance is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "interpretation": "moderately elevated",
+              "critical_symptoms": [
+                "fatigue (0.97)"
+              ]
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "self\u2011confidence",
+                "daily workload",
+                "positive moments"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "concordance",
+              "agreement_level": "moderate",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer gentle check\u2011ins about how fatigue is affecting their day, suggest small breaks or rest, and acknowledge their feelings of being overwhelmed. Keep the tone warm and supportive.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals; continue to monitor for any changes in mood or additional symptoms.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428866.98295325,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 50,
+        "timestamp": 1776531012.614237,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 25,
+          "timestamp": " 55s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "High fatigue signal",
+            "Moderately elevated distress",
+            "Some self\u2011esteem concerns",
+            "Positive vocal tone despite underlying strain"
+          ],
+          "rationale": "The user\u2019s voice is very upbeat, yet the wellness biomarkers show a strong fatigue signal and a moderate distress level. This suggests the user may be pushing through a busy period while feeling physically worn. The brief self\u2011doubt about confidence indicates a mild mismatch between how they feel and how they are expressing themselves. A gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "happy": 0.97,
+            "neutral": 0.01,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "fatigue notably elevated, distress moderately elevated, stress slightly elevated, low self\u2011esteem slightly elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "activities",
+              "daily routine",
+              "self\u2011confidence"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s busy schedule and the feeling of fatigue. Offer gentle suggestions for rest or short breaks, and invite them to share how they\u2019re coping with the workload. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in after a short break could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 25,
+            "timestamp": "55s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "High fatigue signal",
+              "Moderately elevated distress",
+              "Some self\u2011esteem concerns",
+              "Positive vocal tone despite underlying strain"
+            ],
+            "rationale": "The user\u2019s voice is very upbeat, yet the wellness biomarkers show a strong fatigue signal and a moderate distress level. This suggests the user may be pushing through a busy period while feeling physically worn. The brief self\u2011doubt about confidence indicates a mild mismatch between how they feel and how they are expressing themselves. A gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "stress": 0.35,
+              "burnout": 0.1,
+              "fatigue": 0.97,
+              "low_self_esteem": 0.26,
+              "interpretation": "fatigue notably elevated, distress moderately elevated, stress slightly elevated, low self\u2011esteem slightly elevated",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "activities",
+                "daily routine",
+                "self\u2011confidence"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s busy schedule and the feeling of fatigue. Offer gentle suggestions for rest or short breaks, and invite them to share how they\u2019re coping with the workload. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up check\u2011in after a short break could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 428868.773796208,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 52,
+        "timestamp": 1776531014.2197337,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 26,
+          "timestamp": " 57s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "Elevated fatigue signal",
+            "Moderate distress and stress",
+            "Neutral voice tone despite earlier sadness signals"
+          ],
+          "rationale": "The user\u2019s voice has shifted to a calm, neutral tone, yet the wellness indicators show a high fatigue level and moderate distress. The user mentions feeling slow and lacking confidence, which suggests some underlying discomfort that hasn\u2019t been fully explored. This pattern is consistent with a level\u20111 alert: attentive but not urgent.",
+          "biomarker_summary": {
+            "happy": 0.04,
+            "neutral": 0.79,
+            "sad": 0.02,
+            "<unk>": 0.14,
+            "distress": 0.64,
+            "stress": 0.35,
+            "burnout": 0.1,
+            "low_self_esteem": 0.26,
+            "fatigue": 0.97,
+            "interpretation": "moderately elevated"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "confidence",
+              "daily workload",
+              "self\u2011perception"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "moderate",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledge the fatigue, and suggest small breaks or rest if possible. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up conversation about energy levels and workload could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 26,
+            "timestamp": "57s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "Elevated fatigue signal",
+              "Moderate distress and stress",
+              "Neutral voice tone despite earlier sadness signals"
+            ],
+            "rationale": "The user\u2019s voice has shifted to a calm, neutral tone, yet the wellness indicators show a high fatigue level and moderate distress. The user mentions feeling slow and lacking confidence, which suggests some underlying discomfort that hasn\u2019t been fully explored. This pattern is consistent with a level\u20111 alert: attentive but not urgent.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": 0.64,
+              "interpretation": "moderately elevated",
+              "critical_symptoms": [
+                "fatigue (0.97)"
+              ]
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "confidence",
+                "daily workload",
+                "self\u2011perception"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "moderate",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in about how the user is feeling today, acknowledge the fatigue, and suggest small breaks or rest if possible. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the high fatigue and moderate distress signals; a follow\u2011up conversation about energy levels and workload could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "error": null
+}

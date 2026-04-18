@@ -40,6 +40,8 @@ from fastapi.templating import Jinja2Templates
 from starlette.middleware.cors import CORSMiddleware
 
 from services.coaching_live import OllamaLiveCoaching
+from services.live_biomarker import ThymiaLiveBiomarker
+from services.live_transcription import SpeechmaticsLiveTranscription
 from services.training_processor import process_session
 
 load_dotenv()
@@ -101,6 +103,7 @@ state_lock = asyncio.Lock()
 
 app = FastAPI(title="Voice awareness prototype")
 app.mount("/static", StaticFiles(directory=str(ROOT / "static")), name="static")
+app.mount("/ui", StaticFiles(directory=str(ROOT / "UI")), name="ui")
 templates = Jinja2Templates(directory=str(ROOT / "templates"))
 
 app.add_middleware(
@@ -116,7 +119,7 @@ app.add_middleware(
 async def no_cache_static(request: Request, call_next):
     """Dev convenience: never let the browser cache /static, so edits show up on reload."""
     response = await call_next(request)
-    if request.url.path.startswith("/static") or request.url.path in ("/", "/phone", "/train") or request.url.path.startswith("/review"):
+    if request.url.path.startswith("/static") or request.url.path.startswith("/ui") or request.url.path in ("/", "/phone", "/train") or request.url.path.startswith("/review"):
         response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
         response.headers["Pragma"] = "no-cache"
         response.headers["Expires"] = "0"
@@ -448,10 +451,19 @@ async def train_submit(
     audio: UploadFile = File(...),
     volume: str = Form("[]"),
     transcript_hint: str = Form(""),
+    session_id: str = Form(""),
 ):
-    session_id = time.strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:6]
-    folder = SESSIONS_DIR / session_id
-    folder.mkdir(parents=True, exist_ok=True)
+    if session_id:
+        sid = _safe_id(session_id)
+        folder = SESSIONS_DIR / sid
+        folder.mkdir(parents=True, exist_ok=True)
+        session_id = sid
+        log.info("[submit] attaching to existing session %s", session_id)
+    else:
+        session_id = time.strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:6]
+        folder = SESSIONS_DIR / session_id
+        folder.mkdir(parents=True, exist_ok=True)
+        log.info("[submit] generated new session_id %s", session_id)
     log.info(
         "[submit] new session %s audio=%s(%s) video=%s(%s)",
         session_id,
@@ -498,9 +510,15 @@ async def _process_session_bg(session_id: str) -> None:
     folder = SESSIONS_DIR / session_id
     log.info("[bg] start processing session %s", session_id)
     try:
-        await process_session(str(folder), CONFIG)
+        # Hard cap so a hung Ollama / Thymia call can't leave the UI stuck forever.
+        await asyncio.wait_for(process_session(str(folder), CONFIG), timeout=150)
         (folder / "status.json").write_text(json.dumps({"status": "ready"}))
         log.info("[bg] session %s marked READY", session_id)
+    except asyncio.TimeoutError:
+        log.error("[bg] session %s TIMED OUT after 150s", session_id)
+        (folder / "status.json").write_text(
+            json.dumps({"status": "failed", "error": "processing timed out after 150s — check Ollama / Speechmatics / Thymia are running"})
+        )
     except Exception as exc:
         log.exception("[bg] session %s FAILED: %s", session_id, exc)
         (folder / "status.json").write_text(
@@ -618,6 +636,176 @@ async def ws_train(ws: WebSocket):
         pass
     except Exception:
         log.exception("train ws error")
+
+
+# ---------------------------------------------------------------------------
+# Live streaming for training (Speechmatics RT + Thymia Sentinel)
+# ---------------------------------------------------------------------------
+
+
+@app.websocket("/ws/train/stream")
+async def ws_train_stream(ws: WebSocket):
+    """Per-session live audio pipeline.
+
+    Handshake:
+        client connects
+        server creates session folder, sends {"type":"ready","session_id":...}
+        client sends binary PCM frames (s16le 16 kHz mono)
+        server streams back {"type":"partial","text":...},
+                            {"type":"final","text":...,"words":[...]},
+                            {"type":"policy","result":{...}}
+        on close, server persists live_transcript.json and thymia_sentinel.json
+    """
+    peer = ws.client.host if ws.client else "unknown"
+    log.info("[ws/train/stream] incoming connection peer=%s", peer)
+    try:
+        await ws.accept()
+    except Exception:
+        log.exception("[ws/train/stream] accept() failed")
+        return
+    log.info("[ws/train/stream] accepted peer=%s", peer)
+
+    session_id = time.strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:6]
+    folder = SESSIONS_DIR / session_id
+    folder.mkdir(parents=True, exist_ok=True)
+    log.info("[ws/train/stream] peer=%s session=%s", peer, session_id)
+
+    live_cfg = CONFIG.get("live_stream", {})
+    sm_cfg = CONFIG.get("speechmatics", {})
+    sentinel_cfg = CONFIG.get("thymia_sentinel", {})
+
+    live_tx = SpeechmaticsLiveTranscription(
+        language=sm_cfg.get("language", "en"),
+        sample_rate=live_cfg.get("target_sample_rate", 16000),
+        chunk_samples=live_cfg.get("chunk_samples", 2048),
+        max_delay=sm_cfg.get("max_delay", 0.7),
+        enable_partials=sm_cfg.get("enable_partials", True),
+    )
+    sentinel: ThymiaLiveBiomarker | None = None
+    if sentinel_cfg.get("enabled", True):
+        sentinel = ThymiaLiveBiomarker(
+            user_label=sentinel_cfg.get("user_label", "training-user"),
+            policies=sentinel_cfg.get("policies", ["demo_wellbeing_awareness"]),
+        )
+
+    async def send_partial(text: str) -> None:
+        try:
+            await ws.send_json({"type": "partial", "text": text})
+        except Exception:
+            pass
+
+    async def send_final(text: str, words: list) -> None:
+        try:
+            await ws.send_json({
+                "type": "final",
+                "text": text,
+                "words": [w.__dict__ for w in words],
+            })
+        except Exception:
+            pass
+        if sentinel is not None and text:
+            await sentinel.send_transcript(text)
+
+    async def send_policy(result: dict) -> None:
+        try:
+            await ws.send_json({"type": "policy", "result": result})
+        except Exception:
+            pass
+
+    live_tx.on_partial(send_partial)
+    live_tx.on_final(send_final)
+    if sentinel is not None:
+        sentinel.on_policy(send_policy)
+
+    await live_tx.start()
+    if sentinel is not None:
+        await sentinel.start()
+
+    await ws.send_json({
+        "type": "ready",
+        "session_id": session_id,
+        "transcription_enabled": live_tx.error is None,
+        "biomarker_enabled": sentinel is not None and sentinel.error is None,
+        "transcription_error": live_tx.error,
+        "biomarker_error": (sentinel.error if sentinel else "disabled"),
+    })
+
+    frames_in = 0
+    bytes_in = 0
+    try:
+        while True:
+            msg = await ws.receive()
+            if msg.get("type") == "websocket.disconnect":
+                break
+            data = msg.get("bytes")
+            text = msg.get("text")
+            if data is not None:
+                frames_in += 1
+                bytes_in += len(data)
+                await live_tx.send_pcm(data)
+                if sentinel is not None:
+                    await sentinel.send_audio(data)
+                if frames_in <= 3 or frames_in % 100 == 0:
+                    log.info(
+                        "[ws/train/stream] frame=%d total_bytes=%d partial=%r",
+                        frames_in, bytes_in, live_tx.partial_text[:60],
+                    )
+            elif text is not None:
+                try:
+                    ctrl = json.loads(text)
+                except json.JSONDecodeError:
+                    continue
+                ctype = ctrl.get("type")
+                if ctype == "stop":
+                    log.info("[ws/train/stream] client requested stop")
+                    break
+                elif ctype == "ping":
+                    await ws.send_json({"type": "pong"})
+    except WebSocketDisconnect:
+        log.info("[ws/train/stream] client disconnected")
+    except Exception:
+        log.exception("[ws/train/stream] error")
+    finally:
+        log.info(
+            "[ws/train/stream] closing session=%s frames=%d bytes=%d",
+            session_id, frames_in, bytes_in,
+        )
+        try:
+            await live_tx.close()
+        except Exception:
+            log.exception("live_tx close failed")
+        if sentinel is not None:
+            try:
+                await sentinel.close()
+            except Exception:
+                log.exception("sentinel close failed")
+
+        transcript = live_tx.finalise()
+        live_transcript_path = folder / "live_transcript.json"
+        live_transcript_path.write_text(json.dumps(transcript.to_dict(), indent=2))
+        log.info(
+            "[ws/train/stream] saved %s words=%d text_len=%d error=%s",
+            live_transcript_path, len(transcript.words), len(transcript.text), transcript.error,
+        )
+        if sentinel is not None:
+            sentinel_path = folder / "thymia_sentinel.json"
+            sentinel_path.write_text(json.dumps(sentinel.summary(), indent=2, default=str))
+            log.info("[ws/train/stream] saved %s", sentinel_path)
+
+        try:
+            await ws.send_json({
+                "type": "done",
+                "session_id": session_id,
+                "words": len(transcript.words),
+                "text": transcript.text,
+                "error": transcript.error,
+            })
+        except Exception:
+            pass
+        try:
+            await ws.close()
+        except Exception:
+            pass
 
 
 # ---------------------------------------------------------------------------

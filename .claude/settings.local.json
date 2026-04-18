@@ -13,7 +13,16 @@
       "Bash(lsof -nP -iTCP:8000 -sTCP:LISTEN)",
       "Bash(python3 -m py_compile app.py)",
       "Bash(node --check /Users/danionhughes/Documents/Hackathon/static/js/train.js)",
-      "Bash(python3 -m py_compile app.py services/transcription.py services/training_processor.py services/emotion.py services/biomarker.py services/coaching.py)"
+      "Bash(python3 -m py_compile app.py services/transcription.py services/training_processor.py services/emotion.py services/biomarker.py services/coaching.py)",
+      "Bash(pip3 show *)",
+      "Bash(/Users/danionhughes/Documents/Hackathon/venv/bin/pip show *)",
+      "Bash(ps -p 66291 -o pid,etime,command)",
+      "Bash(curl -s -o /dev/null -w \"/config=%{http_code}\\\\n/ws/train/stream=%{http_code}\\\\n/ws/train=%{http_code}\\\\n\" http://localhost:8000/config http://localhost:8000/ws/train/stream http://localhost:8000/ws/train)",
+      "Bash(curl -s -w \"\\\\nstatus: %{http_code}\\\\n\" http://localhost:8000/config)",
+      "Bash(curl -s -w \"\\\\nstatus: %{http_code}\\\\n\" http://localhost:8000/ws/train/stream)",
+      "Bash(curl -s -w \"\\\\nstatus: %{http_code}\\\\n\" http://localhost:8000/ws/train)",
+      "Bash(/Users/danionhughes/Documents/Hackathon/venv/bin/pip list *)",
+      "Bash(/Users/danionhughes/Documents/Hackathon/venv/bin/python -c ' *)"
     ]
   }
 }

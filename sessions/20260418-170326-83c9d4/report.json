@@ -1,0 +1,6778 @@
+{
+  "session_id": "20260418-170326-83c9d4",
+  "audio_file": "audio.webm",
+  "video_file": "video.webm",
+  "duration_seconds": 22.589,
+  "transcript": {
+    "text": "",
+    "words": [],
+    "language": "en",
+    "duration_seconds": 22.589,
+    "error": "HTTPStatusError: Client error '400 Bad Request' for url 'https://asr.api.speechmatics.com/v2/jobs?sm-sdk=python-5.0.0.post1'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "emotion": {
+    "timeline": [],
+    "dominant": "neutral",
+    "error": "no words in transcript"
+  },
+  "biomarker": {
+    "pace_wpm": null,
+    "filler_rate": null,
+    "pitch_mean_hz": null,
+    "pitch_variability": null,
+    "jitter": null,
+    "shimmer": null,
+    "extra": {},
+    "error": "thymia 413: HTTP content length exceeded 10485760 bytes., used transcript fallback"
+  },
+  "live_thymia": {
+    "policy_results": [
+      {
+        "t": 426065.669509333,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 2,
+          "timestamp": 1776528211.298747,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 1,
+            "timestamp": " 2s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "low",
+            "concerns": [],
+            "rationale": "No biomarker data is available for this first segment, so we cannot assess mood or stress levels yet. The user has not provided any explicit emotional content, and the text is incomplete. We remain attentive and ready to explore well\u2011being when more information emerges.",
+            "biomarker_summary": {
+              "interpretation": "unknown"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_yet_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Gently ask how the user is feeling when the conversation naturally allows it, and listen with empathy.",
+              "for_human_reviewer": "No biomarker data available at this point; continue monitoring for future signals.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "initial",
+              "segment_number": 1,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "low"
+              },
+              "concerns": [],
+              "rationale": "No biomarker data is available for this first segment, so we cannot assess mood or stress levels yet. The user has not provided any explicit emotional content, and the text is incomplete. We remain attentive and ready to explore well\u2011being when more information emerges.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": null,
+                "interpretation": "unknown",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_yet_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Gently ask how the user is feeling when the conversation naturally allows it, and listen with empathy.",
+                "for_human_reviewer": "No biomarker data available at this point; continue monitoring for future signals.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426067.360621666,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 4,
+          "timestamp": 1776528212.9898503,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 2,
+            "timestamp": " 4s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "low",
+            "concerns": [],
+            "rationale": "The user\u2019s current message is a brief request to copy the transcript, with no indication of mood or emotional content. No biomarker data is available for this segment, so we cannot detect any elevated signals. The conversation remains neutral and routine.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the request and provide the transcript if appropriate. Keep the tone friendly and supportive.",
+              "for_human_reviewer": "No additional information needed at this time.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 2,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "low"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s current message is a brief request to copy the transcript, with no indication of mood or emotional content. No biomarker data is available for this segment, so we cannot detect any elevated signals. The conversation remains neutral and routine.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "request"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Acknowledge the request and provide the transcript if appropriate. Keep the tone friendly and supportive.",
+                "for_human_reviewer": "No additional information needed at this time.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426068.534822916,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 6,
+          "timestamp": 1776528214.1655838,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 3,
+            "timestamp": " 5s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "low",
+            "concerns": [],
+            "rationale": "The user is simply requesting a transcript and has not shared any information about their mood or wellbeing. With no biomarker data available, there is no indication of elevated signals or distress. The conversation remains neutral and routine.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "transcript request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and offer further assistance if needed. If the user later shares more about how they\u2019re feeling, be ready to respond with warmth and attentiveness.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood disclosures.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 3,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "low"
+              },
+              "concerns": [],
+              "rationale": "The user is simply requesting a transcript and has not shared any information about their mood or wellbeing. With no biomarker data available, there is no indication of elevated signals or distress. The conversation remains neutral and routine.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": null,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "transcript request"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and offer further assistance if needed. If the user later shares more about how they\u2019re feeling, be ready to respond with warmth and attentiveness.",
+                "for_human_reviewer": "No immediate concerns; continue monitoring for any future mood disclosures.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426069.602622541,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 8,
+          "timestamp": 1776528215.2238967,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 4,
+            "timestamp": " 6s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages contain only repeated fragments and do not provide any indication of mood or emotional state. With no biomarker data available, the conversation remains at a baseline level of wellbeing awareness.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "background"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue engaging with the user in a friendly manner. No special attention to wellbeing is required at this time.",
+              "for_human_reviewer": "No concerns to flag. The conversation remains at a baseline level.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 4,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s recent messages contain only repeated fragments and do not provide any indication of mood or emotional state. With no biomarker data available, the conversation remains at a baseline level of wellbeing awareness.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "background"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue engaging with the user in a friendly manner. No special attention to wellbeing is required at this time.",
+                "for_human_reviewer": "No concerns to flag. The conversation remains at a baseline level.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426070.718035333,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 10,
+          "timestamp": 1776528216.342022,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 5,
+            "timestamp": " 7s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "low",
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are fragmented and do not contain any content that indicates mood or emotional state. No biomarker data is available for this segment, so there is no basis for concern or for a higher alert level.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "transcript request"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood or biomarker signals.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 5,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "low"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s recent messages are fragmented and do not contain any content that indicates mood or emotional state. No biomarker data is available for this segment, so there is no basis for concern or for a higher alert level.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "transcript request"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+                "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood or biomarker signals.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426071.784890291,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 12,
+          "timestamp": 1776528217.4074223,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 6,
+            "timestamp": " 8s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are primarily a repetition of a request to copy a transcript and a brief mention that a biomarker signal works. No mood or wellbeing language is present, and no biomarker data were supplied. Therefore, there is no indication of emotional distress or a need for heightened attention.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything else they\u2019d like to discuss.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood cues.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 6,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s recent messages are primarily a repetition of a request to copy a transcript and a brief mention that a biomarker signal works. No mood or wellbeing language is present, and no biomarker data were supplied. Therefore, there is no indication of emotional distress or a need for heightened attention.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "transcript"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling or if there\u2019s anything else they\u2019d like to discuss.",
+                "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood cues.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426072.849301583,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 14,
+          "timestamp": 1776528218.4778903,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 7,
+            "timestamp": " 9s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "low",
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are fragmented and focus on technical aspects of the transcript and biomarker signal. No mood or wellbeing language is present, and no biomarker data was supplied for this segment. Therefore, there is no indication of emotional distress or a need for heightened support at this moment.",
+            "biomarker_summary": {
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript",
+                "biomarker"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+              "for_human_reviewer": "No additional observations needed at this time.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 7,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "low"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s recent messages are fragmented and focus on technical aspects of the transcript and biomarker signal. No mood or wellbeing language is present, and no biomarker data was supplied for this segment. Therefore, there is no indication of emotional distress or a need for heightened support at this moment.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "transcript",
+                  "biomarker"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there\u2019s anything they\u2019d like to share about their day.",
+                "for_human_reviewer": "No additional observations needed at this time.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426073.937664416,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 16,
+          "timestamp": 1776528219.562534,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 8,
+            "timestamp": " 10s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The voice emotion data shows a calm, neutral tone with minimal happiness, and no other mood or wellness biomarkers are present. The user\u2019s text does not reveal any emotional content or distress. Therefore, the conversation remains at a baseline level of wellbeing.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "transcript"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for sharing.",
+              "for_human_reviewer": "No additional attention required at this time.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 8,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The voice emotion data shows a calm, neutral tone with minimal happiness, and no other mood or wellness biomarkers are present. The user\u2019s text does not reveal any emotional content or distress. Therefore, the conversation remains at a baseline level of wellbeing.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": null,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "transcript"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for sharing.",
+                "for_human_reviewer": "No additional attention required at this time.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426075.206439,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 18,
+          "timestamp": 1776528220.8370726,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 9,
+            "timestamp": " 11s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user is discussing a technical issue and the voice emotion data shows a calm, neutral tone with minimal positive affect. No mood or wellbeing topics have been raised, and no elevated biomarkers are present. Therefore, the conversation is clear of any signals that would prompt additional attention.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue to assist with the user\u2019s technical questions and maintain a friendly, supportive tone.",
+              "for_human_reviewer": "No additional concerns noted.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 9,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user is discussing a technical issue and the voice emotion data shows a calm, neutral tone with minimal positive affect. No mood or wellbeing topics have been raised, and no elevated biomarkers are present. Therefore, the conversation is clear of any signals that would prompt additional attention.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": null,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical"
+                ],
+                "user_insight": "unknown"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue to assist with the user\u2019s technical questions and maintain a friendly, supportive tone.",
+                "for_human_reviewer": "No additional concerns noted.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426076.278928333,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 20,
+          "timestamp": 1776528221.9093437,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 10,
+            "timestamp": " 13s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user is discussing a technical issue with a video and biomarker signal, and the voice emotion data shows a calm, neutral tone with almost no happiness. No mood or wellbeing topics have been raised, and no elevated wellbeing or mood indicators are present. Therefore, the conversation remains at a baseline level of attention.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "video",
+                "biomarker"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation as usual, offering help with the technical issue if needed. No special mood\u2011support prompts are required at this time.",
+              "for_human_reviewer": "No concerns to flag. The user is not expressing distress or mood issues.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 10,
+              "timestamp": "13s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user is discussing a technical issue with a video and biomarker signal, and the voice emotion data shows a calm, neutral tone with almost no happiness. No mood or wellbeing topics have been raised, and no elevated wellbeing or mood indicators are present. Therefore, the conversation remains at a baseline level of attention.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": null,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "video",
+                  "biomarker"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue the conversation as usual, offering help with the technical issue if needed. No special mood\u2011support prompts are required at this time.",
+                "for_human_reviewer": "No concerns to flag. The user is not expressing distress or mood issues.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426077.937677291,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 22,
+          "timestamp": 1776528223.5619001,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 11,
+            "timestamp": " 14s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user\u2019s speech is focused on technical details about a video and biomarker signal. Voice emotion shows a calm, neutral tone with no signs of distress or elevated affect. No mood or wellbeing topics have been mentioned, and no other biomarker data is available. Therefore, the conversation is currently clear of any indicators that would prompt a more attentive or supportive stance.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "video",
+                "biomarker"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation about the technical aspects. When a natural opening arises, gently ask how the user is feeling to keep the dialogue open and supportive.",
+              "for_human_reviewer": "No immediate concerns; maintain routine monitoring.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 11,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s speech is focused on technical details about a video and biomarker signal. Voice emotion shows a calm, neutral tone with no signs of distress or elevated affect. No mood or wellbeing topics have been mentioned, and no other biomarker data is available. Therefore, the conversation is currently clear of any indicators that would prompt a more attentive or supportive stance.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "video",
+                  "biomarker"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue the conversation about the technical aspects. When a natural opening arises, gently ask how the user is feeling to keep the dialogue open and supportive.",
+                "for_human_reviewer": "No immediate concerns; maintain routine monitoring.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426079.187961625,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 24,
+          "timestamp": 1776528224.8186278,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 12,
+            "timestamp": " 15s",
+            "level": 0,
+            "alert": "none",
+            "confidence": "high",
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages focus on technical aspects of the biomarker system and contain no indication of emotional distress. Voice emotion scores are overwhelmingly neutral, suggesting a calm tone. With no mood or wellness indicators present, the conversation remains at a baseline level of wellbeing.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "interpretation": "minimal"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "system status"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for emotional sharing.",
+              "for_human_reviewer": "No immediate concern; continue monitoring for any future mood disclosures.",
+              "urgency": "routine"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 12,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 0,
+                "alert": "none",
+                "confidence": "high"
+              },
+              "concerns": [],
+              "rationale": "The user\u2019s recent messages focus on technical aspects of the biomarker system and contain no indication of emotional distress. Voice emotion scores are overwhelmingly neutral, suggesting a calm tone. With no mood or wellness indicators present, the conversation remains at a baseline level of wellbeing.",
+              "biomarker_summary": {
+                "depression_probability": 0.0,
+                "anxiety_probability": 0.0,
+                "distress": 0.0,
+                "interpretation": "minimal",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical",
+                  "system status"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a friendly tone and, when appropriate, gently ask how the user is feeling to open a space for emotional sharing.",
+                "for_human_reviewer": "No immediate concern; continue monitoring for any future mood disclosures.",
+                "urgency": "routine"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426080.679963375,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 26,
+          "timestamp": 1776528226.3090646,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 13,
+            "timestamp": " 17s",
+            "level": 1,
+            "alert": "aware",
+            "confidence": "medium",
+            "concerns": [
+              "Distress and fatigue signals are slightly above baseline, though the user has not yet shared how they feel.",
+              "Voice remains largely neutral with minimal positive affect."
+            ],
+            "rationale": "The biomarker data shows a moderate level of distress and fatigue, but the user\u2019s text does not mention mood or emotional state. This suggests an opportunity for the agent to gently inquire about well\u2011being while remaining supportive.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.99,
+              "distress": 0.55,
+              "stress": 0.28,
+              "burnout": 0.04,
+              "low_self_esteem": 0.27,
+              "fatigue": 0.5,
+              "interpretation": "moderately elevated"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical discussion about biomarker system"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a warm tone and consider asking the user how they are feeling or if anything is on their mind. Acknowledge that the system is noticing some signals of mild distress and fatigue, and invite them to share if they wish.",
+              "for_human_reviewer": "The user has not yet discussed mood, but biomarker data indicates moderate distress and fatigue. No urgent clinical concern is evident.",
+              "urgency": "attentive"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 13,
+              "timestamp": "0-60s",
+              "classification": {
+                "level": 1,
+                "alert": "aware",
+                "confidence": "medium"
+              },
+              "concerns": [
+                "Distress and fatigue signals are slightly above baseline, though the user has not yet shared how they feel.",
+                "Voice remains largely neutral with minimal positive affect."
+              ],
+              "rationale": "The biomarker data shows a moderate level of distress and fatigue, but the user\u2019s text does not mention mood or emotional state. This suggests an opportunity for the agent to gently inquire about well\u2011being while remaining supportive.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": 0.55,
+                "interpretation": "moderately elevated",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical discussion about biomarker system"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Maintain a warm tone and consider asking the user how they are feeling or if anything is on their mind. Acknowledge that the system is noticing some signals of mild distress and fatigue, and invite them to share if they wish.",
+                "for_human_reviewer": "The user has not yet discussed mood, but biomarker data indicates moderate distress and fatigue. No urgent clinical concern is evident.",
+                "urgency": "attentive"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426081.803347916,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 28,
+          "timestamp": 1776528227.4317422,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 14,
+            "timestamp": " 18s",
+            "level": 1,
+            "alert": "aware",
+            "confidence": "medium",
+            "concerns": [
+              "Moderate distress signal (0.55)",
+              "Moderate fatigue signal (0.50)",
+              "Low happiness and high neutral voice emotion"
+            ],
+            "rationale": "The user\u2019s voice emotion remains calm and neutral, but wellness biomarkers indicate a moderate level of distress and fatigue. The user has not explicitly discussed mood, so the elevated signals are noted as a cue for gentle inquiry rather than a sign of immediate crisis.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.94,
+              "<unk>": 0.04,
+              "distress": 0.55,
+              "stress": 0.28,
+              "burnout": 0.04,
+              "low_self_esteem": 0.27,
+              "fatigue": 0.5,
+              "interpretation": "moderately elevated"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical troubleshooting",
+                "video playback",
+                "biomarker feedback"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation with a gentle, open question about how the user is feeling today. Acknowledge the technical discussion and invite them to share any concerns or emotions they might have. Keep the tone warm and supportive.",
+              "for_human_reviewer": "The user shows moderate distress and fatigue signals but has not yet discussed mood. No urgent intervention is required; monitor for any changes in future segments.",
+              "urgency": "attentive"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 14,
+              "timestamp": "18s",
+              "classification": {
+                "level": 1,
+                "alert": "aware",
+                "confidence": "medium"
+              },
+              "concerns": [
+                "Moderate distress signal (0.55)",
+                "Moderate fatigue signal (0.50)",
+                "Low happiness and high neutral voice emotion"
+              ],
+              "rationale": "The user\u2019s voice emotion remains calm and neutral, but wellness biomarkers indicate a moderate level of distress and fatigue. The user has not explicitly discussed mood, so the elevated signals are noted as a cue for gentle inquiry rather than a sign of immediate crisis.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": 0.55,
+                "interpretation": "moderately elevated",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical troubleshooting",
+                  "video playback",
+                  "biomarker feedback"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue the conversation with a gentle, open question about how the user is feeling today. Acknowledge the technical discussion and invite them to share any concerns or emotions they might have. Keep the tone warm and supportive.",
+                "for_human_reviewer": "The user shows moderate distress and fatigue signals but has not yet discussed mood. No urgent intervention is required; monitor for any changes in future segments.",
+                "urgency": "attentive"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426082.952869375,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 30,
+          "timestamp": 1776528228.577974,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 15,
+            "timestamp": " 19s",
+            "level": 1,
+            "alert": "aware",
+            "confidence": "medium",
+            "concerns": [
+              "Elevated distress signal at 0.55",
+              "Moderate fatigue at 0.50",
+              "Neutral voice with minimal happiness"
+            ],
+            "rationale": "The user\u2019s recent biomarker readings show a moderate level of distress and fatigue, while other wellness indicators remain low. The user has not yet shared how they feel, so the pattern suggests a need for gentle attention rather than immediate escalation.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.94,
+              "<unk>": 0.04,
+              "distress": 0.55,
+              "stress": 0.28,
+              "burnout": 0.04,
+              "low_self_esteem": 0.27,
+              "fatigue": 0.5,
+              "interpretation": "moderately elevated"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical troubleshooting",
+                "biomarker status"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation about the technical aspects, and when a natural pause occurs, gently ask how the user is feeling today. Offer a supportive tone and acknowledge that the biomarker signals suggest some level of stress or fatigue.",
+              "for_human_reviewer": "No urgent action required; monitor for any shift toward higher distress or new self\u2011reported feelings.",
+              "urgency": "attentive"
+            },
+            "raw_response": {
+              "analysis_type": "incremental_update",
+              "segment_number": 15,
+              "timestamp": "19s",
+              "classification": {
+                "level": 1,
+                "alert": "aware",
+                "confidence": "medium"
+              },
+              "concerns": [
+                "Elevated distress signal at 0.55",
+                "Moderate fatigue at 0.50",
+                "Neutral voice with minimal happiness"
+              ],
+              "rationale": "The user\u2019s recent biomarker readings show a moderate level of distress and fatigue, while other wellness indicators remain low. The user has not yet shared how they feel, so the pattern suggests a need for gentle attention rather than immediate escalation.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": 0.55,
+                "interpretation": "moderately elevated",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical troubleshooting",
+                  "biomarker status"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "none",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue the conversation about the technical aspects, and when a natural pause occurs, gently ask how the user is feeling today. Offer a supportive tone and acknowledge that the biomarker signals suggest some level of stress or fatigue.",
+                "for_human_reviewer": "No urgent action required; monitor for any shift toward higher distress or new self\u2011reported feelings.",
+                "urgency": "attentive"
+              }
+            }
+          }
+        }
+      },
+      {
+        "t": 426084.199993208,
+        "result": {
+          "type": "POLICY_RESULT",
+          "policy": "safety_analysis",
+          "policy_name": "demo_wellbeing_awareness",
+          "triggered_at_turn": 32,
+          "timestamp": 1776528229.8278944,
+          "result": {
+            "type": "safety_analysis",
+            "segment_number": 16,
+            "timestamp": " 20s",
+            "level": 1,
+            "alert": "aware",
+            "confidence": "medium",
+            "concerns": [
+              "Elevated distress signal at 0.55",
+              "Moderate fatigue at 0.50",
+              "Neutral voice with minimal positive affect"
+            ],
+            "rationale": "The biomarker data shows a slightly elevated distress level and moderate fatigue, while the user has not yet shared how they feel. The voice remains largely neutral, suggesting the user is not expressing strong emotions in this segment. This pattern fits a Level 1 scenario where the agent should remain attentive and gently invite the user to share their feelings if they wish.",
+            "biomarker_summary": {
+              "happy": 0.01,
+              "neutral": 0.94,
+              "<unk>": 0.04,
+              "distress": 0.55,
+              "stress": 0.28,
+              "burnout": 0.04,
+              "low_self_esteem": 0.27,
+              "fatigue": 0.5,
+              "interpretation": "slightly elevated"
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical discussion of biomarker system",
+                "video functionality"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "not_yet_discussed",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue to engage with the user about the biomarker system, and when a natural pause occurs, gently ask how they are feeling today. Offer a supportive tone and validate any emotions they may share.",
+              "for_human_reviewer": "The user shows modest distress and fatigue signals but has not yet discussed mood. No immediate escalation is required, but keep an eye on any future expressions of discomfort.",
+              "urgency": "attentive"
+            },
+            "raw_response": {
+              "analysis_type": "update",
+              "segment_number": 16,
+              "timestamp": "20s",
+              "classification": {
+                "level": 1,
+                "alert": "aware",
+                "confidence": "medium"
+              },
+              "concerns": [
+                "Elevated distress signal at 0.55",
+                "Moderate fatigue at 0.50",
+                "Neutral voice with minimal positive affect"
+              ],
+              "rationale": "The biomarker data shows a slightly elevated distress level and moderate fatigue, while the user has not yet shared how they feel. The voice remains largely neutral, suggesting the user is not expressing strong emotions in this segment. This pattern fits a Level 1 scenario where the agent should remain attentive and gently invite the user to share their feelings if they wish.",
+              "biomarker_summary": {
+                "depression_probability": null,
+                "anxiety_probability": null,
+                "distress": 0.55,
+                "interpretation": "slightly elevated",
+                "critical_symptoms": []
+              },
+              "conversation_context": {
+                "mood_discussed": false,
+                "topics": [
+                  "technical discussion of biomarker system",
+                  "video functionality"
+                ],
+                "user_insight": "limited"
+              },
+              "concordance_analysis": {
+                "scenario": "mood_not_discussed",
+                "agreement_level": "n/a",
+                "mismatch_type": "not_yet_discussed",
+                "mismatch_severity": "none"
+              },
+              "flags": {
+                "suicidal_content": false,
+                "severe_mismatch": false,
+                "mood_not_yet_discussed": true,
+                "critical_symptoms": false
+              },
+              "recommended_actions": {
+                "for_agent": "Continue to engage with the user about the biomarker system, and when a natural pause occurs, gently ask how they are feeling today. Offer a supportive tone and validate any emotions they may share.",
+                "for_human_reviewer": "The user shows modest distress and fatigue signals but has not yet discussed mood. No immediate escalation is required, but keep an eye on any future expressions of discomfort.",
+                "urgency": "attentive"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "error": null
+  },
+  "volume_timeline": [
+    {
+      "t": 16.563,
+      "dbfs": -180
+    },
+    {
+      "t": 16.565,
+      "dbfs": -180
+    },
+    {
+      "t": 16.606,
+      "dbfs": -180
+    },
+    {
+      "t": 16.627,
+      "dbfs": -180
+    },
+    {
+      "t": 16.657,
+      "dbfs": -180
+    },
+    {
+      "t": 16.658,
+      "dbfs": -180
+    },
+    {
+      "t": 16.673,
+      "dbfs": -42.27
+    },
+    {
+      "t": 16.689,
+      "dbfs": -40.31
+    },
+    {
+      "t": 16.706,
+      "dbfs": -39.48
+    },
+    {
+      "t": 16.726,
+      "dbfs": -39.15
+    },
+    {
+      "t": 16.74,
+      "dbfs": -39
+    },
+    {
+      "t": 16.755,
+      "dbfs": -38.82
+    },
+    {
+      "t": 16.772,
+      "dbfs": -31.81
+    },
+    {
+      "t": 16.809,
+      "dbfs": -25.19
+    },
+    {
+      "t": 16.819,
+      "dbfs": -24.62
+    },
+    {
+      "t": 16.835,
+      "dbfs": -23.58
+    },
+    {
+      "t": 16.843,
+      "dbfs": -23.2
+    },
+    {
+      "t": 16.857,
+      "dbfs": -22.56
+    },
+    {
+      "t": 0.005,
+      "dbfs": -22.28
+    },
+    {
+      "t": 0.025,
+      "dbfs": -21.69
+    },
+    {
+      "t": 0.039,
+      "dbfs": -21.92
+    },
+    {
+      "t": 0.056,
+      "dbfs": -22.53
+    },
+    {
+      "t": 0.073,
+      "dbfs": -23.27
+    },
+    {
+      "t": 0.091,
+      "dbfs": -24.51
+    },
+    {
+      "t": 0.134,
+      "dbfs": -25.35
+    },
+    {
+      "t": 0.158,
+      "dbfs": -25.03
+    },
+    {
+      "t": 0.173,
+      "dbfs": -24.22
+    },
+    {
+      "t": 0.193,
+      "dbfs": -23.43
+    },
+    {
+      "t": 0.21,
+      "dbfs": -22.5
+    },
+    {
+      "t": 0.223,
+      "dbfs": -21.39
+    },
+    {
+      "t": 0.239,
+      "dbfs": -20.48
+    },
+    {
+      "t": 0.272,
+      "dbfs": -19.17
+    },
+    {
+      "t": 0.286,
+      "dbfs": -19.07
+    },
+    {
+      "t": 0.338,
+      "dbfs": -19.75
+    },
+    {
+      "t": 0.359,
+      "dbfs": -21.15
+    },
+    {
+      "t": 0.374,
+      "dbfs": -22.38
+    },
+    {
+      "t": 0.389,
+      "dbfs": -23.71
+    },
+    {
+      "t": 0.406,
+      "dbfs": -24.32
+    },
+    {
+      "t": 0.423,
+      "dbfs": -24.78
+    },
+    {
+      "t": 0.439,
+      "dbfs": -25.01
+    },
+    {
+      "t": 0.456,
+      "dbfs": -24.52
+    },
+    {
+      "t": 0.486,
+      "dbfs": -23.36
+    },
+    {
+      "t": 0.509,
+      "dbfs": -23.55
+    },
+    {
+      "t": 0.523,
+      "dbfs": -24.29
+    },
+    {
+      "t": 0.539,
+      "dbfs": -25.14
+    },
+    {
+      "t": 0.556,
+      "dbfs": -25.72
+    },
+    {
+      "t": 0.573,
+      "dbfs": -26.42
+    },
+    {
+      "t": 0.589,
+      "dbfs": -27.47
+    },
+    {
+      "t": 0.606,
+      "dbfs": -27.86
+    },
+    {
+      "t": 0.623,
+      "dbfs": -23.68
+    },
+    {
+      "t": 0.641,
+      "dbfs": -20.62
+    },
+    {
+      "t": 0.671,
+      "dbfs": -19.13
+    },
+    {
+      "t": 0.738,
+      "dbfs": -19.78
+    },
+    {
+      "t": 0.757,
+      "dbfs": -22.37
+    },
+    {
+      "t": 0.775,
+      "dbfs": -25.31
+    },
+    {
+      "t": 0.794,
+      "dbfs": -30.2
+    },
+    {
+      "t": 0.81,
+      "dbfs": -29.18
+    },
+    {
+      "t": 0.825,
+      "dbfs": -28.79
+    },
+    {
+      "t": 0.907,
+      "dbfs": -28.67
+    },
+    {
+      "t": 0.944,
+      "dbfs": -27.35
+    },
+    {
+      "t": 0.959,
+      "dbfs": -24.17
+    },
+    {
+      "t": 0.973,
+      "dbfs": -22.87
+    },
+    {
+      "t": 0.989,
+      "dbfs": -22.51
+    },
+    {
+      "t": 1.005,
+      "dbfs": -22.4
+    },
+    {
+      "t": 1.024,
+      "dbfs": -22.39
+    },
+    {
+      "t": 1.039,
+      "dbfs": -22.46
+    },
+    {
+      "t": 1.056,
+      "dbfs": -23.02
+    },
+    {
+      "t": 1.073,
+      "dbfs": -23.75
+    },
+    {
+      "t": 1.091,
+      "dbfs": -29.35
+    },
+    {
+      "t": 1.106,
+      "dbfs": -34.6
+    },
+    {
+      "t": 1.123,
+      "dbfs": -40.34
+    },
+    {
+      "t": 1.14,
+      "dbfs": -38.24
+    },
+    {
+      "t": 1.16,
+      "dbfs": -33.14
+    },
+    {
+      "t": 1.192,
+      "dbfs": -27.68
+    },
+    {
+      "t": 1.224,
+      "dbfs": -25.27
+    },
+    {
+      "t": 1.239,
+      "dbfs": -24.66
+    },
+    {
+      "t": 1.256,
+      "dbfs": -24.01
+    },
+    {
+      "t": 1.273,
+      "dbfs": -23.62
+    },
+    {
+      "t": 1.341,
+      "dbfs": -26.12
+    },
+    {
+      "t": 1.356,
+      "dbfs": -26.99
+    },
+    {
+      "t": 1.374,
+      "dbfs": -28.29
+    },
+    {
+      "t": 1.394,
+      "dbfs": -30.27
+    },
+    {
+      "t": 1.409,
+      "dbfs": -32.55
+    },
+    {
+      "t": 1.423,
+      "dbfs": -34.58
+    },
+    {
+      "t": 1.44,
+      "dbfs": -34.37
+    },
+    {
+      "t": 1.464,
+      "dbfs": -28.82
+    },
+    {
+      "t": 1.502,
+      "dbfs": -25.15
+    },
+    {
+      "t": 1.51,
+      "dbfs": -24.71
+    },
+    {
+      "t": 1.523,
+      "dbfs": -24.2
+    },
+    {
+      "t": 1.544,
+      "dbfs": -23.88
+    },
+    {
+      "t": 1.559,
+      "dbfs": -23.68
+    },
+    {
+      "t": 1.573,
+      "dbfs": -23.81
+    },
+    {
+      "t": 1.591,
+      "dbfs": -24.43
+    },
+    {
+      "t": 1.606,
+      "dbfs": -25.28
+    },
+    {
+      "t": 1.635,
+      "dbfs": -26.81
+    },
+    {
+      "t": 1.642,
+      "dbfs": -26.81
+    },
+    {
+      "t": 1.656,
+      "dbfs": -27.27
+    },
+    {
+      "t": 1.674,
+      "dbfs": -27.42
+    },
+    {
+      "t": 1.694,
+      "dbfs": -27.22
+    },
+    {
+      "t": 1.723,
+      "dbfs": -26.74
+    },
+    {
+      "t": 1.745,
+      "dbfs": -26.48
+    },
+    {
+      "t": 1.777,
+      "dbfs": -26.11
+    },
+    {
+      "t": 1.822,
+      "dbfs": -26.62
+    },
+    {
+      "t": 1.833,
+      "dbfs": -26.77
+    },
+    {
+      "t": 1.841,
+      "dbfs": -27.04
+    },
+    {
+      "t": 1.859,
+      "dbfs": -27.81
+    },
+    {
+      "t": 1.873,
+      "dbfs": -28.12
+    },
+    {
+      "t": 1.892,
+      "dbfs": -29.62
+    },
+    {
+      "t": 1.908,
+      "dbfs": -30.84
+    },
+    {
+      "t": 1.944,
+      "dbfs": -33.47
+    },
+    {
+      "t": 1.953,
+      "dbfs": -34.06
+    },
+    {
+      "t": 1.961,
+      "dbfs": -34.85
+    },
+    {
+      "t": 1.974,
+      "dbfs": -36.24
+    },
+    {
+      "t": 1.99,
+      "dbfs": -38.73
+    },
+    {
+      "t": 2.008,
+      "dbfs": -41.59
+    },
+    {
+      "t": 2.023,
+      "dbfs": -43.95
+    },
+    {
+      "t": 2.039,
+      "dbfs": -46.12
+    },
+    {
+      "t": 2.056,
+      "dbfs": -46.94
+    },
+    {
+      "t": 2.073,
+      "dbfs": -47.16
+    },
+    {
+      "t": 2.089,
+      "dbfs": -41.64
+    },
+    {
+      "t": 2.106,
+      "dbfs": -29.1
+    },
+    {
+      "t": 2.123,
+      "dbfs": -26.55
+    },
+    {
+      "t": 2.149,
+      "dbfs": -24.46
+    },
+    {
+      "t": 2.157,
+      "dbfs": -23.93
+    },
+    {
+      "t": 2.173,
+      "dbfs": -23.21
+    },
+    {
+      "t": 2.189,
+      "dbfs": -22.77
+    },
+    {
+      "t": 2.212,
+      "dbfs": -22.65
+    },
+    {
+      "t": 2.223,
+      "dbfs": -22.82
+    },
+    {
+      "t": 2.239,
+      "dbfs": -23.59
+    },
+    {
+      "t": 2.256,
+      "dbfs": -24.51
+    },
+    {
+      "t": 2.275,
+      "dbfs": -25.82
+    },
+    {
+      "t": 2.29,
+      "dbfs": -26.3
+    },
+    {
+      "t": 2.306,
+      "dbfs": -26.46
+    },
+    {
+      "t": 2.328,
+      "dbfs": -27.19
+    },
+    {
+      "t": 2.342,
+      "dbfs": -27.28
+    },
+    {
+      "t": 2.356,
+      "dbfs": -27.41
+    },
+    {
+      "t": 2.373,
+      "dbfs": -27.65
+    },
+    {
+      "t": 2.389,
+      "dbfs": -28.17
+    },
+    {
+      "t": 2.406,
+      "dbfs": -29.34
+    },
+    {
+      "t": 2.441,
+      "dbfs": -37.82
+    },
+    {
+      "t": 2.459,
+      "dbfs": -42.98
+    },
+    {
+      "t": 2.473,
+      "dbfs": -42.59
+    },
+    {
+      "t": 2.501,
+      "dbfs": -40.55
+    },
+    {
+      "t": 2.509,
+      "dbfs": -39.57
+    },
+    {
+      "t": 2.522,
+      "dbfs": -38.64
+    },
+    {
+      "t": 2.541,
+      "dbfs": -38.44
+    },
+    {
+      "t": 2.556,
+      "dbfs": -38.27
+    },
+    {
+      "t": 2.574,
+      "dbfs": -38.64
+    },
+    {
+      "t": 2.589,
+      "dbfs": -39.01
+    },
+    {
+      "t": 2.608,
+      "dbfs": -39.57
+    },
+    {
+      "t": 2.623,
+      "dbfs": -40.47
+    },
+    {
+      "t": 2.64,
+      "dbfs": -31.39
+    },
+    {
+      "t": 2.656,
+      "dbfs": -24.45
+    },
+    {
+      "t": 2.685,
+      "dbfs": -19.02
+    },
+    {
+      "t": 2.694,
+      "dbfs": -17.41
+    },
+    {
+      "t": 2.71,
+      "dbfs": -15.66
+    },
+    {
+      "t": 2.725,
+      "dbfs": -14.68
+    },
+    {
+      "t": 2.739,
+      "dbfs": -13.92
+    },
+    {
+      "t": 2.756,
+      "dbfs": -13.43
+    },
+    {
+      "t": 2.774,
+      "dbfs": -13.39
+    },
+    {
+      "t": 2.791,
+      "dbfs": -13.75
+    },
+    {
+      "t": 2.807,
+      "dbfs": -14.27
+    },
+    {
+      "t": 2.824,
+      "dbfs": -15.31
+    },
+    {
+      "t": 2.876,
+      "dbfs": -23.7
+    },
+    {
+      "t": 2.889,
+      "dbfs": -23.69
+    },
+    {
+      "t": 2.926,
+      "dbfs": -20.69
+    },
+    {
+      "t": 2.94,
+      "dbfs": -19.84
+    },
+    {
+      "t": 2.959,
+      "dbfs": -19.47
+    },
+    {
+      "t": 2.973,
+      "dbfs": -18.89
+    },
+    {
+      "t": 2.992,
+      "dbfs": -18.32
+    },
+    {
+      "t": 3.006,
+      "dbfs": -17.93
+    },
+    {
+      "t": 3.024,
+      "dbfs": -18.35
+    },
+    {
+      "t": 3.044,
+      "dbfs": -18.68
+    },
+    {
+      "t": 3.056,
+      "dbfs": -18.92
+    },
+    {
+      "t": 3.073,
+      "dbfs": -18.81
+    },
+    {
+      "t": 3.094,
+      "dbfs": -17.94
+    },
+    {
+      "t": 3.107,
+      "dbfs": -17.45
+    },
+    {
+      "t": 3.123,
+      "dbfs": -17.24
+    },
+    {
+      "t": 3.143,
+      "dbfs": -17.19
+    },
+    {
+      "t": 3.156,
+      "dbfs": -17.47
+    },
+    {
+      "t": 3.188,
+      "dbfs": -18.43
+    },
+    {
+      "t": 3.195,
+      "dbfs": -18.85
+    },
+    {
+      "t": 3.206,
+      "dbfs": -19.32
+    },
+    {
+      "t": 3.224,
+      "dbfs": -20.7
+    },
+    {
+      "t": 3.239,
+      "dbfs": -23.08
+    },
+    {
+      "t": 3.261,
+      "dbfs": -30.27
+    },
+    {
+      "t": 3.273,
+      "dbfs": -33.62
+    },
+    {
+      "t": 3.29,
+      "dbfs": -40.18
+    },
+    {
+      "t": 3.309,
+      "dbfs": -30.35
+    },
+    {
+      "t": 3.323,
+      "dbfs": -28.38
+    },
+    {
+      "t": 3.343,
+      "dbfs": -27.01
+    },
+    {
+      "t": 3.356,
+      "dbfs": -26.4
+    },
+    {
+      "t": 3.377,
+      "dbfs": -26.04
+    },
+    {
+      "t": 3.41,
+      "dbfs": -25.95
+    },
+    {
+      "t": 3.418,
+      "dbfs": -26.36
+    },
+    {
+      "t": 3.436,
+      "dbfs": -27.81
+    },
+    {
+      "t": 3.443,
+      "dbfs": -28.51
+    },
+    {
+      "t": 3.456,
+      "dbfs": -29.5
+    },
+    {
+      "t": 3.473,
+      "dbfs": -32.31
+    },
+    {
+      "t": 3.489,
+      "dbfs": -34.68
+    },
+    {
+      "t": 3.506,
+      "dbfs": -31.24
+    },
+    {
+      "t": 3.525,
+      "dbfs": -29.63
+    },
+    {
+      "t": 3.542,
+      "dbfs": -29.66
+    },
+    {
+      "t": 3.56,
+      "dbfs": -29.68
+    },
+    {
+      "t": 3.572,
+      "dbfs": -29.68
+    },
+    {
+      "t": 3.59,
+      "dbfs": -29.68
+    },
+    {
+      "t": 3.606,
+      "dbfs": -29.69
+    },
+    {
+      "t": 3.623,
+      "dbfs": -30.93
+    },
+    {
+      "t": 3.64,
+      "dbfs": -30.47
+    },
+    {
+      "t": 3.656,
+      "dbfs": -28.2
+    },
+    {
+      "t": 3.673,
+      "dbfs": -26.16
+    },
+    {
+      "t": 3.689,
+      "dbfs": -24.89
+    },
+    {
+      "t": 3.706,
+      "dbfs": -24.09
+    },
+    {
+      "t": 3.722,
+      "dbfs": -23.66
+    },
+    {
+      "t": 3.74,
+      "dbfs": -23.65
+    },
+    {
+      "t": 3.756,
+      "dbfs": -24.03
+    },
+    {
+      "t": 3.773,
+      "dbfs": -24.96
+    },
+    {
+      "t": 3.793,
+      "dbfs": -26.26
+    },
+    {
+      "t": 3.806,
+      "dbfs": -28.27
+    },
+    {
+      "t": 3.822,
+      "dbfs": -31.38
+    },
+    {
+      "t": 3.839,
+      "dbfs": -36.39
+    },
+    {
+      "t": 3.87,
+      "dbfs": -47.49
+    },
+    {
+      "t": 3.879,
+      "dbfs": -47.96
+    },
+    {
+      "t": 3.893,
+      "dbfs": -39.45
+    },
+    {
+      "t": 3.906,
+      "dbfs": -37.78
+    },
+    {
+      "t": 3.926,
+      "dbfs": -36.02
+    },
+    {
+      "t": 3.952,
+      "dbfs": -33.67
+    },
+    {
+      "t": 3.961,
+      "dbfs": -32.97
+    },
+    {
+      "t": 3.973,
+      "dbfs": -31.81
+    },
+    {
+      "t": 3.989,
+      "dbfs": -30.87
+    },
+    {
+      "t": 4.006,
+      "dbfs": -30.15
+    },
+    {
+      "t": 4.023,
+      "dbfs": -30
+    },
+    {
+      "t": 4.039,
+      "dbfs": -29.93
+    },
+    {
+      "t": 4.056,
+      "dbfs": -29.95
+    },
+    {
+      "t": 4.073,
+      "dbfs": -30.17
+    },
+    {
+      "t": 4.089,
+      "dbfs": -30.7
+    },
+    {
+      "t": 4.106,
+      "dbfs": -31.49
+    },
+    {
+      "t": 4.123,
+      "dbfs": -33.22
+    },
+    {
+      "t": 4.139,
+      "dbfs": -34.83
+    },
+    {
+      "t": 4.156,
+      "dbfs": -36.34
+    },
+    {
+      "t": 4.173,
+      "dbfs": -38.12
+    },
+    {
+      "t": 4.189,
+      "dbfs": -41.02
+    },
+    {
+      "t": 4.206,
+      "dbfs": -45.48
+    },
+    {
+      "t": 4.223,
+      "dbfs": -54.09
+    },
+    {
+      "t": 4.239,
+      "dbfs": -63.89
+    },
+    {
+      "t": 4.256,
+      "dbfs": -68.36
+    },
+    {
+      "t": 4.273,
+      "dbfs": -69.43
+    },
+    {
+      "t": 4.289,
+      "dbfs": -70.56
+    },
+    {
+      "t": 4.307,
+      "dbfs": -71.09
+    },
+    {
+      "t": 4.322,
+      "dbfs": -70.64
+    },
+    {
+      "t": 4.339,
+      "dbfs": -70.46
+    },
+    {
+      "t": 4.356,
+      "dbfs": -70.24
+    },
+    {
+      "t": 4.373,
+      "dbfs": -70.06
+    },
+    {
+      "t": 4.389,
+      "dbfs": -69.92
+    },
+    {
+      "t": 4.406,
+      "dbfs": -70.14
+    },
+    {
+      "t": 4.423,
+      "dbfs": -70.52
+    },
+    {
+      "t": 4.439,
+      "dbfs": -70.3
+    },
+    {
+      "t": 4.456,
+      "dbfs": -71.02
+    },
+    {
+      "t": 4.473,
+      "dbfs": -71.55
+    },
+    {
+      "t": 4.5,
+      "dbfs": -71.89
+    },
+    {
+      "t": 4.508,
+      "dbfs": -71.99
+    },
+    {
+      "t": 4.525,
+      "dbfs": -71.75
+    },
+    {
+      "t": 4.54,
+      "dbfs": -71.53
+    },
+    {
+      "t": 4.556,
+      "dbfs": -71.59
+    },
+    {
+      "t": 4.573,
+      "dbfs": -71.8
+    },
+    {
+      "t": 4.59,
+      "dbfs": -71.86
+    },
+    {
+      "t": 4.606,
+      "dbfs": -71.81
+    },
+    {
+      "t": 4.623,
+      "dbfs": -72.14
+    },
+    {
+      "t": 4.639,
+      "dbfs": -72.52
+    },
+    {
+      "t": 4.656,
+      "dbfs": -72.47
+    },
+    {
+      "t": 4.673,
+      "dbfs": -72.78
+    },
+    {
+      "t": 4.695,
+      "dbfs": -73.06
+    },
+    {
+      "t": 4.718,
+      "dbfs": -73.18
+    },
+    {
+      "t": 4.724,
+      "dbfs": -72.97
+    },
+    {
+      "t": 4.739,
+      "dbfs": -72.93
+    },
+    {
+      "t": 4.756,
+      "dbfs": -73.23
+    },
+    {
+      "t": 4.774,
+      "dbfs": -73.21
+    },
+    {
+      "t": 4.79,
+      "dbfs": -73.12
+    },
+    {
+      "t": 4.806,
+      "dbfs": -72.7
+    },
+    {
+      "t": 4.824,
+      "dbfs": -72.46
+    },
+    {
+      "t": 4.839,
+      "dbfs": -72.3
+    },
+    {
+      "t": 4.855,
+      "dbfs": -72.21
+    },
+    {
+      "t": 4.876,
+      "dbfs": -37.1
+    },
+    {
+      "t": 4.889,
+      "dbfs": -33.15
+    },
+    {
+      "t": 4.906,
+      "dbfs": -27.62
+    },
+    {
+      "t": 4.922,
+      "dbfs": -26.86
+    },
+    {
+      "t": 4.939,
+      "dbfs": -25.95
+    },
+    {
+      "t": 4.956,
+      "dbfs": -25.18
+    },
+    {
+      "t": 4.973,
+      "dbfs": -24.56
+    },
+    {
+      "t": 4.989,
+      "dbfs": -23.78
+    },
+    {
+      "t": 5.006,
+      "dbfs": -22.87
+    },
+    {
+      "t": 5.023,
+      "dbfs": -22.6
+    },
+    {
+      "t": 5.043,
+      "dbfs": -22.34
+    },
+    {
+      "t": 5.057,
+      "dbfs": -22.04
+    },
+    {
+      "t": 5.072,
+      "dbfs": -21.4
+    },
+    {
+      "t": 5.089,
+      "dbfs": -20.55
+    },
+    {
+      "t": 5.106,
+      "dbfs": -19.91
+    },
+    {
+      "t": 5.123,
+      "dbfs": -19.79
+    },
+    {
+      "t": 5.139,
+      "dbfs": -20.24
+    },
+    {
+      "t": 5.156,
+      "dbfs": -20.53
+    },
+    {
+      "t": 5.173,
+      "dbfs": -21.02
+    },
+    {
+      "t": 5.192,
+      "dbfs": -21.76
+    },
+    {
+      "t": 5.206,
+      "dbfs": -23.2
+    },
+    {
+      "t": 5.223,
+      "dbfs": -25.52
+    },
+    {
+      "t": 5.239,
+      "dbfs": -28.71
+    },
+    {
+      "t": 5.256,
+      "dbfs": -28.5
+    },
+    {
+      "t": 5.273,
+      "dbfs": -26.38
+    },
+    {
+      "t": 5.289,
+      "dbfs": -24.68
+    },
+    {
+      "t": 5.306,
+      "dbfs": -23.61
+    },
+    {
+      "t": 5.323,
+      "dbfs": -22.79
+    },
+    {
+      "t": 5.341,
+      "dbfs": -22.35
+    },
+    {
+      "t": 5.356,
+      "dbfs": -22.02
+    },
+    {
+      "t": 5.373,
+      "dbfs": -21.99
+    },
+    {
+      "t": 5.39,
+      "dbfs": -22.47
+    },
+    {
+      "t": 5.406,
+      "dbfs": -23.26
+    },
+    {
+      "t": 5.423,
+      "dbfs": -24.23
+    },
+    {
+      "t": 5.439,
+      "dbfs": -24.88
+    },
+    {
+      "t": 5.456,
+      "dbfs": -25.38
+    },
+    {
+      "t": 5.473,
+      "dbfs": -25.77
+    },
+    {
+      "t": 5.489,
+      "dbfs": -26.09
+    },
+    {
+      "t": 5.505,
+      "dbfs": -26.77
+    },
+    {
+      "t": 5.523,
+      "dbfs": -27.62
+    },
+    {
+      "t": 5.539,
+      "dbfs": -28.27
+    },
+    {
+      "t": 5.556,
+      "dbfs": -29.1
+    },
+    {
+      "t": 5.573,
+      "dbfs": -30.13
+    },
+    {
+      "t": 5.588,
+      "dbfs": -31.72
+    },
+    {
+      "t": 5.606,
+      "dbfs": -33
+    },
+    {
+      "t": 5.623,
+      "dbfs": -34.62
+    },
+    {
+      "t": 5.642,
+      "dbfs": -35.24
+    },
+    {
+      "t": 5.656,
+      "dbfs": -34.99
+    },
+    {
+      "t": 5.673,
+      "dbfs": -34.49
+    },
+    {
+      "t": 5.689,
+      "dbfs": -34.25
+    },
+    {
+      "t": 5.708,
+      "dbfs": -34.25
+    },
+    {
+      "t": 5.722,
+      "dbfs": -31.42
+    },
+    {
+      "t": 5.739,
+      "dbfs": -28.68
+    },
+    {
+      "t": 5.756,
+      "dbfs": -28.3
+    },
+    {
+      "t": 5.773,
+      "dbfs": -28.35
+    },
+    {
+      "t": 5.789,
+      "dbfs": -28.44
+    },
+    {
+      "t": 5.806,
+      "dbfs": -28.55
+    },
+    {
+      "t": 5.826,
+      "dbfs": -28.59
+    },
+    {
+      "t": 5.839,
+      "dbfs": -28.4
+    },
+    {
+      "t": 5.855,
+      "dbfs": -29.37
+    },
+    {
+      "t": 5.873,
+      "dbfs": -31.94
+    },
+    {
+      "t": 5.889,
+      "dbfs": -31.74
+    },
+    {
+      "t": 5.906,
+      "dbfs": -30.63
+    },
+    {
+      "t": 5.923,
+      "dbfs": -30.08
+    },
+    {
+      "t": 5.939,
+      "dbfs": -29.54
+    },
+    {
+      "t": 5.956,
+      "dbfs": -28.96
+    },
+    {
+      "t": 5.972,
+      "dbfs": -28.66
+    },
+    {
+      "t": 5.989,
+      "dbfs": -28.63
+    },
+    {
+      "t": 6.006,
+      "dbfs": -28.49
+    },
+    {
+      "t": 6.022,
+      "dbfs": -27.94
+    },
+    {
+      "t": 6.039,
+      "dbfs": -27.58
+    },
+    {
+      "t": 6.056,
+      "dbfs": -27.23
+    },
+    {
+      "t": 6.073,
+      "dbfs": -26.92
+    },
+    {
+      "t": 6.089,
+      "dbfs": -26.7
+    },
+    {
+      "t": 6.106,
+      "dbfs": -26.48
+    },
+    {
+      "t": 6.125,
+      "dbfs": -26.59
+    },
+    {
+      "t": 6.145,
+      "dbfs": -27.19
+    },
+    {
+      "t": 6.159,
+      "dbfs": -27.98
+    },
+    {
+      "t": 6.173,
+      "dbfs": -28.81
+    },
+    {
+      "t": 6.189,
+      "dbfs": -29.83
+    },
+    {
+      "t": 6.206,
+      "dbfs": -31.14
+    },
+    {
+      "t": 6.223,
+      "dbfs": -33.38
+    },
+    {
+      "t": 6.239,
+      "dbfs": -36.65
+    },
+    {
+      "t": 6.256,
+      "dbfs": -39.13
+    },
+    {
+      "t": 6.273,
+      "dbfs": -38.82
+    },
+    {
+      "t": 6.294,
+      "dbfs": -37.82
+    },
+    {
+      "t": 6.306,
+      "dbfs": -37.68
+    },
+    {
+      "t": 6.325,
+      "dbfs": -36.72
+    },
+    {
+      "t": 6.34,
+      "dbfs": -36.47
+    },
+    {
+      "t": 6.356,
+      "dbfs": -36.64
+    },
+    {
+      "t": 6.373,
+      "dbfs": -37.46
+    },
+    {
+      "t": 6.389,
+      "dbfs": -39.12
+    },
+    {
+      "t": 6.406,
+      "dbfs": -40.24
+    },
+    {
+      "t": 6.424,
+      "dbfs": -41.25
+    },
+    {
+      "t": 6.439,
+      "dbfs": -43.08
+    },
+    {
+      "t": 6.456,
+      "dbfs": -45.73
+    },
+    {
+      "t": 6.473,
+      "dbfs": -52.5
+    },
+    {
+      "t": 6.489,
+      "dbfs": -57.82
+    },
+    {
+      "t": 6.506,
+      "dbfs": -63.63
+    },
+    {
+      "t": 6.522,
+      "dbfs": -66.45
+    },
+    {
+      "t": 6.539,
+      "dbfs": -67.65
+    },
+    {
+      "t": 6.556,
+      "dbfs": -67.05
+    },
+    {
+      "t": 6.573,
+      "dbfs": -47.38
+    },
+    {
+      "t": 6.589,
+      "dbfs": -36.81
+    },
+    {
+      "t": 6.606,
+      "dbfs": -32.12
+    },
+    {
+      "t": 6.623,
+      "dbfs": -30.54
+    },
+    {
+      "t": 6.639,
+      "dbfs": -29.59
+    },
+    {
+      "t": 6.655,
+      "dbfs": -28.29
+    },
+    {
+      "t": 6.673,
+      "dbfs": -27.67
+    },
+    {
+      "t": 6.689,
+      "dbfs": -27.19
+    },
+    {
+      "t": 6.706,
+      "dbfs": -27
+    },
+    {
+      "t": 6.723,
+      "dbfs": -27.77
+    },
+    {
+      "t": 6.739,
+      "dbfs": -28.77
+    },
+    {
+      "t": 6.756,
+      "dbfs": -29.28
+    },
+    {
+      "t": 6.773,
+      "dbfs": -30.63
+    },
+    {
+      "t": 6.793,
+      "dbfs": -32.53
+    },
+    {
+      "t": 6.806,
+      "dbfs": -34.73
+    },
+    {
+      "t": 6.823,
+      "dbfs": -36.65
+    },
+    {
+      "t": 6.839,
+      "dbfs": -30.49
+    },
+    {
+      "t": 6.855,
+      "dbfs": -25.12
+    },
+    {
+      "t": 6.873,
+      "dbfs": -22.05
+    },
+    {
+      "t": 6.888,
+      "dbfs": -21.19
+    },
+    {
+      "t": 6.906,
+      "dbfs": -20.84
+    },
+    {
+      "t": 6.923,
+      "dbfs": -20.52
+    },
+    {
+      "t": 6.939,
+      "dbfs": -19.98
+    },
+    {
+      "t": 6.959,
+      "dbfs": -19.82
+    },
+    {
+      "t": 6.973,
+      "dbfs": -20.26
+    },
+    {
+      "t": 6.989,
+      "dbfs": -21.84
+    },
+    {
+      "t": 7.005,
+      "dbfs": -23.68
+    },
+    {
+      "t": 7.023,
+      "dbfs": -24.23
+    },
+    {
+      "t": 7.039,
+      "dbfs": -24.49
+    },
+    {
+      "t": 7.055,
+      "dbfs": -25.22
+    },
+    {
+      "t": 7.073,
+      "dbfs": -27.32
+    },
+    {
+      "t": 7.089,
+      "dbfs": -28.97
+    },
+    {
+      "t": 7.109,
+      "dbfs": -30.63
+    },
+    {
+      "t": 7.123,
+      "dbfs": -33.25
+    },
+    {
+      "t": 7.139,
+      "dbfs": -34.99
+    },
+    {
+      "t": 7.155,
+      "dbfs": -36.02
+    },
+    {
+      "t": 7.173,
+      "dbfs": -37.09
+    },
+    {
+      "t": 7.189,
+      "dbfs": -38.25
+    },
+    {
+      "t": 7.206,
+      "dbfs": -38.89
+    },
+    {
+      "t": 7.223,
+      "dbfs": -40.32
+    },
+    {
+      "t": 7.239,
+      "dbfs": -39.94
+    },
+    {
+      "t": 7.268,
+      "dbfs": -34.11
+    },
+    {
+      "t": 7.274,
+      "dbfs": -33.22
+    },
+    {
+      "t": 7.289,
+      "dbfs": -32.33
+    },
+    {
+      "t": 7.306,
+      "dbfs": -31.36
+    },
+    {
+      "t": 7.323,
+      "dbfs": -30.36
+    },
+    {
+      "t": 7.339,
+      "dbfs": -29.94
+    },
+    {
+      "t": 7.356,
+      "dbfs": -29.64
+    },
+    {
+      "t": 7.373,
+      "dbfs": -29.52
+    },
+    {
+      "t": 7.389,
+      "dbfs": -29.83
+    },
+    {
+      "t": 7.406,
+      "dbfs": -30.6
+    },
+    {
+      "t": 7.423,
+      "dbfs": -31.59
+    },
+    {
+      "t": 7.444,
+      "dbfs": -33.05
+    },
+    {
+      "t": 7.456,
+      "dbfs": -33.53
+    },
+    {
+      "t": 7.473,
+      "dbfs": -34.44
+    },
+    {
+      "t": 7.489,
+      "dbfs": -35.11
+    },
+    {
+      "t": 7.506,
+      "dbfs": -34.72
+    },
+    {
+      "t": 7.522,
+      "dbfs": -32.7
+    },
+    {
+      "t": 7.539,
+      "dbfs": -30.53
+    },
+    {
+      "t": 7.556,
+      "dbfs": -29.22
+    },
+    {
+      "t": 7.572,
+      "dbfs": -28.69
+    },
+    {
+      "t": 7.589,
+      "dbfs": -28.36
+    },
+    {
+      "t": 7.606,
+      "dbfs": -28.18
+    },
+    {
+      "t": 7.623,
+      "dbfs": -28.24
+    },
+    {
+      "t": 7.639,
+      "dbfs": -28.73
+    },
+    {
+      "t": 7.656,
+      "dbfs": -29.4
+    },
+    {
+      "t": 7.673,
+      "dbfs": -31.06
+    },
+    {
+      "t": 7.689,
+      "dbfs": -33.29
+    },
+    {
+      "t": 7.705,
+      "dbfs": -35.09
+    },
+    {
+      "t": 7.722,
+      "dbfs": -38.4
+    },
+    {
+      "t": 7.739,
+      "dbfs": -41.02
+    },
+    {
+      "t": 7.756,
+      "dbfs": -43.03
+    },
+    {
+      "t": 7.773,
+      "dbfs": -46.12
+    },
+    {
+      "t": 7.789,
+      "dbfs": -48.64
+    },
+    {
+      "t": 7.806,
+      "dbfs": -51.8
+    },
+    {
+      "t": 7.823,
+      "dbfs": -56.75
+    },
+    {
+      "t": 7.839,
+      "dbfs": -58.09
+    },
+    {
+      "t": 7.856,
+      "dbfs": -58.5
+    },
+    {
+      "t": 7.873,
+      "dbfs": -58.57
+    },
+    {
+      "t": 7.895,
+      "dbfs": -59.01
+    },
+    {
+      "t": 7.938,
+      "dbfs": -60.82
+    },
+    {
+      "t": 7.944,
+      "dbfs": -61.09
+    },
+    {
+      "t": 7.955,
+      "dbfs": -62.52
+    },
+    {
+      "t": 7.973,
+      "dbfs": -63.27
+    },
+    {
+      "t": 7.989,
+      "dbfs": -64.53
+    },
+    {
+      "t": 8.006,
+      "dbfs": -47.54
+    },
+    {
+      "t": 8.023,
+      "dbfs": -43.48
+    },
+    {
+      "t": 8.044,
+      "dbfs": -41.54
+    },
+    {
+      "t": 8.056,
+      "dbfs": -41.45
+    },
+    {
+      "t": 8.073,
+      "dbfs": -41.41
+    },
+    {
+      "t": 8.089,
+      "dbfs": -41.4
+    },
+    {
+      "t": 8.106,
+      "dbfs": -41.36
+    },
+    {
+      "t": 8.122,
+      "dbfs": -41.25
+    },
+    {
+      "t": 8.14,
+      "dbfs": -42.78
+    },
+    {
+      "t": 8.156,
+      "dbfs": -44.15
+    },
+    {
+      "t": 8.176,
+      "dbfs": -45.09
+    },
+    {
+      "t": 8.189,
+      "dbfs": -44.97
+    },
+    {
+      "t": 8.206,
+      "dbfs": -44.93
+    },
+    {
+      "t": 8.241,
+      "dbfs": -44.44
+    },
+    {
+      "t": 8.253,
+      "dbfs": -35.41
+    },
+    {
+      "t": 8.26,
+      "dbfs": -32.89
+    },
+    {
+      "t": 8.274,
+      "dbfs": -28.12
+    },
+    {
+      "t": 8.289,
+      "dbfs": -27.69
+    },
+    {
+      "t": 8.306,
+      "dbfs": -27.38
+    },
+    {
+      "t": 8.323,
+      "dbfs": -27.1
+    },
+    {
+      "t": 8.339,
+      "dbfs": -26.97
+    },
+    {
+      "t": 8.356,
+      "dbfs": -26.1
+    },
+    {
+      "t": 8.373,
+      "dbfs": -25.44
+    },
+    {
+      "t": 8.389,
+      "dbfs": -25.92
+    },
+    {
+      "t": 8.406,
+      "dbfs": -27.92
+    },
+    {
+      "t": 8.423,
+      "dbfs": -28.27
+    },
+    {
+      "t": 8.46,
+      "dbfs": -28.48
+    },
+    {
+      "t": 8.473,
+      "dbfs": -28.62
+    },
+    {
+      "t": 8.489,
+      "dbfs": -30.26
+    },
+    {
+      "t": 8.506,
+      "dbfs": -33.3
+    },
+    {
+      "t": 8.522,
+      "dbfs": -34.86
+    },
+    {
+      "t": 8.539,
+      "dbfs": -36.21
+    },
+    {
+      "t": 8.556,
+      "dbfs": -38.38
+    },
+    {
+      "t": 8.573,
+      "dbfs": -40.6
+    },
+    {
+      "t": 8.599,
+      "dbfs": -42.19
+    },
+    {
+      "t": 8.607,
+      "dbfs": -42.71
+    },
+    {
+      "t": 8.623,
+      "dbfs": -44.63
+    },
+    {
+      "t": 8.639,
+      "dbfs": -47.31
+    },
+    {
+      "t": 8.656,
+      "dbfs": -47.08
+    },
+    {
+      "t": 8.673,
+      "dbfs": -45.12
+    },
+    {
+      "t": 8.689,
+      "dbfs": -42.97
+    },
+    {
+      "t": 8.706,
+      "dbfs": -41.7
+    },
+    {
+      "t": 8.723,
+      "dbfs": -40.49
+    },
+    {
+      "t": 8.739,
+      "dbfs": -39.7
+    },
+    {
+      "t": 8.756,
+      "dbfs": -38.94
+    },
+    {
+      "t": 8.778,
+      "dbfs": -38.54
+    },
+    {
+      "t": 8.79,
+      "dbfs": -38.63
+    },
+    {
+      "t": 8.806,
+      "dbfs": -39.2
+    },
+    {
+      "t": 8.823,
+      "dbfs": -39.83
+    },
+    {
+      "t": 8.839,
+      "dbfs": -40.56
+    },
+    {
+      "t": 8.856,
+      "dbfs": -41.15
+    },
+    {
+      "t": 8.872,
+      "dbfs": -41.64
+    },
+    {
+      "t": 8.889,
+      "dbfs": -42.16
+    },
+    {
+      "t": 8.906,
+      "dbfs": -42.67
+    },
+    {
+      "t": 8.924,
+      "dbfs": -41.75
+    },
+    {
+      "t": 8.943,
+      "dbfs": -40.8
+    },
+    {
+      "t": 8.956,
+      "dbfs": -40.04
+    },
+    {
+      "t": 8.986,
+      "dbfs": -39.48
+    },
+    {
+      "t": 8.992,
+      "dbfs": -39.64
+    },
+    {
+      "t": 9.006,
+      "dbfs": -40.29
+    },
+    {
+      "t": 9.023,
+      "dbfs": -41.03
+    },
+    {
+      "t": 9.039,
+      "dbfs": -41.65
+    },
+    {
+      "t": 9.056,
+      "dbfs": -42.68
+    },
+    {
+      "t": 9.073,
+      "dbfs": -44.27
+    },
+    {
+      "t": 9.089,
+      "dbfs": -46.71
+    },
+    {
+      "t": 9.106,
+      "dbfs": -50.02
+    },
+    {
+      "t": 9.122,
+      "dbfs": -52.98
+    },
+    {
+      "t": 9.145,
+      "dbfs": -51.88
+    },
+    {
+      "t": 9.156,
+      "dbfs": -49.36
+    },
+    {
+      "t": 9.174,
+      "dbfs": -41.28
+    },
+    {
+      "t": 9.192,
+      "dbfs": -33.24
+    },
+    {
+      "t": 9.206,
+      "dbfs": -31.05
+    },
+    {
+      "t": 9.223,
+      "dbfs": -27.96
+    },
+    {
+      "t": 9.239,
+      "dbfs": -26.63
+    },
+    {
+      "t": 9.256,
+      "dbfs": -25.52
+    },
+    {
+      "t": 9.273,
+      "dbfs": -24.37
+    },
+    {
+      "t": 9.289,
+      "dbfs": -23.22
+    },
+    {
+      "t": 9.306,
+      "dbfs": -22.48
+    },
+    {
+      "t": 9.323,
+      "dbfs": -20.74
+    },
+    {
+      "t": 9.338,
+      "dbfs": -19.52
+    },
+    {
+      "t": 9.372,
+      "dbfs": -17.46
+    },
+    {
+      "t": 9.377,
+      "dbfs": -17.46
+    },
+    {
+      "t": 9.391,
+      "dbfs": -16.9
+    },
+    {
+      "t": 9.406,
+      "dbfs": -16.58
+    },
+    {
+      "t": 9.426,
+      "dbfs": -16.42
+    },
+    {
+      "t": 9.442,
+      "dbfs": -16.35
+    },
+    {
+      "t": 9.457,
+      "dbfs": -16.31
+    },
+    {
+      "t": 9.478,
+      "dbfs": -16.95
+    },
+    {
+      "t": 9.49,
+      "dbfs": -17.74
+    },
+    {
+      "t": 9.508,
+      "dbfs": -18.94
+    },
+    {
+      "t": 9.523,
+      "dbfs": -20.23
+    },
+    {
+      "t": 9.554,
+      "dbfs": -21.54
+    },
+    {
+      "t": 9.56,
+      "dbfs": -22.1
+    },
+    {
+      "t": 9.572,
+      "dbfs": -24.35
+    },
+    {
+      "t": 9.589,
+      "dbfs": -28.42
+    },
+    {
+      "t": 9.605,
+      "dbfs": -31.01
+    },
+    {
+      "t": 9.623,
+      "dbfs": -34.49
+    },
+    {
+      "t": 9.639,
+      "dbfs": -35.13
+    },
+    {
+      "t": 9.656,
+      "dbfs": -30.74
+    },
+    {
+      "t": 9.673,
+      "dbfs": -27.46
+    },
+    {
+      "t": 9.692,
+      "dbfs": -23.92
+    },
+    {
+      "t": 9.707,
+      "dbfs": -22.65
+    },
+    {
+      "t": 9.723,
+      "dbfs": -22.37
+    },
+    {
+      "t": 9.739,
+      "dbfs": -22.16
+    },
+    {
+      "t": 9.756,
+      "dbfs": -21.99
+    },
+    {
+      "t": 9.773,
+      "dbfs": -22.09
+    },
+    {
+      "t": 9.789,
+      "dbfs": -22.35
+    },
+    {
+      "t": 9.805,
+      "dbfs": -22.56
+    },
+    {
+      "t": 9.823,
+      "dbfs": -23.21
+    },
+    {
+      "t": 9.839,
+      "dbfs": -24.56
+    },
+    {
+      "t": 9.856,
+      "dbfs": -24.91
+    },
+    {
+      "t": 9.873,
+      "dbfs": -25.14
+    },
+    {
+      "t": 9.89,
+      "dbfs": -25.33
+    },
+    {
+      "t": 9.906,
+      "dbfs": -25.62
+    },
+    {
+      "t": 9.923,
+      "dbfs": -27.09
+    },
+    {
+      "t": 9.939,
+      "dbfs": -30.36
+    },
+    {
+      "t": 9.955,
+      "dbfs": -32.21
+    },
+    {
+      "t": 9.973,
+      "dbfs": -32.41
+    },
+    {
+      "t": 9.989,
+      "dbfs": -33.15
+    },
+    {
+      "t": 10.01,
+      "dbfs": -34.46
+    },
+    {
+      "t": 10.023,
+      "dbfs": -29.2
+    },
+    {
+      "t": 10.039,
+      "dbfs": -25.17
+    },
+    {
+      "t": 10.056,
+      "dbfs": -23.54
+    },
+    {
+      "t": 10.073,
+      "dbfs": -22.22
+    },
+    {
+      "t": 10.089,
+      "dbfs": -21.55
+    },
+    {
+      "t": 10.106,
+      "dbfs": -21.16
+    },
+    {
+      "t": 10.123,
+      "dbfs": -21.03
+    },
+    {
+      "t": 10.139,
+      "dbfs": -21.08
+    },
+    {
+      "t": 10.156,
+      "dbfs": -22
+    },
+    {
+      "t": 10.173,
+      "dbfs": -23.56
+    },
+    {
+      "t": 10.189,
+      "dbfs": -25.22
+    },
+    {
+      "t": 10.205,
+      "dbfs": -27.96
+    },
+    {
+      "t": 10.223,
+      "dbfs": -31.17
+    },
+    {
+      "t": 10.239,
+      "dbfs": -35.01
+    },
+    {
+      "t": 10.256,
+      "dbfs": -36.87
+    },
+    {
+      "t": 10.272,
+      "dbfs": -39.19
+    },
+    {
+      "t": 10.289,
+      "dbfs": -40.44
+    },
+    {
+      "t": 10.306,
+      "dbfs": -41.76
+    },
+    {
+      "t": 10.322,
+      "dbfs": -43.93
+    },
+    {
+      "t": 10.344,
+      "dbfs": -47.88
+    },
+    {
+      "t": 10.38,
+      "dbfs": -60.86
+    },
+    {
+      "t": 10.414,
+      "dbfs": -67.52
+    },
+    {
+      "t": 10.441,
+      "dbfs": -69.75
+    },
+    {
+      "t": 10.449,
+      "dbfs": -69.92
+    },
+    {
+      "t": 10.457,
+      "dbfs": -70.06
+    },
+    {
+      "t": 10.473,
+      "dbfs": -70.14
+    },
+    {
+      "t": 10.489,
+      "dbfs": -69.29
+    },
+    {
+      "t": 10.506,
+      "dbfs": -68.6
+    },
+    {
+      "t": 10.522,
+      "dbfs": -68.28
+    },
+    {
+      "t": 10.539,
+      "dbfs": -68.14
+    },
+    {
+      "t": 10.556,
+      "dbfs": -67.91
+    },
+    {
+      "t": 10.573,
+      "dbfs": -67.65
+    },
+    {
+      "t": 10.589,
+      "dbfs": -67.93
+    },
+    {
+      "t": 10.606,
+      "dbfs": -67.78
+    },
+    {
+      "t": 10.623,
+      "dbfs": -68.36
+    },
+    {
+      "t": 10.639,
+      "dbfs": -68.69
+    },
+    {
+      "t": 10.657,
+      "dbfs": -68.63
+    },
+    {
+      "t": 10.672,
+      "dbfs": -68.99
+    },
+    {
+      "t": 10.689,
+      "dbfs": -68.88
+    },
+    {
+      "t": 10.707,
+      "dbfs": -69.01
+    },
+    {
+      "t": 10.723,
+      "dbfs": -69.11
+    },
+    {
+      "t": 10.739,
+      "dbfs": -69.62
+    },
+    {
+      "t": 10.756,
+      "dbfs": -69.52
+    },
+    {
+      "t": 10.773,
+      "dbfs": -54.87
+    },
+    {
+      "t": 10.789,
+      "dbfs": -39.1
+    },
+    {
+      "t": 10.806,
+      "dbfs": -32.93
+    },
+    {
+      "t": 10.823,
+      "dbfs": -29.87
+    },
+    {
+      "t": 10.839,
+      "dbfs": -27.64
+    },
+    {
+      "t": 10.856,
+      "dbfs": -25.56
+    },
+    {
+      "t": 10.872,
+      "dbfs": -24.21
+    },
+    {
+      "t": 10.889,
+      "dbfs": -23.15
+    },
+    {
+      "t": 10.906,
+      "dbfs": -22.44
+    },
+    {
+      "t": 10.935,
+      "dbfs": -22.67
+    },
+    {
+      "t": 10.94,
+      "dbfs": -22.86
+    },
+    {
+      "t": 10.956,
+      "dbfs": -23.38
+    },
+    {
+      "t": 10.973,
+      "dbfs": -24.22
+    },
+    {
+      "t": 10.989,
+      "dbfs": -25.71
+    },
+    {
+      "t": 11.006,
+      "dbfs": -25.09
+    },
+    {
+      "t": 11.023,
+      "dbfs": -22.92
+    },
+    {
+      "t": 11.039,
+      "dbfs": -21.84
+    },
+    {
+      "t": 11.056,
+      "dbfs": -21.03
+    },
+    {
+      "t": 11.073,
+      "dbfs": -20.6
+    },
+    {
+      "t": 11.089,
+      "dbfs": -20.53
+    },
+    {
+      "t": 11.107,
+      "dbfs": -20.49
+    },
+    {
+      "t": 11.122,
+      "dbfs": -20.58
+    },
+    {
+      "t": 11.139,
+      "dbfs": -22.23
+    },
+    {
+      "t": 11.156,
+      "dbfs": -24.24
+    },
+    {
+      "t": 11.172,
+      "dbfs": -27.14
+    },
+    {
+      "t": 11.189,
+      "dbfs": -30.24
+    },
+    {
+      "t": 11.206,
+      "dbfs": -30.03
+    },
+    {
+      "t": 11.223,
+      "dbfs": -29.47
+    },
+    {
+      "t": 11.239,
+      "dbfs": -29.08
+    },
+    {
+      "t": 11.255,
+      "dbfs": -28.99
+    },
+    {
+      "t": 11.276,
+      "dbfs": -28.38
+    },
+    {
+      "t": 11.289,
+      "dbfs": -27.03
+    },
+    {
+      "t": 11.306,
+      "dbfs": -24.98
+    },
+    {
+      "t": 11.323,
+      "dbfs": -22.88
+    },
+    {
+      "t": 11.339,
+      "dbfs": -22.1
+    },
+    {
+      "t": 11.356,
+      "dbfs": -21.65
+    },
+    {
+      "t": 11.372,
+      "dbfs": -21.43
+    },
+    {
+      "t": 11.389,
+      "dbfs": -21.42
+    },
+    {
+      "t": 11.406,
+      "dbfs": -21.55
+    },
+    {
+      "t": 11.426,
+      "dbfs": -22.26
+    },
+    {
+      "t": 11.438,
+      "dbfs": -23.58
+    },
+    {
+      "t": 11.455,
+      "dbfs": -25.57
+    },
+    {
+      "t": 11.473,
+      "dbfs": -28.15
+    },
+    {
+      "t": 11.489,
+      "dbfs": -31.24
+    },
+    {
+      "t": 11.506,
+      "dbfs": -33.3
+    },
+    {
+      "t": 11.522,
+      "dbfs": -30.64
+    },
+    {
+      "t": 11.539,
+      "dbfs": -29.94
+    },
+    {
+      "t": 11.556,
+      "dbfs": -29.34
+    },
+    {
+      "t": 11.574,
+      "dbfs": -29.19
+    },
+    {
+      "t": 11.589,
+      "dbfs": -29.13
+    },
+    {
+      "t": 11.606,
+      "dbfs": -29.3
+    },
+    {
+      "t": 11.623,
+      "dbfs": -28.61
+    },
+    {
+      "t": 11.639,
+      "dbfs": -27.46
+    },
+    {
+      "t": 11.656,
+      "dbfs": -26.82
+    },
+    {
+      "t": 11.673,
+      "dbfs": -25.87
+    },
+    {
+      "t": 11.689,
+      "dbfs": -24.98
+    },
+    {
+      "t": 11.706,
+      "dbfs": -24.35
+    },
+    {
+      "t": 11.723,
+      "dbfs": -23.91
+    },
+    {
+      "t": 11.741,
+      "dbfs": -23.82
+    },
+    {
+      "t": 11.755,
+      "dbfs": -24.39
+    },
+    {
+      "t": 11.773,
+      "dbfs": -25.31
+    },
+    {
+      "t": 11.789,
+      "dbfs": -26.26
+    },
+    {
+      "t": 11.806,
+      "dbfs": -27.94
+    },
+    {
+      "t": 11.823,
+      "dbfs": -30.14
+    },
+    {
+      "t": 11.839,
+      "dbfs": -33.11
+    },
+    {
+      "t": 11.855,
+      "dbfs": -35.95
+    },
+    {
+      "t": 11.873,
+      "dbfs": -41.17
+    },
+    {
+      "t": 11.888,
+      "dbfs": -45.5
+    },
+    {
+      "t": 11.907,
+      "dbfs": -47.39
+    },
+    {
+      "t": 11.932,
+      "dbfs": -45.06
+    },
+    {
+      "t": 11.94,
+      "dbfs": -43.89
+    },
+    {
+      "t": 11.956,
+      "dbfs": -43.44
+    },
+    {
+      "t": 11.973,
+      "dbfs": -43.09
+    },
+    {
+      "t": 11.989,
+      "dbfs": -42.97
+    },
+    {
+      "t": 12.006,
+      "dbfs": -42.95
+    },
+    {
+      "t": 12.023,
+      "dbfs": -43.93
+    },
+    {
+      "t": 12.039,
+      "dbfs": -44.44
+    },
+    {
+      "t": 12.056,
+      "dbfs": -45.42
+    },
+    {
+      "t": 12.072,
+      "dbfs": -49.11
+    },
+    {
+      "t": 12.089,
+      "dbfs": -51.7
+    },
+    {
+      "t": 12.107,
+      "dbfs": -57.23
+    },
+    {
+      "t": 12.122,
+      "dbfs": -58.64
+    },
+    {
+      "t": 12.139,
+      "dbfs": -65.59
+    },
+    {
+      "t": 12.156,
+      "dbfs": -61.23
+    },
+    {
+      "t": 12.173,
+      "dbfs": -46.23
+    },
+    {
+      "t": 12.189,
+      "dbfs": -44.85
+    },
+    {
+      "t": 12.206,
+      "dbfs": -43.32
+    },
+    {
+      "t": 12.223,
+      "dbfs": -41.62
+    },
+    {
+      "t": 12.239,
+      "dbfs": -40.16
+    },
+    {
+      "t": 12.258,
+      "dbfs": -39.12
+    },
+    {
+      "t": 12.272,
+      "dbfs": -39.01
+    },
+    {
+      "t": 12.289,
+      "dbfs": -38.62
+    },
+    {
+      "t": 12.306,
+      "dbfs": -39.37
+    },
+    {
+      "t": 12.323,
+      "dbfs": -39.66
+    },
+    {
+      "t": 12.34,
+      "dbfs": -40.18
+    },
+    {
+      "t": 12.356,
+      "dbfs": -41.22
+    },
+    {
+      "t": 12.373,
+      "dbfs": -43.11
+    },
+    {
+      "t": 12.389,
+      "dbfs": -44.48
+    },
+    {
+      "t": 12.409,
+      "dbfs": -46.37
+    },
+    {
+      "t": 12.423,
+      "dbfs": -47.11
+    },
+    {
+      "t": 12.44,
+      "dbfs": -48.78
+    },
+    {
+      "t": 12.456,
+      "dbfs": -51.1
+    },
+    {
+      "t": 12.473,
+      "dbfs": -51.82
+    },
+    {
+      "t": 12.489,
+      "dbfs": -50.16
+    },
+    {
+      "t": 12.506,
+      "dbfs": -50.16
+    },
+    {
+      "t": 12.523,
+      "dbfs": -50.82
+    },
+    {
+      "t": 12.539,
+      "dbfs": -49.91
+    },
+    {
+      "t": 12.556,
+      "dbfs": -49.73
+    },
+    {
+      "t": 12.573,
+      "dbfs": -49.7
+    },
+    {
+      "t": 12.589,
+      "dbfs": -49.65
+    },
+    {
+      "t": 12.606,
+      "dbfs": -51.18
+    },
+    {
+      "t": 12.623,
+      "dbfs": -52.07
+    },
+    {
+      "t": 12.638,
+      "dbfs": -52.92
+    },
+    {
+      "t": 12.655,
+      "dbfs": -54.65
+    },
+    {
+      "t": 12.673,
+      "dbfs": -58.79
+    },
+    {
+      "t": 12.689,
+      "dbfs": -61.3
+    },
+    {
+      "t": 12.706,
+      "dbfs": -62.46
+    },
+    {
+      "t": 12.726,
+      "dbfs": -66.57
+    },
+    {
+      "t": 12.739,
+      "dbfs": -66.99
+    },
+    {
+      "t": 12.756,
+      "dbfs": -66.89
+    },
+    {
+      "t": 12.772,
+      "dbfs": -63.17
+    },
+    {
+      "t": 12.789,
+      "dbfs": -60.59
+    },
+    {
+      "t": 12.806,
+      "dbfs": -58.27
+    },
+    {
+      "t": 12.822,
+      "dbfs": -57.29
+    },
+    {
+      "t": 12.838,
+      "dbfs": -56.42
+    },
+    {
+      "t": 12.856,
+      "dbfs": -55.77
+    },
+    {
+      "t": 12.873,
+      "dbfs": -55.66
+    },
+    {
+      "t": 12.89,
+      "dbfs": -55.61
+    },
+    {
+      "t": 12.908,
+      "dbfs": -56.36
+    },
+    {
+      "t": 12.925,
+      "dbfs": -57.64
+    },
+    {
+      "t": 12.939,
+      "dbfs": -58.79
+    },
+    {
+      "t": 12.956,
+      "dbfs": -60.74
+    },
+    {
+      "t": 12.973,
+      "dbfs": -63.74
+    },
+    {
+      "t": 12.989,
+      "dbfs": -66
+    },
+    {
+      "t": 13.006,
+      "dbfs": -66.5
+    },
+    {
+      "t": 13.022,
+      "dbfs": -67.11
+    },
+    {
+      "t": 13.039,
+      "dbfs": -67.4
+    },
+    {
+      "t": 13.056,
+      "dbfs": -66.97
+    },
+    {
+      "t": 13.073,
+      "dbfs": -67.66
+    },
+    {
+      "t": 13.089,
+      "dbfs": -67.73
+    },
+    {
+      "t": 13.106,
+      "dbfs": -67.65
+    },
+    {
+      "t": 13.123,
+      "dbfs": -66.2
+    },
+    {
+      "t": 13.139,
+      "dbfs": -50.04
+    },
+    {
+      "t": 13.156,
+      "dbfs": -42.37
+    },
+    {
+      "t": 13.173,
+      "dbfs": -39.13
+    },
+    {
+      "t": 13.189,
+      "dbfs": -36.92
+    },
+    {
+      "t": 13.206,
+      "dbfs": -35.61
+    },
+    {
+      "t": 13.223,
+      "dbfs": -34.81
+    },
+    {
+      "t": 13.239,
+      "dbfs": -34.5
+    },
+    {
+      "t": 13.256,
+      "dbfs": -34.43
+    },
+    {
+      "t": 13.273,
+      "dbfs": -34.36
+    },
+    {
+      "t": 13.289,
+      "dbfs": -34.41
+    },
+    {
+      "t": 13.306,
+      "dbfs": -34.59
+    },
+    {
+      "t": 13.322,
+      "dbfs": -35.58
+    },
+    {
+      "t": 13.339,
+      "dbfs": -36.1
+    },
+    {
+      "t": 13.357,
+      "dbfs": -36.67
+    },
+    {
+      "t": 13.373,
+      "dbfs": -36.93
+    },
+    {
+      "t": 13.389,
+      "dbfs": -37.06
+    },
+    {
+      "t": 13.406,
+      "dbfs": -37.69
+    },
+    {
+      "t": 13.423,
+      "dbfs": -39.43
+    },
+    {
+      "t": 13.441,
+      "dbfs": -41.54
+    },
+    {
+      "t": 13.459,
+      "dbfs": -42.96
+    },
+    {
+      "t": 13.473,
+      "dbfs": -43.75
+    },
+    {
+      "t": 13.489,
+      "dbfs": -43.04
+    },
+    {
+      "t": 13.516,
+      "dbfs": -40.18
+    },
+    {
+      "t": 13.572,
+      "dbfs": -21.89
+    },
+    {
+      "t": 13.719,
+      "dbfs": -26.16
+    },
+    {
+      "t": 13.77,
+      "dbfs": -37.48
+    },
+    {
+      "t": 13.776,
+      "dbfs": -38.98
+    },
+    {
+      "t": 13.789,
+      "dbfs": -40.24
+    },
+    {
+      "t": 13.806,
+      "dbfs": -35.67
+    },
+    {
+      "t": 13.823,
+      "dbfs": -20.29
+    },
+    {
+      "t": 13.839,
+      "dbfs": -16.95
+    },
+    {
+      "t": 13.855,
+      "dbfs": -15.9
+    },
+    {
+      "t": 13.876,
+      "dbfs": -15.48
+    },
+    {
+      "t": 13.891,
+      "dbfs": -15.34
+    },
+    {
+      "t": 13.906,
+      "dbfs": -15.29
+    },
+    {
+      "t": 13.924,
+      "dbfs": -14.49
+    },
+    {
+      "t": 13.939,
+      "dbfs": -13.87
+    },
+    {
+      "t": 13.956,
+      "dbfs": -14.28
+    },
+    {
+      "t": 13.973,
+      "dbfs": -14.54
+    },
+    {
+      "t": 13.989,
+      "dbfs": -14.45
+    },
+    {
+      "t": 14.007,
+      "dbfs": -14.11
+    },
+    {
+      "t": 14.023,
+      "dbfs": -13.92
+    },
+    {
+      "t": 14.044,
+      "dbfs": -14.04
+    },
+    {
+      "t": 14.057,
+      "dbfs": -14.45
+    },
+    {
+      "t": 14.073,
+      "dbfs": -15.5
+    },
+    {
+      "t": 14.089,
+      "dbfs": -15.65
+    },
+    {
+      "t": 14.106,
+      "dbfs": -15.92
+    },
+    {
+      "t": 14.122,
+      "dbfs": -16.24
+    },
+    {
+      "t": 14.139,
+      "dbfs": -15.93
+    },
+    {
+      "t": 14.156,
+      "dbfs": -15.49
+    },
+    {
+      "t": 14.173,
+      "dbfs": -15.03
+    },
+    {
+      "t": 14.189,
+      "dbfs": -14.51
+    },
+    {
+      "t": 14.227,
+      "dbfs": -13.87
+    },
+    {
+      "t": 14.251,
+      "dbfs": -13.35
+    },
+    {
+      "t": 14.258,
+      "dbfs": -13.35
+    },
+    {
+      "t": 14.273,
+      "dbfs": -13.25
+    },
+    {
+      "t": 14.289,
+      "dbfs": -13.31
+    },
+    {
+      "t": 14.306,
+      "dbfs": -13.38
+    },
+    {
+      "t": 14.323,
+      "dbfs": -13.99
+    },
+    {
+      "t": 14.339,
+      "dbfs": -14.77
+    },
+    {
+      "t": 14.356,
+      "dbfs": -15.71
+    },
+    {
+      "t": 14.373,
+      "dbfs": -17.09
+    },
+    {
+      "t": 14.394,
+      "dbfs": -19.6
+    },
+    {
+      "t": 14.406,
+      "dbfs": -20.48
+    },
+    {
+      "t": 14.423,
+      "dbfs": -22.6
+    },
+    {
+      "t": 14.44,
+      "dbfs": -25.39
+    },
+    {
+      "t": 14.456,
+      "dbfs": -24.81
+    },
+    {
+      "t": 14.473,
+      "dbfs": -23.17
+    },
+    {
+      "t": 14.489,
+      "dbfs": -21.31
+    },
+    {
+      "t": 14.506,
+      "dbfs": -19.91
+    },
+    {
+      "t": 14.523,
+      "dbfs": -19.03
+    },
+    {
+      "t": 14.539,
+      "dbfs": -18.6
+    },
+    {
+      "t": 14.561,
+      "dbfs": -18.25
+    },
+    {
+      "t": 14.573,
+      "dbfs": -18.05
+    },
+    {
+      "t": 14.589,
+      "dbfs": -18.4
+    },
+    {
+      "t": 14.606,
+      "dbfs": -18.88
+    },
+    {
+      "t": 14.623,
+      "dbfs": -19.86
+    },
+    {
+      "t": 14.639,
+      "dbfs": -20.56
+    },
+    {
+      "t": 14.656,
+      "dbfs": -20.96
+    },
+    {
+      "t": 14.675,
+      "dbfs": -21.4
+    },
+    {
+      "t": 14.689,
+      "dbfs": -21.49
+    },
+    {
+      "t": 14.706,
+      "dbfs": -21.68
+    },
+    {
+      "t": 14.724,
+      "dbfs": -22.09
+    },
+    {
+      "t": 14.739,
+      "dbfs": -22.47
+    },
+    {
+      "t": 14.756,
+      "dbfs": -23.09
+    },
+    {
+      "t": 14.773,
+      "dbfs": -23.8
+    },
+    {
+      "t": 14.789,
+      "dbfs": -24.62
+    },
+    {
+      "t": 14.806,
+      "dbfs": -25.84
+    },
+    {
+      "t": 14.823,
+      "dbfs": -27.57
+    },
+    {
+      "t": 14.839,
+      "dbfs": -30.05
+    },
+    {
+      "t": 14.856,
+      "dbfs": -33.42
+    },
+    {
+      "t": 14.873,
+      "dbfs": -36.83
+    },
+    {
+      "t": 14.891,
+      "dbfs": -36.65
+    },
+    {
+      "t": 14.912,
+      "dbfs": -36.03
+    },
+    {
+      "t": 14.923,
+      "dbfs": -36.36
+    },
+    {
+      "t": 14.941,
+      "dbfs": -36.45
+    },
+    {
+      "t": 14.956,
+      "dbfs": -36.56
+    },
+    {
+      "t": 14.973,
+      "dbfs": -37.76
+    },
+    {
+      "t": 14.989,
+      "dbfs": -33.78
+    },
+    {
+      "t": 15.006,
+      "dbfs": -31.01
+    },
+    {
+      "t": 15.023,
+      "dbfs": -29.44
+    },
+    {
+      "t": 15.039,
+      "dbfs": -28.19
+    },
+    {
+      "t": 15.055,
+      "dbfs": -27.59
+    },
+    {
+      "t": 15.078,
+      "dbfs": -27.33
+    },
+    {
+      "t": 15.089,
+      "dbfs": -27.33
+    },
+    {
+      "t": 15.108,
+      "dbfs": -27.54
+    },
+    {
+      "t": 15.127,
+      "dbfs": -28.68
+    },
+    {
+      "t": 15.139,
+      "dbfs": -30.28
+    },
+    {
+      "t": 15.156,
+      "dbfs": -32.78
+    },
+    {
+      "t": 15.173,
+      "dbfs": -36.66
+    },
+    {
+      "t": 15.189,
+      "dbfs": -44.84
+    },
+    {
+      "t": 15.206,
+      "dbfs": -53.95
+    },
+    {
+      "t": 15.223,
+      "dbfs": -60.56
+    },
+    {
+      "t": 15.239,
+      "dbfs": -65.04
+    },
+    {
+      "t": 15.256,
+      "dbfs": -67.1
+    },
+    {
+      "t": 15.273,
+      "dbfs": -66.63
+    },
+    {
+      "t": 15.289,
+      "dbfs": -64.92
+    },
+    {
+      "t": 15.306,
+      "dbfs": -63.06
+    },
+    {
+      "t": 15.322,
+      "dbfs": -61.62
+    },
+    {
+      "t": 15.339,
+      "dbfs": -61.09
+    },
+    {
+      "t": 15.356,
+      "dbfs": -60.71
+    },
+    {
+      "t": 15.373,
+      "dbfs": -60.51
+    },
+    {
+      "t": 15.389,
+      "dbfs": -60.21
+    },
+    {
+      "t": 15.406,
+      "dbfs": -60.56
+    },
+    {
+      "t": 15.423,
+      "dbfs": -60.8
+    },
+    {
+      "t": 15.442,
+      "dbfs": -61.4
+    },
+    {
+      "t": 15.455,
+      "dbfs": -61.94
+    },
+    {
+      "t": 15.472,
+      "dbfs": -62.74
+    },
+    {
+      "t": 15.489,
+      "dbfs": -63.38
+    },
+    {
+      "t": 15.506,
+      "dbfs": -63.72
+    },
+    {
+      "t": 15.522,
+      "dbfs": -64.48
+    },
+    {
+      "t": 15.539,
+      "dbfs": -36.71
+    },
+    {
+      "t": 15.556,
+      "dbfs": -28.68
+    },
+    {
+      "t": 15.573,
+      "dbfs": -25.6
+    },
+    {
+      "t": 15.589,
+      "dbfs": -22.82
+    },
+    {
+      "t": 15.608,
+      "dbfs": -20.5
+    },
+    {
+      "t": 15.623,
+      "dbfs": -19.77
+    },
+    {
+      "t": 15.64,
+      "dbfs": -19.65
+    },
+    {
+      "t": 15.656,
+      "dbfs": -19.6
+    },
+    {
+      "t": 15.672,
+      "dbfs": -19.66
+    },
+    {
+      "t": 15.689,
+      "dbfs": -20.09
+    },
+    {
+      "t": 15.706,
+      "dbfs": -20.73
+    },
+    {
+      "t": 15.722,
+      "dbfs": -24.46
+    },
+    {
+      "t": 15.739,
+      "dbfs": -29.23
+    },
+    {
+      "t": 15.758,
+      "dbfs": -33.61
+    },
+    {
+      "t": 15.773,
+      "dbfs": -34.55
+    },
+    {
+      "t": 15.789,
+      "dbfs": -35.36
+    },
+    {
+      "t": 15.806,
+      "dbfs": -36.57
+    },
+    {
+      "t": 15.823,
+      "dbfs": -39.53
+    },
+    {
+      "t": 15.839,
+      "dbfs": -29.68
+    },
+    {
+      "t": 15.856,
+      "dbfs": -25.56
+    },
+    {
+      "t": 15.874,
+      "dbfs": -22.15
+    },
+    {
+      "t": 15.889,
+      "dbfs": -21.81
+    },
+    {
+      "t": 15.92,
+      "dbfs": -20.61
+    },
+    {
+      "t": 15.927,
+      "dbfs": -20.42
+    },
+    {
+      "t": 15.941,
+      "dbfs": -20.06
+    },
+    {
+      "t": 15.956,
+      "dbfs": -19.29
+    },
+    {
+      "t": 15.973,
+      "dbfs": -19.4
+    },
+    {
+      "t": 15.989,
+      "dbfs": -19.59
+    },
+    {
+      "t": 16.006,
+      "dbfs": -19.77
+    },
+    {
+      "t": 16.022,
+      "dbfs": -19.7
+    },
+    {
+      "t": 16.039,
+      "dbfs": -19.86
+    },
+    {
+      "t": 16.056,
+      "dbfs": -20.26
+    },
+    {
+      "t": 16.083,
+      "dbfs": -21.82
+    },
+    {
+      "t": 16.092,
+      "dbfs": -22.28
+    },
+    {
+      "t": 16.106,
+      "dbfs": -22.76
+    },
+    {
+      "t": 16.123,
+      "dbfs": -25.54
+    },
+    {
+      "t": 16.139,
+      "dbfs": -29
+    },
+    {
+      "t": 16.156,
+      "dbfs": -34.39
+    },
+    {
+      "t": 16.173,
+      "dbfs": -41.61
+    },
+    {
+      "t": 16.189,
+      "dbfs": -43.31
+    },
+    {
+      "t": 16.206,
+      "dbfs": -50.66
+    },
+    {
+      "t": 16.223,
+      "dbfs": -51.08
+    },
+    {
+      "t": 16.242,
+      "dbfs": -53.76
+    },
+    {
+      "t": 16.256,
+      "dbfs": -55.16
+    },
+    {
+      "t": 16.273,
+      "dbfs": -56.92
+    },
+    {
+      "t": 16.289,
+      "dbfs": -60.19
+    },
+    {
+      "t": 16.306,
+      "dbfs": -62.93
+    },
+    {
+      "t": 16.322,
+      "dbfs": -65.78
+    },
+    {
+      "t": 16.339,
+      "dbfs": -67.9
+    },
+    {
+      "t": 16.356,
+      "dbfs": -68.59
+    },
+    {
+      "t": 16.372,
+      "dbfs": -69.54
+    },
+    {
+      "t": 16.389,
+      "dbfs": -69.9
+    },
+    {
+      "t": 16.41,
+      "dbfs": -70.26
+    },
+    {
+      "t": 16.422,
+      "dbfs": -70.33
+    },
+    {
+      "t": 16.439,
+      "dbfs": -70.04
+    },
+    {
+      "t": 16.456,
+      "dbfs": -70.17
+    },
+    {
+      "t": 16.473,
+      "dbfs": -69.03
+    },
+    {
+      "t": 16.489,
+      "dbfs": -68.81
+    },
+    {
+      "t": 16.506,
+      "dbfs": -68.78
+    },
+    {
+      "t": 16.522,
+      "dbfs": -68.13
+    },
+    {
+      "t": 16.539,
+      "dbfs": -67.57
+    },
+    {
+      "t": 16.556,
+      "dbfs": -66.3
+    },
+    {
+      "t": 16.574,
+      "dbfs": -65.93
+    },
+    {
+      "t": 16.589,
+      "dbfs": -65.93
+    },
+    {
+      "t": 16.606,
+      "dbfs": -65.64
+    },
+    {
+      "t": 16.623,
+      "dbfs": -65.33
+    },
+    {
+      "t": 16.639,
+      "dbfs": -65.13
+    },
+    {
+      "t": 16.656,
+      "dbfs": -65.17
+    },
+    {
+      "t": 16.673,
+      "dbfs": -65.27
+    },
+    {
+      "t": 16.689,
+      "dbfs": -65.81
+    },
+    {
+      "t": 16.706,
+      "dbfs": -66.14
+    },
+    {
+      "t": 16.722,
+      "dbfs": -66.55
+    },
+    {
+      "t": 16.739,
+      "dbfs": -67.11
+    },
+    {
+      "t": 16.756,
+      "dbfs": -67.64
+    },
+    {
+      "t": 16.772,
+      "dbfs": -68
+    },
+    {
+      "t": 16.789,
+      "dbfs": -67.55
+    },
+    {
+      "t": 16.806,
+      "dbfs": -67.95
+    },
+    {
+      "t": 16.822,
+      "dbfs": -67.37
+    },
+    {
+      "t": 16.839,
+      "dbfs": -67.69
+    },
+    {
+      "t": 16.884,
+      "dbfs": -67.37
+    },
+    {
+      "t": 16.889,
+      "dbfs": -67.37
+    },
+    {
+      "t": 16.925,
+      "dbfs": -68.26
+    },
+    {
+      "t": 16.941,
+      "dbfs": -68.52
+    },
+    {
+      "t": 16.956,
+      "dbfs": -69.55
+    },
+    {
+      "t": 16.973,
+      "dbfs": -51.75
+    },
+    {
+      "t": 16.99,
+      "dbfs": -36.68
+    },
+    {
+      "t": 17.006,
+      "dbfs": -32.55
+    },
+    {
+      "t": 17.023,
+      "dbfs": -29.37
+    },
+    {
+      "t": 17.039,
+      "dbfs": -27.42
+    },
+    {
+      "t": 17.056,
+      "dbfs": -25.95
+    },
+    {
+      "t": 17.073,
+      "dbfs": -25.11
+    },
+    {
+      "t": 17.09,
+      "dbfs": -24.28
+    },
+    {
+      "t": 17.106,
+      "dbfs": -23.76
+    },
+    {
+      "t": 17.123,
+      "dbfs": -23.46
+    },
+    {
+      "t": 17.14,
+      "dbfs": -23.48
+    },
+    {
+      "t": 17.157,
+      "dbfs": -23.91
+    },
+    {
+      "t": 17.172,
+      "dbfs": -24.41
+    },
+    {
+      "t": 17.2,
+      "dbfs": -25.72
+    },
+    {
+      "t": 17.211,
+      "dbfs": -26.92
+    },
+    {
+      "t": 17.223,
+      "dbfs": -27.38
+    },
+    {
+      "t": 17.492,
+      "dbfs": -23.29
+    },
+    {
+      "t": 17.576,
+      "dbfs": -32.94
+    },
+    {
+      "t": 17.659,
+      "dbfs": -37.2
+    },
+    {
+      "t": 17.689,
+      "dbfs": -36.92
+    },
+    {
+      "t": 17.704,
+      "dbfs": -38.56
+    },
+    {
+      "t": 17.711,
+      "dbfs": -38.17
+    },
+    {
+      "t": 17.722,
+      "dbfs": -38.33
+    },
+    {
+      "t": 17.739,
+      "dbfs": -37.78
+    },
+    {
+      "t": 17.756,
+      "dbfs": -37.7
+    },
+    {
+      "t": 17.773,
+      "dbfs": -37.34
+    },
+    {
+      "t": 17.789,
+      "dbfs": -32.25
+    },
+    {
+      "t": 17.806,
+      "dbfs": -29.97
+    },
+    {
+      "t": 17.824,
+      "dbfs": -29.54
+    },
+    {
+      "t": 17.84,
+      "dbfs": -29.07
+    },
+    {
+      "t": 17.856,
+      "dbfs": -28.5
+    },
+    {
+      "t": 17.873,
+      "dbfs": -27.73
+    },
+    {
+      "t": 17.889,
+      "dbfs": -26.52
+    },
+    {
+      "t": 17.906,
+      "dbfs": -25.55
+    },
+    {
+      "t": 17.923,
+      "dbfs": -26.1
+    },
+    {
+      "t": 17.941,
+      "dbfs": -25.51
+    },
+    {
+      "t": 17.956,
+      "dbfs": -24.55
+    },
+    {
+      "t": 17.973,
+      "dbfs": -24.06
+    },
+    {
+      "t": 18.005,
+      "dbfs": -23.57
+    },
+    {
+      "t": 18.017,
+      "dbfs": -23.55
+    },
+    {
+      "t": 18.024,
+      "dbfs": -23.41
+    },
+    {
+      "t": 18.039,
+      "dbfs": -23.22
+    },
+    {
+      "t": 18.056,
+      "dbfs": -22.48
+    },
+    {
+      "t": 18.073,
+      "dbfs": -21.89
+    },
+    {
+      "t": 18.089,
+      "dbfs": -21.49
+    },
+    {
+      "t": 18.106,
+      "dbfs": -20.93
+    },
+    {
+      "t": 18.123,
+      "dbfs": -20.66
+    },
+    {
+      "t": 18.14,
+      "dbfs": -20.93
+    },
+    {
+      "t": 18.156,
+      "dbfs": -21.32
+    },
+    {
+      "t": 18.182,
+      "dbfs": -22.28
+    },
+    {
+      "t": 18.189,
+      "dbfs": -22.85
+    },
+    {
+      "t": 18.206,
+      "dbfs": -24.3
+    },
+    {
+      "t": 18.223,
+      "dbfs": -26.29
+    },
+    {
+      "t": 18.239,
+      "dbfs": -30.3
+    },
+    {
+      "t": 18.255,
+      "dbfs": -37.65
+    },
+    {
+      "t": 18.273,
+      "dbfs": -41.28
+    },
+    {
+      "t": 18.289,
+      "dbfs": -35.99
+    },
+    {
+      "t": 18.306,
+      "dbfs": -28.93
+    },
+    {
+      "t": 18.323,
+      "dbfs": -25.82
+    },
+    {
+      "t": 18.339,
+      "dbfs": -24.61
+    },
+    {
+      "t": 18.356,
+      "dbfs": -23.78
+    },
+    {
+      "t": 18.373,
+      "dbfs": -23.11
+    },
+    {
+      "t": 18.389,
+      "dbfs": -22.5
+    },
+    {
+      "t": 18.406,
+      "dbfs": -22.17
+    },
+    {
+      "t": 18.423,
+      "dbfs": -22.59
+    },
+    {
+      "t": 18.44,
+      "dbfs": -23.24
+    },
+    {
+      "t": 18.457,
+      "dbfs": -24.24
+    },
+    {
+      "t": 18.473,
+      "dbfs": -25.34
+    },
+    {
+      "t": 18.489,
+      "dbfs": -26.46
+    },
+    {
+      "t": 18.506,
+      "dbfs": -27.79
+    },
+    {
+      "t": 18.523,
+      "dbfs": -29.94
+    },
+    {
+      "t": 18.54,
+      "dbfs": -28.89
+    },
+    {
+      "t": 18.57,
+      "dbfs": -27.42
+    },
+    {
+      "t": 18.579,
+      "dbfs": -26.34
+    },
+    {
+      "t": 18.593,
+      "dbfs": -25.91
+    },
+    {
+      "t": 18.606,
+      "dbfs": -25.5
+    },
+    {
+      "t": 18.656,
+      "dbfs": -24.9
+    },
+    {
+      "t": 18.667,
+      "dbfs": -25.06
+    },
+    {
+      "t": 18.675,
+      "dbfs": -25.21
+    },
+    {
+      "t": 18.689,
+      "dbfs": -25.3
+    },
+    {
+      "t": 18.706,
+      "dbfs": -25.74
+    },
+    {
+      "t": 18.722,
+      "dbfs": -26.39
+    },
+    {
+      "t": 18.739,
+      "dbfs": -26.88
+    },
+    {
+      "t": 18.761,
+      "dbfs": -27.37
+    },
+    {
+      "t": 18.773,
+      "dbfs": -27.89
+    },
+    {
+      "t": 18.788,
+      "dbfs": -28.9
+    },
+    {
+      "t": 18.806,
+      "dbfs": -29.65
+    },
+    {
+      "t": 18.822,
+      "dbfs": -30.05
+    },
+    {
+      "t": 18.839,
+      "dbfs": -29.52
+    },
+    {
+      "t": 18.855,
+      "dbfs": -28.94
+    },
+    {
+      "t": 18.873,
+      "dbfs": -28.45
+    },
+    {
+      "t": 18.889,
+      "dbfs": -28.54
+    },
+    {
+      "t": 18.906,
+      "dbfs": -28.83
+    },
+    {
+      "t": 18.922,
+      "dbfs": -29.47
+    },
+    {
+      "t": 18.939,
+      "dbfs": -30.15
+    },
+    {
+      "t": 18.958,
+      "dbfs": -31.15
+    },
+    {
+      "t": 18.973,
+      "dbfs": -33.01
+    },
+    {
+      "t": 18.989,
+      "dbfs": -35.85
+    },
+    {
+      "t": 19.006,
+      "dbfs": -30.7
+    },
+    {
+      "t": 19.023,
+      "dbfs": -26.36
+    },
+    {
+      "t": 19.041,
+      "dbfs": -25.08
+    },
+    {
+      "t": 19.056,
+      "dbfs": -24.91
+    },
+    {
+      "t": 19.073,
+      "dbfs": -24.9
+    },
+    {
+      "t": 19.09,
+      "dbfs": -24.89
+    },
+    {
+      "t": 19.114,
+      "dbfs": -24.89
+    },
+    {
+      "t": 19.123,
+      "dbfs": -25.27
+    },
+    {
+      "t": 19.139,
+      "dbfs": -27.6
+    },
+    {
+      "t": 19.156,
+      "dbfs": -33.26
+    },
+    {
+      "t": 19.173,
+      "dbfs": -39.73
+    },
+    {
+      "t": 19.189,
+      "dbfs": -40.86
+    },
+    {
+      "t": 19.206,
+      "dbfs": -40.95
+    },
+    {
+      "t": 19.223,
+      "dbfs": -41.15
+    },
+    {
+      "t": 19.239,
+      "dbfs": -41.9
+    },
+    {
+      "t": 19.256,
+      "dbfs": -39.5
+    },
+    {
+      "t": 19.273,
+      "dbfs": -37.01
+    },
+    {
+      "t": 19.289,
+      "dbfs": -35.76
+    },
+    {
+      "t": 19.306,
+      "dbfs": -35.46
+    },
+    {
+      "t": 19.322,
+      "dbfs": -35.25
+    },
+    {
+      "t": 19.339,
+      "dbfs": -35.24
+    },
+    {
+      "t": 19.357,
+      "dbfs": -35.26
+    },
+    {
+      "t": 19.373,
+      "dbfs": -35.36
+    },
+    {
+      "t": 19.389,
+      "dbfs": -37.24
+    },
+    {
+      "t": 19.406,
+      "dbfs": -40.64
+    },
+    {
+      "t": 19.422,
+      "dbfs": -46.01
+    },
+    {
+      "t": 19.439,
+      "dbfs": -49.62
+    },
+    {
+      "t": 19.458,
+      "dbfs": -49.12
+    },
+    {
+      "t": 19.472,
+      "dbfs": -47.77
+    },
+    {
+      "t": 19.489,
+      "dbfs": -46.88
+    },
+    {
+      "t": 19.506,
+      "dbfs": -40.39
+    },
+    {
+      "t": 19.522,
+      "dbfs": -37.8
+    },
+    {
+      "t": 19.539,
+      "dbfs": -37.29
+    },
+    {
+      "t": 19.556,
+      "dbfs": -36.99
+    },
+    {
+      "t": 19.572,
+      "dbfs": -37.1
+    },
+    {
+      "t": 19.589,
+      "dbfs": -37.22
+    },
+    {
+      "t": 19.606,
+      "dbfs": -37.3
+    },
+    {
+      "t": 19.623,
+      "dbfs": -38.16
+    },
+    {
+      "t": 19.639,
+      "dbfs": -41.22
+    },
+    {
+      "t": 19.656,
+      "dbfs": -38.16
+    },
+    {
+      "t": 19.673,
+      "dbfs": -35.01
+    },
+    {
+      "t": 19.689,
+      "dbfs": -33.5
+    },
+    {
+      "t": 19.706,
+      "dbfs": -32.52
+    },
+    {
+      "t": 19.723,
+      "dbfs": -31.78
+    },
+    {
+      "t": 19.739,
+      "dbfs": -31.69
+    },
+    {
+      "t": 19.756,
+      "dbfs": -31.59
+    },
+    {
+      "t": 19.773,
+      "dbfs": -31.77
+    },
+    {
+      "t": 19.789,
+      "dbfs": -32.74
+    },
+    {
+      "t": 19.811,
+      "dbfs": -33.76
+    },
+    {
+      "t": 19.823,
+      "dbfs": -33.66
+    },
+    {
+      "t": 19.839,
+      "dbfs": -33.44
+    },
+    {
+      "t": 19.856,
+      "dbfs": -32.67
+    },
+    {
+      "t": 19.873,
+      "dbfs": -31.96
+    },
+    {
+      "t": 19.889,
+      "dbfs": -31.71
+    },
+    {
+      "t": 19.906,
+      "dbfs": -31.1
+    },
+    {
+      "t": 19.922,
+      "dbfs": -29.78
+    },
+    {
+      "t": 19.939,
+      "dbfs": -29.48
+    },
+    {
+      "t": 19.955,
+      "dbfs": -29.37
+    },
+    {
+      "t": 19.972,
+      "dbfs": -29.72
+    },
+    {
+      "t": 19.994,
+      "dbfs": -30.12
+    },
+    {
+      "t": 20.007,
+      "dbfs": -30.41
+    },
+    {
+      "t": 20.023,
+      "dbfs": -30.4
+    },
+    {
+      "t": 20.039,
+      "dbfs": -31.32
+    },
+    {
+      "t": 20.056,
+      "dbfs": -33.01
+    },
+    {
+      "t": 20.073,
+      "dbfs": -34.84
+    },
+    {
+      "t": 20.089,
+      "dbfs": -37.72
+    },
+    {
+      "t": 20.106,
+      "dbfs": -38.91
+    },
+    {
+      "t": 20.123,
+      "dbfs": -37.53
+    },
+    {
+      "t": 20.139,
+      "dbfs": -37.06
+    },
+    {
+      "t": 20.156,
+      "dbfs": -37.79
+    },
+    {
+      "t": 20.174,
+      "dbfs": -37.94
+    },
+    {
+      "t": 20.211,
+      "dbfs": -37.01
+    },
+    {
+      "t": 20.219,
+      "dbfs": -37.13
+    },
+    {
+      "t": 20.229,
+      "dbfs": -35.3
+    },
+    {
+      "t": 20.239,
+      "dbfs": -34.12
+    },
+    {
+      "t": 20.256,
+      "dbfs": -32.39
+    },
+    {
+      "t": 20.273,
+      "dbfs": -31.04
+    },
+    {
+      "t": 20.289,
+      "dbfs": -29.85
+    },
+    {
+      "t": 20.306,
+      "dbfs": -29.46
+    },
+    {
+      "t": 20.322,
+      "dbfs": -29.46
+    },
+    {
+      "t": 20.343,
+      "dbfs": -29.51
+    },
+    {
+      "t": 20.356,
+      "dbfs": -29.67
+    },
+    {
+      "t": 20.373,
+      "dbfs": -30.5
+    },
+    {
+      "t": 20.389,
+      "dbfs": -31.94
+    },
+    {
+      "t": 20.406,
+      "dbfs": -33.35
+    },
+    {
+      "t": 20.423,
+      "dbfs": -35.3
+    },
+    {
+      "t": 20.439,
+      "dbfs": -35.63
+    },
+    {
+      "t": 20.456,
+      "dbfs": -35.59
+    },
+    {
+      "t": 20.473,
+      "dbfs": -35.68
+    },
+    {
+      "t": 20.493,
+      "dbfs": -37.1
+    },
+    {
+      "t": 20.506,
+      "dbfs": -37.56
+    },
+    {
+      "t": 20.522,
+      "dbfs": -38.44
+    },
+    {
+      "t": 20.539,
+      "dbfs": -39.47
+    },
+    {
+      "t": 20.556,
+      "dbfs": -39.81
+    },
+    {
+      "t": 20.573,
+      "dbfs": -40.61
+    },
+    {
+      "t": 20.589,
+      "dbfs": -40.59
+    },
+    {
+      "t": 20.606,
+      "dbfs": -40.76
+    },
+    {
+      "t": 20.623,
+      "dbfs": -40.21
+    },
+    {
+      "t": 20.639,
+      "dbfs": -40.84
+    },
+    {
+      "t": 20.659,
+      "dbfs": -41.6
+    },
+    {
+      "t": 20.673,
+      "dbfs": -41.86
+    },
+    {
+      "t": 20.689,
+      "dbfs": -38.56
+    },
+    {
+      "t": 20.706,
+      "dbfs": -36.23
+    },
+    {
+      "t": 20.723,
+      "dbfs": -34.66
+    },
+    {
+      "t": 20.739,
+      "dbfs": -34.21
+    },
+    {
+      "t": 20.756,
+      "dbfs": -33.8
+    },
+    {
+      "t": 20.773,
+      "dbfs": -33.78
+    },
+    {
+      "t": 20.789,
+      "dbfs": -33.77
+    },
+    {
+      "t": 20.806,
+      "dbfs": -34.19
+    },
+    {
+      "t": 20.823,
+      "dbfs": -35.79
+    },
+    {
+      "t": 20.839,
+      "dbfs": -37.1
+    },
+    {
+      "t": 20.855,
+      "dbfs": -39.43
+    },
+    {
+      "t": 20.873,
+      "dbfs": -41.99
+    },
+    {
+      "t": 20.889,
+      "dbfs": -50.06
+    },
+    {
+      "t": 20.906,
+      "dbfs": -55.85
+    },
+    {
+      "t": 20.922,
+      "dbfs": -35.54
+    },
+    {
+      "t": 20.939,
+      "dbfs": -25.09
+    },
+    {
+      "t": 20.956,
+      "dbfs": -21.56
+    },
+    {
+      "t": 20.973,
+      "dbfs": -20.64
+    },
+    {
+      "t": 20.989,
+      "dbfs": -20.51
+    },
+    {
+      "t": 21.008,
+      "dbfs": -20.47
+    },
+    {
+      "t": 21.023,
+      "dbfs": -20.47
+    },
+    {
+      "t": 21.039,
+      "dbfs": -20.39
+    },
+    {
+      "t": 21.055,
+      "dbfs": -20.51
+    },
+    {
+      "t": 21.073,
+      "dbfs": -20.96
+    },
+    {
+      "t": 21.089,
+      "dbfs": -19.05
+    },
+    {
+      "t": 21.106,
+      "dbfs": -17.74
+    },
+    {
+      "t": 21.123,
+      "dbfs": -16.23
+    },
+    {
+      "t": 21.139,
+      "dbfs": -15.55
+    },
+    {
+      "t": 21.158,
+      "dbfs": -15.27
+    },
+    {
+      "t": 21.173,
+      "dbfs": -15.13
+    },
+    {
+      "t": 21.195,
+      "dbfs": -15.37
+    },
+    {
+      "t": 21.206,
+      "dbfs": -15.92
+    },
+    {
+      "t": 21.223,
+      "dbfs": -17.6
+    },
+    {
+      "t": 21.244,
+      "dbfs": -19.99
+    },
+    {
+      "t": 21.257,
+      "dbfs": -21.29
+    },
+    {
+      "t": 21.272,
+      "dbfs": -24.79
+    },
+    {
+      "t": 21.294,
+      "dbfs": -31.01
+    },
+    {
+      "t": 21.306,
+      "dbfs": -39.56
+    },
+    {
+      "t": 21.324,
+      "dbfs": -50.35
+    },
+    {
+      "t": 21.341,
+      "dbfs": -51.88
+    },
+    {
+      "t": 21.368,
+      "dbfs": -50.71
+    },
+    {
+      "t": 21.383,
+      "dbfs": -49.84
+    },
+    {
+      "t": 21.39,
+      "dbfs": -49.5
+    },
+    {
+      "t": 21.406,
+      "dbfs": -48.51
+    },
+    {
+      "t": 21.423,
+      "dbfs": -47.87
+    },
+    {
+      "t": 21.439,
+      "dbfs": -47.44
+    },
+    {
+      "t": 21.456,
+      "dbfs": -47.26
+    },
+    {
+      "t": 21.473,
+      "dbfs": -47.64
+    },
+    {
+      "t": 21.489,
+      "dbfs": -47.97
+    },
+    {
+      "t": 21.506,
+      "dbfs": -48.5
+    },
+    {
+      "t": 21.525,
+      "dbfs": -49.91
+    },
+    {
+      "t": 21.539,
+      "dbfs": -51.5
+    },
+    {
+      "t": 21.556,
+      "dbfs": -52.65
+    },
+    {
+      "t": 21.573,
+      "dbfs": -47.7
+    },
+    {
+      "t": 21.589,
+      "dbfs": -37.07
+    },
+    {
+      "t": 21.606,
+      "dbfs": -34.42
+    },
+    {
+      "t": 21.622,
+      "dbfs": -31.12
+    },
+    {
+      "t": 21.64,
+      "dbfs": -29.63
+    },
+    {
+      "t": 21.655,
+      "dbfs": -28.41
+    },
+    {
+      "t": 21.672,
+      "dbfs": -28.31
+    },
+    {
+      "t": 21.699,
+      "dbfs": -18.1
+    },
+    {
+      "t": 21.706,
+      "dbfs": -18.1
+    },
+    {
+      "t": 21.723,
+      "dbfs": -15.55
+    },
+    {
+      "t": 21.739,
+      "dbfs": -14.56
+    },
+    {
+      "t": 21.756,
+      "dbfs": -13.83
+    },
+    {
+      "t": 21.773,
+      "dbfs": -13.24
+    },
+    {
+      "t": 21.789,
+      "dbfs": -12.83
+    },
+    {
+      "t": 21.806,
+      "dbfs": -12.53
+    },
+    {
+      "t": 21.823,
+      "dbfs": -13.06
+    },
+    {
+      "t": 21.859,
+      "dbfs": -15.27
+    },
+    {
+      "t": 21.872,
+      "dbfs": -15.83
+    },
+    {
+      "t": 21.945,
+      "dbfs": -25.61
+    },
+    {
+      "t": 21.958,
+      "dbfs": -31.45
+    },
+    {
+      "t": 21.973,
+      "dbfs": -35.5
+    },
+    {
+      "t": 21.991,
+      "dbfs": -41.14
+    },
+    {
+      "t": 22.008,
+      "dbfs": -44.29
+    },
+    {
+      "t": 22.022,
+      "dbfs": -45.44
+    },
+    {
+      "t": 22.039,
+      "dbfs": -46.36
+    },
+    {
+      "t": 22.056,
+      "dbfs": -48.24
+    },
+    {
+      "t": 22.073,
+      "dbfs": -48.75
+    },
+    {
+      "t": 22.089,
+      "dbfs": -49.41
+    },
+    {
+      "t": 22.106,
+      "dbfs": -49.74
+    },
+    {
+      "t": 22.122,
+      "dbfs": -49.75
+    },
+    {
+      "t": 22.139,
+      "dbfs": -49.68
+    },
+    {
+      "t": 22.156,
+      "dbfs": -49.64
+    },
+    {
+      "t": 22.173,
+      "dbfs": -49.04
+    },
+    {
+      "t": 22.191,
+      "dbfs": -47.72
+    },
+    {
+      "t": 22.206,
+      "dbfs": -43.01
+    },
+    {
+      "t": 22.223,
+      "dbfs": -38.4
+    },
+    {
+      "t": 22.239,
+      "dbfs": -37.31
+    },
+    {
+      "t": 22.256,
+      "dbfs": -36.35
+    },
+    {
+      "t": 22.273,
+      "dbfs": -35.05
+    },
+    {
+      "t": 22.289,
+      "dbfs": -33.96
+    },
+    {
+      "t": 22.306,
+      "dbfs": -32.53
+    },
+    {
+      "t": 22.322,
+      "dbfs": -31.2
+    },
+    {
+      "t": 22.339,
+      "dbfs": -31.25
+    },
+    {
+      "t": 22.356,
+      "dbfs": -31.15
+    },
+    {
+      "t": 22.373,
+      "dbfs": -30.89
+    },
+    {
+      "t": 22.389,
+      "dbfs": -30.73
+    },
+    {
+      "t": 22.406,
+      "dbfs": -30.66
+    },
+    {
+      "t": 22.423,
+      "dbfs": -30.42
+    },
+    {
+      "t": 22.439,
+      "dbfs": -30.46
+    },
+    {
+      "t": 22.456,
+      "dbfs": -30.85
+    },
+    {
+      "t": 22.496,
+      "dbfs": -30.56
+    },
+    {
+      "t": 22.523,
+      "dbfs": -29.13
+    },
+    {
+      "t": 22.541,
+      "dbfs": -27.96
+    },
+    {
+      "t": 22.556,
+      "dbfs": -28.01
+    },
+    {
+      "t": 22.573,
+      "dbfs": -27.41
+    },
+    {
+      "t": 22.589,
+      "dbfs": -26.82
+    }
+  ],
+  "report": {
+    "summary": "This session was a good baseline recording, but the lack of content and measurable vocal metrics makes it difficult to give detailed feedback.",
+    "tips": [
+      {
+        "category": "clarity",
+        "text": "Since there is no transcript, try reading a short paragraph aloud and paying attention to articulating every consonant, especially 't' and 'd' sounds, to build muscle memory."
+      },
+      {
+        "category": "presence",
+        "text": "When recording next time, focus on projecting your voice from your diaphragm, imagining you are speaking to someone at the back of a large room, even if the content is simple."
+      },
+      {
+        "category": "pace",
+        "text": "To help with pacing, try recording yourself reading a poem or a piece of prose and deliberately marking where you want to pause. This will help you build natural, impactful breaks."
+      }
+    ],
+    "score": 60,
+    "strengths": [
+      "The overall volume range suggests good technical capability."
+    ],
+    "error": null
+  }
+}

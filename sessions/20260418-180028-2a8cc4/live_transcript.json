@@ -1,0 +1,686 @@
+{
+  "text": "From. I was  there when  the six pizza boxes  came through that  door.  This is  the.  This is  the  evidence  Pizza  Hut  . This  plug  thing.  You  can't just  get one of those from  anywhere  .  Um,  maybe  , you know,  five minutes max.  We  haven't done the  video  .  I'd have  to say  speed  up because  we want to  have  . Judging done  by seven.  Okay,  okay. Okay,  fine.  Yeah,  I actually  don't know  if  it  automatically  closes on the  platform  .  Um,  understood  as  much as  possible.  That's  just  because I'm  not a  carnivore.  That is.  Actually a  discrimination  .  Should we  do.  Video  volume? I'm not  joking.  What?  Okay,  let's  use  screen  recording.  Just  upload  it  .  Just",
+  "words": [
+    {
+      "start": 0.04,
+      "end": 0.32,
+      "text": "From",
+      "confidence": 0.68
+    },
+    {
+      "start": 0.36,
+      "end": 0.44,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 0.44,
+      "end": 0.6,
+      "text": "was",
+      "confidence": 1.0
+    },
+    {
+      "start": 0.6,
+      "end": 0.76,
+      "text": "there",
+      "confidence": 1.0
+    },
+    {
+      "start": 0.76,
+      "end": 0.96,
+      "text": "when",
+      "confidence": 1.0
+    },
+    {
+      "start": 0.96,
+      "end": 1.08,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.08,
+      "end": 1.32,
+      "text": "six",
+      "confidence": 0.98
+    },
+    {
+      "start": 1.32,
+      "end": 1.56,
+      "text": "pizza",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.56,
+      "end": 1.92,
+      "text": "boxes",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.92,
+      "end": 2.12,
+      "text": "came",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.12,
+      "end": 2.32,
+      "text": "through",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.32,
+      "end": 2.44,
+      "text": "that",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.44,
+      "end": 2.76,
+      "text": "door",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.48,
+      "end": 3.72,
+      "text": "This",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.72,
+      "end": 3.84,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.88,
+      "end": 4.12,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.16,
+      "end": 4.36,
+      "text": "This",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.36,
+      "end": 4.52,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.52,
+      "end": 4.64,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.68,
+      "end": 5.4,
+      "text": "evidence",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.8,
+      "end": 6.4,
+      "text": "Pizza",
+      "confidence": 0.84
+    },
+    {
+      "start": 6.4,
+      "end": 6.76,
+      "text": "Hut",
+      "confidence": 0.57
+    },
+    {
+      "start": 7.72,
+      "end": 8.12,
+      "text": "This",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.24,
+      "end": 8.56,
+      "text": "plug",
+      "confidence": 0.8
+    },
+    {
+      "start": 8.6,
+      "end": 8.96,
+      "text": "thing",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.28,
+      "end": 9.48,
+      "text": "You",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.48,
+      "end": 9.72,
+      "text": "can't",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.72,
+      "end": 9.88,
+      "text": "just",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.88,
+      "end": 10.04,
+      "text": "get",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.08,
+      "end": 10.28,
+      "text": "one",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.28,
+      "end": 10.36,
+      "text": "of",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.36,
+      "end": 10.56,
+      "text": "those",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.56,
+      "end": 10.84,
+      "text": "from",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.84,
+      "end": 11.32,
+      "text": "anywhere",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.44,
+      "end": 12.76,
+      "text": "Um",
+      "confidence": 0.83
+    },
+    {
+      "start": 12.88,
+      "end": 13.12,
+      "text": "maybe",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.12,
+      "end": 13.24,
+      "text": "you",
+      "confidence": 0.99
+    },
+    {
+      "start": 13.24,
+      "end": 13.4,
+      "text": "know",
+      "confidence": 0.99
+    },
+    {
+      "start": 13.64,
+      "end": 13.94,
+      "text": "five",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.94,
+      "end": 14.24,
+      "text": "minutes",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.24,
+      "end": 14.64,
+      "text": "max",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.68,
+      "end": 14.8,
+      "text": "We",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.8,
+      "end": 15.08,
+      "text": "haven't",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.08,
+      "end": 15.2,
+      "text": "done",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.2,
+      "end": 15.32,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.32,
+      "end": 15.88,
+      "text": "video",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.6,
+      "end": 17.04,
+      "text": "I'd",
+      "confidence": 0.76
+    },
+    {
+      "start": 17.04,
+      "end": 17.2,
+      "text": "have",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.2,
+      "end": 17.28,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.28,
+      "end": 17.52,
+      "text": "say",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.52,
+      "end": 17.76,
+      "text": "speed",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.76,
+      "end": 17.96,
+      "text": "up",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.96,
+      "end": 18.24,
+      "text": "because",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.24,
+      "end": 18.36,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.36,
+      "end": 18.56,
+      "text": "want",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.56,
+      "end": 18.64,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.64,
+      "end": 18.8,
+      "text": "have",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.8,
+      "end": 19.12,
+      "text": "Judging",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.12,
+      "end": 19.24,
+      "text": "done",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.24,
+      "end": 19.4,
+      "text": "by",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.4,
+      "end": 19.84,
+      "text": "seven",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.88,
+      "end": 20.24,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.28,
+      "end": 20.52,
+      "text": "okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.52,
+      "end": 20.72,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.72,
+      "end": 21.04,
+      "text": "fine",
+      "confidence": 1.0
+    },
+    {
+      "start": 21.04,
+      "end": 21.48,
+      "text": "Yeah",
+      "confidence": 1.0
+    },
+    {
+      "start": 21.8,
+      "end": 21.92,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 21.92,
+      "end": 22.16,
+      "text": "actually",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.2,
+      "end": 22.36,
+      "text": "don't",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.4,
+      "end": 22.6,
+      "text": "know",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.6,
+      "end": 22.88,
+      "text": "if",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.92,
+      "end": 23.04,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 23.04,
+      "end": 23.68,
+      "text": "automatically",
+      "confidence": 1.0
+    },
+    {
+      "start": 23.68,
+      "end": 24.08,
+      "text": "closes",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.08,
+      "end": 24.24,
+      "text": "on",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.24,
+      "end": 24.36,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.36,
+      "end": 25.0,
+      "text": "platform",
+      "confidence": 1.0
+    },
+    {
+      "start": 25.64,
+      "end": 25.92,
+      "text": "Um",
+      "confidence": 0.98
+    },
+    {
+      "start": 26.32,
+      "end": 26.76,
+      "text": "understood",
+      "confidence": 0.99
+    },
+    {
+      "start": 27.16,
+      "end": 27.28,
+      "text": "as",
+      "confidence": 0.93
+    },
+    {
+      "start": 27.28,
+      "end": 27.44,
+      "text": "much",
+      "confidence": 0.68
+    },
+    {
+      "start": 27.44,
+      "end": 27.56,
+      "text": "as",
+      "confidence": 1.0
+    },
+    {
+      "start": 27.56,
+      "end": 28.04,
+      "text": "possible",
+      "confidence": 1.0
+    },
+    {
+      "start": 28.16,
+      "end": 28.48,
+      "text": "That's",
+      "confidence": 0.94
+    },
+    {
+      "start": 28.72,
+      "end": 28.92,
+      "text": "just",
+      "confidence": 1.0
+    },
+    {
+      "start": 28.92,
+      "end": 29.2,
+      "text": "because",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.2,
+      "end": 29.28,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.28,
+      "end": 29.48,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.48,
+      "end": 29.56,
+      "text": "a",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.56,
+      "end": 30.16,
+      "text": "carnivore",
+      "confidence": 1.0
+    },
+    {
+      "start": 31.04,
+      "end": 31.2,
+      "text": "That",
+      "confidence": 0.74
+    },
+    {
+      "start": 31.2,
+      "end": 31.4,
+      "text": "is",
+      "confidence": 0.74
+    },
+    {
+      "start": 31.44,
+      "end": 31.72,
+      "text": "Actually",
+      "confidence": 0.7
+    },
+    {
+      "start": 31.72,
+      "end": 31.84,
+      "text": "a",
+      "confidence": 0.6
+    },
+    {
+      "start": 31.84,
+      "end": 33.0,
+      "text": "discrimination",
+      "confidence": 1.0
+    },
+    {
+      "start": 34.36,
+      "end": 34.6,
+      "text": "Should",
+      "confidence": 0.67
+    },
+    {
+      "start": 34.6,
+      "end": 34.72,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 34.72,
+      "end": 34.92,
+      "text": "do",
+      "confidence": 1.0
+    },
+    {
+      "start": 34.96,
+      "end": 35.28,
+      "text": "Video",
+      "confidence": 0.59
+    },
+    {
+      "start": 35.28,
+      "end": 35.6,
+      "text": "volume",
+      "confidence": 0.94
+    },
+    {
+      "start": 35.96,
+      "end": 36.08,
+      "text": "I'm",
+      "confidence": 0.96
+    },
+    {
+      "start": 36.08,
+      "end": 36.28,
+      "text": "not",
+      "confidence": 0.96
+    },
+    {
+      "start": 36.28,
+      "end": 36.88,
+      "text": "joking",
+      "confidence": 1.0
+    },
+    {
+      "start": 37.32,
+      "end": 37.88,
+      "text": "What",
+      "confidence": 1.0
+    },
+    {
+      "start": 37.92,
+      "end": 38.36,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 38.4,
+      "end": 38.68,
+      "text": "let's",
+      "confidence": 1.0
+    },
+    {
+      "start": 38.68,
+      "end": 39.04,
+      "text": "use",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.04,
+      "end": 39.36,
+      "text": "screen",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.36,
+      "end": 39.88,
+      "text": "recording",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.88,
+      "end": 40.2,
+      "text": "Just",
+      "confidence": 1.0
+    },
+    {
+      "start": 40.2,
+      "end": 40.52,
+      "text": "upload",
+      "confidence": 1.0
+    },
+    {
+      "start": 40.52,
+      "end": 40.84,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 41.64,
+      "end": 41.88,
+      "text": "Just",
+      "confidence": 1.0
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 41.88,
+  "error": null
+}

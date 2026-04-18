@@ -1,0 +1,374 @@
+{
+  "text": "Can you just  copied  entire  transcript.  Okay. The live.  Transcript  works now  . The  live  biomarker  signal  works.  It  on  the video  is  working.  No,  it just  says  my face  is there  for the  vibes.  Okay.  You  it's  giving the  live  biomarker  stuff.  Let's tell  it  . Oh,  okay.  Perfect. So I  don't need  to.  Yeah, you  fixed  it.  Two problems  together.  Okay,",
+  "words": [
+    {
+      "start": 0.2,
+      "end": 0.32,
+      "text": "Can",
+      "confidence": 0.82
+    },
+    {
+      "start": 0.32,
+      "end": 0.44,
+      "text": "you",
+      "confidence": 0.98
+    },
+    {
+      "start": 0.44,
+      "end": 0.64,
+      "text": "just",
+      "confidence": 0.99
+    },
+    {
+      "start": 0.64,
+      "end": 1.0,
+      "text": "copied",
+      "confidence": 0.44
+    },
+    {
+      "start": 1.32,
+      "end": 1.96,
+      "text": "entire",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.96,
+      "end": 2.52,
+      "text": "transcript",
+      "confidence": 0.91
+    },
+    {
+      "start": 2.56,
+      "end": 2.92,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.96,
+      "end": 3.04,
+      "text": "The",
+      "confidence": 0.87
+    },
+    {
+      "start": 3.04,
+      "end": 3.16,
+      "text": "live",
+      "confidence": 0.4
+    },
+    {
+      "start": 3.2,
+      "end": 3.64,
+      "text": "Transcript",
+      "confidence": 0.99
+    },
+    {
+      "start": 3.64,
+      "end": 3.92,
+      "text": "works",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.92,
+      "end": 4.24,
+      "text": "now",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.8,
+      "end": 4.92,
+      "text": "The",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.92,
+      "end": 5.12,
+      "text": "live",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.16,
+      "end": 5.64,
+      "text": "biomarker",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.64,
+      "end": 5.96,
+      "text": "signal",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.96,
+      "end": 6.52,
+      "text": "works",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.96,
+      "end": 7.12,
+      "text": "It",
+      "confidence": 0.72
+    },
+    {
+      "start": 7.28,
+      "end": 7.52,
+      "text": "on",
+      "confidence": 0.46
+    },
+    {
+      "start": 8.16,
+      "end": 8.28,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.28,
+      "end": 8.52,
+      "text": "video",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.76,
+      "end": 8.92,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.92,
+      "end": 9.2,
+      "text": "working",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.28,
+      "end": 9.6,
+      "text": "No",
+      "confidence": 0.94
+    },
+    {
+      "start": 9.64,
+      "end": 9.76,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.76,
+      "end": 9.96,
+      "text": "just",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.96,
+      "end": 10.36,
+      "text": "says",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.68,
+      "end": 10.88,
+      "text": "my",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.88,
+      "end": 11.08,
+      "text": "face",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.08,
+      "end": 11.2,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.2,
+      "end": 11.36,
+      "text": "there",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.36,
+      "end": 11.52,
+      "text": "for",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.52,
+      "end": 11.6,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.6,
+      "end": 12.08,
+      "text": "vibes",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.12,
+      "end": 12.72,
+      "text": "Okay",
+      "confidence": 0.98
+    },
+    {
+      "start": 13.04,
+      "end": 13.2,
+      "text": "You",
+      "confidence": 0.94
+    },
+    {
+      "start": 13.6,
+      "end": 13.8,
+      "text": "it's",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.8,
+      "end": 14.04,
+      "text": "giving",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.04,
+      "end": 14.12,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.12,
+      "end": 14.36,
+      "text": "live",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.36,
+      "end": 14.88,
+      "text": "biomarker",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.88,
+      "end": 15.4,
+      "text": "stuff",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.44,
+      "end": 15.8,
+      "text": "Let's",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.8,
+      "end": 16.0,
+      "text": "tell",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.0,
+      "end": 16.28,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.88,
+      "end": 17.04,
+      "text": "Oh",
+      "confidence": 0.94
+    },
+    {
+      "start": 17.08,
+      "end": 17.28,
+      "text": "okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.32,
+      "end": 17.64,
+      "text": "Perfect",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.64,
+      "end": 17.72,
+      "text": "So",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.72,
+      "end": 17.8,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.8,
+      "end": 18.04,
+      "text": "don't",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.04,
+      "end": 18.2,
+      "text": "need",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.2,
+      "end": 18.4,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.44,
+      "end": 18.72,
+      "text": "Yeah",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.76,
+      "end": 18.96,
+      "text": "you",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.96,
+      "end": 19.24,
+      "text": "fixed",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.24,
+      "end": 19.4,
+      "text": "it",
+      "confidence": 0.7
+    },
+    {
+      "start": 19.4,
+      "end": 19.56,
+      "text": "Two",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.56,
+      "end": 20.04,
+      "text": "problems",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.04,
+      "end": 20.52,
+      "text": "together",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.92,
+      "end": 21.32,
+      "text": "Okay",
+      "confidence": 1.0
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 21.32,
+  "error": null
+}

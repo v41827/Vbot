@@ -20,6 +20,11 @@
 
 * { box-sizing: border-box; }
 
+/* Make sure JS setting element.hidden = true actually hides an element
+   even when CSS overrides `display`. Without this, display:flex on
+   .loading wins over the UA stylesheet's [hidden] { display: none }. */
+[hidden] { display: none !important; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -337,6 +342,118 @@ nav { display: flex; gap: 8px; }
   background: var(--bg-elev-2);
   overflow: hidden;
 }
+.live-indicator {
+  margin-left: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--fg-dim);
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+}
+.live-indicator.on {
+  color: #30d158;
+  border-color: rgba(48,209,88,0.35);
+  background: rgba(48,209,88,0.12);
+}
+.live-panel { margin-top: 6px; }
+.live-panel-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.live-transcript {
+  min-height: 52px;
+  max-height: 140px;
+  overflow-y: auto;
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.live-transcript .final { color: var(--fg); }
+.live-transcript .partial { color: var(--fg-muted); font-style: italic; }
+.live-biomarker-meta {
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--fg-muted);
+  min-height: 20px;
+}
+.live-coaching {
+  background: linear-gradient(135deg, rgba(10,132,255,0.12), rgba(100,210,255,0.08));
+  border: 1px solid rgba(10,132,255,0.2);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: var(--fg);
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  transition: opacity 0.3s ease;
+}
+.live-coaching.fade { opacity: 0.4; }
+.live-coaching .chip {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-family: var(--mono);
+  background: rgba(10,132,255,0.2);
+  color: #64d2ff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+}
+.live-coaching .chip.warn {
+  background: rgba(255,159,10,0.15); color: var(--warn);
+}
+.live-coaching .chip.alert {
+  background: rgba(255,59,48,0.2); color: var(--loud);
+}
+.live-coaching .chip.good {
+  background: rgba(48,209,88,0.15); color: var(--safe);
+}
+.live-biomarker-bars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.bio-bar {
+  background: var(--bg-elev-2);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+.bio-bar-head {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.bio-bar-head .k { color: var(--fg-muted); text-transform: capitalize; }
+.bio-bar-head .v { font-family: var(--mono); font-weight: 500; color: var(--fg); }
+.bio-bar-track {
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+.bio-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.35s ease, background 0.2s ease;
+}
+.bio-bar-fill.low { background: var(--safe); }
+.bio-bar-fill.mid { background: var(--warn); }
+.bio-bar-fill.high { background: var(--loud); }
+.bio-bar-fill.good-low { background: var(--loud); }
+.bio-bar-fill.good-mid { background: var(--warn); }
+.bio-bar-fill.good-high { background: var(--safe); }
 .mini-bar {
   height: 100%;
   width: 0%;

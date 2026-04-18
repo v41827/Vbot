@@ -25,8 +25,18 @@
   "speechmatics": {
     "language": "en",
     "operating_point": "enhanced",
-    "max_delay": 1.5,
+    "max_delay": 0.7,
     "enable_partials": true
+  },
+  "live_stream": {
+    "target_sample_rate": 16000,
+    "chunk_samples": 2048,
+    "send_interval_ms": 200
+  },
+  "thymia_sentinel": {
+    "enabled": true,
+    "user_label": "training-user",
+    "policies": ["demo_wellbeing_awareness"]
   },
   "training": {
     "min_duration_seconds": 10,

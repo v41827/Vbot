@@ -1,0 +1,1058 @@
+{
+  "text": "I'm  talking  my  piece  is  correct.  My  volume is  correct.  My  confidence  is  correct.  I  don't know  if it  knows I'm  calm or  not.  You're  not calm  because you're  worried about  the  time.  Exactly.  But  sound pretty  calm  .  Um  , okay. We  don't need  all this.  Actually,  this  technical data  is fine,  based on my  goals this session.  Is.  Okay  .  Okay.  Yeah,  there's  no  suggestions  . My  .  Give us  30 minutes and we'll put it in  . I  should  have  disappearing  texts  . I  need  time to  type  , use  whisper  . He feels emotionally,  psychologically  , in  addition to  not  having  . Um,  we should  have  disappearing  texts  in  addition to  that,  we  should be  able to see  the  biomarkers  live. We  should  also be  able to  see  suggestions on  what we  should  change  for  example,  if our  pace  is  determined is  too low or  too  high,  we should  be told  to  regulate  it.  If  we.  If we  are  detected to  have  distress, we  should be  told  to  regulate that  as well.  And  we  really  just  need  um  it to  tell  us",
+  "words": [
+    {
+      "start": 0.28,
+      "end": 0.64,
+      "text": "I'm",
+      "confidence": 0.39
+    },
+    {
+      "start": 0.68,
+      "end": 1.36,
+      "text": "talking",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.68,
+      "end": 2.04,
+      "text": "my",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.04,
+      "end": 2.32,
+      "text": "piece",
+      "confidence": 0.58
+    },
+    {
+      "start": 2.32,
+      "end": 2.52,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.52,
+      "end": 3.04,
+      "text": "correct",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.04,
+      "end": 3.24,
+      "text": "My",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.24,
+      "end": 3.64,
+      "text": "volume",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.64,
+      "end": 3.8,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.8,
+      "end": 4.32,
+      "text": "correct",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.6,
+      "end": 4.84,
+      "text": "My",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.84,
+      "end": 5.32,
+      "text": "confidence",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.32,
+      "end": 5.48,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.48,
+      "end": 6.28,
+      "text": "correct",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.6,
+      "end": 6.76,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.76,
+      "end": 6.92,
+      "text": "don't",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.92,
+      "end": 7.04,
+      "text": "know",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.04,
+      "end": 7.2,
+      "text": "if",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.2,
+      "end": 7.28,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.28,
+      "end": 7.56,
+      "text": "knows",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.56,
+      "end": 7.76,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.76,
+      "end": 7.96,
+      "text": "calm",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.96,
+      "end": 8.08,
+      "text": "or",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.08,
+      "end": 8.44,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.72,
+      "end": 8.92,
+      "text": "You're",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.92,
+      "end": 9.04,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.04,
+      "end": 9.24,
+      "text": "calm",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.28,
+      "end": 9.48,
+      "text": "because",
+      "confidence": 0.85
+    },
+    {
+      "start": 9.48,
+      "end": 9.6,
+      "text": "you're",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.6,
+      "end": 9.8,
+      "text": "worried",
+      "confidence": 1.0
+    },
+    {
+      "start": 9.8,
+      "end": 10.0,
+      "text": "about",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.0,
+      "end": 10.12,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.12,
+      "end": 10.48,
+      "text": "time",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.72,
+      "end": 11.4,
+      "text": "Exactly",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.4,
+      "end": 11.84,
+      "text": "But",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.88,
+      "end": 12.2,
+      "text": "sound",
+      "confidence": 0.55
+    },
+    {
+      "start": 12.2,
+      "end": 12.52,
+      "text": "pretty",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.52,
+      "end": 12.96,
+      "text": "calm",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.6,
+      "end": 14.0,
+      "text": "Um",
+      "confidence": 0.84
+    },
+    {
+      "start": 15.0,
+      "end": 15.2,
+      "text": "okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.2,
+      "end": 15.28,
+      "text": "We",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.28,
+      "end": 15.48,
+      "text": "don't",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.48,
+      "end": 15.64,
+      "text": "need",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.64,
+      "end": 15.8,
+      "text": "all",
+      "confidence": 1.0
+    },
+    {
+      "start": 15.8,
+      "end": 16.08,
+      "text": "this",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.16,
+      "end": 16.44,
+      "text": "Actually",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.44,
+      "end": 16.56,
+      "text": "this",
+      "confidence": 0.6
+    },
+    {
+      "start": 16.56,
+      "end": 16.92,
+      "text": "technical",
+      "confidence": 0.98
+    },
+    {
+      "start": 16.92,
+      "end": 17.08,
+      "text": "data",
+      "confidence": 0.98
+    },
+    {
+      "start": 17.08,
+      "end": 17.24,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 17.24,
+      "end": 17.48,
+      "text": "fine",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.08,
+      "end": 18.4,
+      "text": "based",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.4,
+      "end": 18.48,
+      "text": "on",
+      "confidence": 1.0
+    },
+    {
+      "start": 18.48,
+      "end": 18.6,
+      "text": "my",
+      "confidence": 0.99
+    },
+    {
+      "start": 18.8,
+      "end": 19.0,
+      "text": "goals",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.0,
+      "end": 19.12,
+      "text": "this",
+      "confidence": 0.76
+    },
+    {
+      "start": 19.12,
+      "end": 19.36,
+      "text": "session",
+      "confidence": 0.89
+    },
+    {
+      "start": 19.84,
+      "end": 20.12,
+      "text": "Is",
+      "confidence": 0.48
+    },
+    {
+      "start": 20.68,
+      "end": 21.08,
+      "text": "Okay",
+      "confidence": 0.98
+    },
+    {
+      "start": 21.76,
+      "end": 22.12,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.16,
+      "end": 22.6,
+      "text": "Yeah",
+      "confidence": 0.83
+    },
+    {
+      "start": 22.64,
+      "end": 22.84,
+      "text": "there's",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.84,
+      "end": 23.0,
+      "text": "no",
+      "confidence": 1.0
+    },
+    {
+      "start": 23.0,
+      "end": 23.6,
+      "text": "suggestions",
+      "confidence": 0.56
+    },
+    {
+      "start": 24.88,
+      "end": 25.08,
+      "text": "My",
+      "confidence": 0.55
+    },
+    {
+      "start": 26.52,
+      "end": 26.64,
+      "text": "Give",
+      "confidence": 1.0
+    },
+    {
+      "start": 26.64,
+      "end": 26.76,
+      "text": "us",
+      "confidence": 1.0
+    },
+    {
+      "start": 26.76,
+      "end": 26.96,
+      "text": "30",
+      "confidence": 1.0
+    },
+    {
+      "start": 26.96,
+      "end": 27.16,
+      "text": "minutes",
+      "confidence": 1.0
+    },
+    {
+      "start": 27.16,
+      "end": 27.28,
+      "text": "and",
+      "confidence": 1.0
+    },
+    {
+      "start": 27.28,
+      "end": 27.4,
+      "text": "we'll",
+      "confidence": 1.0
+    },
+    {
+      "start": 27.4,
+      "end": 27.52,
+      "text": "put",
+      "confidence": 1.0
+    },
+    {
+      "start": 27.52,
+      "end": 27.6,
+      "text": "it",
+      "confidence": 0.8
+    },
+    {
+      "start": 27.6,
+      "end": 27.72,
+      "text": "in",
+      "confidence": 0.81
+    },
+    {
+      "start": 29.16,
+      "end": 29.44,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.44,
+      "end": 29.76,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 29.76,
+      "end": 30.28,
+      "text": "have",
+      "confidence": 1.0
+    },
+    {
+      "start": 30.32,
+      "end": 31.28,
+      "text": "disappearing",
+      "confidence": 1.0
+    },
+    {
+      "start": 31.32,
+      "end": 32.0,
+      "text": "texts",
+      "confidence": 0.71
+    },
+    {
+      "start": 32.64,
+      "end": 32.92,
+      "text": "I",
+      "confidence": 0.96
+    },
+    {
+      "start": 33.0,
+      "end": 33.16,
+      "text": "need",
+      "confidence": 0.98
+    },
+    {
+      "start": 33.24,
+      "end": 33.52,
+      "text": "time",
+      "confidence": 1.0
+    },
+    {
+      "start": 33.52,
+      "end": 33.68,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 33.72,
+      "end": 33.96,
+      "text": "type",
+      "confidence": 1.0
+    },
+    {
+      "start": 34.0,
+      "end": 34.24,
+      "text": "use",
+      "confidence": 0.97
+    },
+    {
+      "start": 34.24,
+      "end": 34.6,
+      "text": "whisper",
+      "confidence": 0.99
+    },
+    {
+      "start": 35.04,
+      "end": 35.2,
+      "text": "He",
+      "confidence": 0.99
+    },
+    {
+      "start": 35.2,
+      "end": 35.44,
+      "text": "feels",
+      "confidence": 0.99
+    },
+    {
+      "start": 35.44,
+      "end": 35.88,
+      "text": "emotionally",
+      "confidence": 0.99
+    },
+    {
+      "start": 35.88,
+      "end": 36.44,
+      "text": "psychologically",
+      "confidence": 0.63
+    },
+    {
+      "start": 36.76,
+      "end": 36.92,
+      "text": "in",
+      "confidence": 1.0
+    },
+    {
+      "start": 36.92,
+      "end": 37.2,
+      "text": "addition",
+      "confidence": 1.0
+    },
+    {
+      "start": 37.2,
+      "end": 37.32,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 37.36,
+      "end": 37.52,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 37.52,
+      "end": 37.96,
+      "text": "having",
+      "confidence": 1.0
+    },
+    {
+      "start": 38.2,
+      "end": 38.68,
+      "text": "Um",
+      "confidence": 1.0
+    },
+    {
+      "start": 38.68,
+      "end": 38.88,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 38.88,
+      "end": 39.08,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.08,
+      "end": 39.2,
+      "text": "have",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.2,
+      "end": 39.72,
+      "text": "disappearing",
+      "confidence": 1.0
+    },
+    {
+      "start": 39.76,
+      "end": 40.28,
+      "text": "texts",
+      "confidence": 0.93
+    },
+    {
+      "start": 40.56,
+      "end": 40.72,
+      "text": "in",
+      "confidence": 1.0
+    },
+    {
+      "start": 40.72,
+      "end": 41.08,
+      "text": "addition",
+      "confidence": 1.0
+    },
+    {
+      "start": 41.08,
+      "end": 41.2,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 41.24,
+      "end": 41.6,
+      "text": "that",
+      "confidence": 1.0
+    },
+    {
+      "start": 41.76,
+      "end": 41.92,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 41.92,
+      "end": 42.16,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.16,
+      "end": 42.24,
+      "text": "be",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.24,
+      "end": 42.48,
+      "text": "able",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.48,
+      "end": 42.56,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.56,
+      "end": 42.72,
+      "text": "see",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.72,
+      "end": 42.84,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 42.84,
+      "end": 43.52,
+      "text": "biomarkers",
+      "confidence": 1.0
+    },
+    {
+      "start": 43.52,
+      "end": 44.08,
+      "text": "live",
+      "confidence": 1.0
+    },
+    {
+      "start": 44.08,
+      "end": 44.2,
+      "text": "We",
+      "confidence": 1.0
+    },
+    {
+      "start": 44.2,
+      "end": 44.4,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 44.4,
+      "end": 44.76,
+      "text": "also",
+      "confidence": 1.0
+    },
+    {
+      "start": 44.8,
+      "end": 44.88,
+      "text": "be",
+      "confidence": 1.0
+    },
+    {
+      "start": 44.92,
+      "end": 45.12,
+      "text": "able",
+      "confidence": 1.0
+    },
+    {
+      "start": 45.12,
+      "end": 45.2,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 45.2,
+      "end": 45.36,
+      "text": "see",
+      "confidence": 1.0
+    },
+    {
+      "start": 45.4,
+      "end": 46.12,
+      "text": "suggestions",
+      "confidence": 1.0
+    },
+    {
+      "start": 46.12,
+      "end": 46.32,
+      "text": "on",
+      "confidence": 1.0
+    },
+    {
+      "start": 46.32,
+      "end": 46.44,
+      "text": "what",
+      "confidence": 1.0
+    },
+    {
+      "start": 46.44,
+      "end": 46.56,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 46.56,
+      "end": 46.8,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 46.8,
+      "end": 47.32,
+      "text": "change",
+      "confidence": 1.0
+    },
+    {
+      "start": 47.56,
+      "end": 47.76,
+      "text": "for",
+      "confidence": 1.0
+    },
+    {
+      "start": 47.76,
+      "end": 48.16,
+      "text": "example",
+      "confidence": 1.0
+    },
+    {
+      "start": 48.16,
+      "end": 48.32,
+      "text": "if",
+      "confidence": 1.0
+    },
+    {
+      "start": 48.32,
+      "end": 48.52,
+      "text": "our",
+      "confidence": 1.0
+    },
+    {
+      "start": 48.52,
+      "end": 48.76,
+      "text": "pace",
+      "confidence": 1.0
+    },
+    {
+      "start": 48.76,
+      "end": 48.92,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 48.92,
+      "end": 49.36,
+      "text": "determined",
+      "confidence": 1.0
+    },
+    {
+      "start": 49.36,
+      "end": 49.52,
+      "text": "is",
+      "confidence": 1.0
+    },
+    {
+      "start": 49.52,
+      "end": 49.64,
+      "text": "too",
+      "confidence": 1.0
+    },
+    {
+      "start": 49.64,
+      "end": 49.76,
+      "text": "low",
+      "confidence": 1.0
+    },
+    {
+      "start": 49.76,
+      "end": 49.92,
+      "text": "or",
+      "confidence": 1.0
+    },
+    {
+      "start": 49.92,
+      "end": 50.12,
+      "text": "too",
+      "confidence": 1.0
+    },
+    {
+      "start": 50.12,
+      "end": 50.36,
+      "text": "high",
+      "confidence": 1.0
+    },
+    {
+      "start": 50.68,
+      "end": 50.8,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 50.8,
+      "end": 51.0,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 51.0,
+      "end": 51.12,
+      "text": "be",
+      "confidence": 1.0
+    },
+    {
+      "start": 51.12,
+      "end": 51.32,
+      "text": "told",
+      "confidence": 1.0
+    },
+    {
+      "start": 51.32,
+      "end": 51.44,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 51.44,
+      "end": 51.88,
+      "text": "regulate",
+      "confidence": 1.0
+    },
+    {
+      "start": 51.88,
+      "end": 52.16,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 52.52,
+      "end": 52.96,
+      "text": "If",
+      "confidence": 1.0
+    },
+    {
+      "start": 52.96,
+      "end": 53.44,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 54.0,
+      "end": 54.44,
+      "text": "If",
+      "confidence": 1.0
+    },
+    {
+      "start": 54.48,
+      "end": 54.6,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 54.64,
+      "end": 54.76,
+      "text": "are",
+      "confidence": 1.0
+    },
+    {
+      "start": 54.76,
+      "end": 55.12,
+      "text": "detected",
+      "confidence": 1.0
+    },
+    {
+      "start": 55.12,
+      "end": 55.2,
+      "text": "to",
+      "confidence": 0.67
+    },
+    {
+      "start": 55.2,
+      "end": 55.4,
+      "text": "have",
+      "confidence": 1.0
+    },
+    {
+      "start": 55.4,
+      "end": 55.8,
+      "text": "distress",
+      "confidence": 1.0
+    },
+    {
+      "start": 55.8,
+      "end": 55.92,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 55.92,
+      "end": 56.2,
+      "text": "should",
+      "confidence": 1.0
+    },
+    {
+      "start": 56.24,
+      "end": 56.4,
+      "text": "be",
+      "confidence": 1.0
+    },
+    {
+      "start": 56.4,
+      "end": 56.72,
+      "text": "told",
+      "confidence": 1.0
+    },
+    {
+      "start": 56.72,
+      "end": 56.84,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 56.84,
+      "end": 57.24,
+      "text": "regulate",
+      "confidence": 1.0
+    },
+    {
+      "start": 57.24,
+      "end": 57.4,
+      "text": "that",
+      "confidence": 1.0
+    },
+    {
+      "start": 57.4,
+      "end": 57.56,
+      "text": "as",
+      "confidence": 1.0
+    },
+    {
+      "start": 57.56,
+      "end": 57.84,
+      "text": "well",
+      "confidence": 1.0
+    },
+    {
+      "start": 58.24,
+      "end": 58.48,
+      "text": "And",
+      "confidence": 1.0
+    },
+    {
+      "start": 58.48,
+      "end": 58.8,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 58.8,
+      "end": 59.08,
+      "text": "really",
+      "confidence": 1.0
+    },
+    {
+      "start": 59.08,
+      "end": 59.36,
+      "text": "just",
+      "confidence": 1.0
+    },
+    {
+      "start": 59.36,
+      "end": 59.8,
+      "text": "need",
+      "confidence": 1.0
+    },
+    {
+      "start": 60.36,
+      "end": 60.68,
+      "text": "um",
+      "confidence": 0.9
+    },
+    {
+      "start": 61.08,
+      "end": 61.24,
+      "text": "it",
+      "confidence": 1.0
+    },
+    {
+      "start": 61.24,
+      "end": 61.44,
+      "text": "to",
+      "confidence": 1.0
+    },
+    {
+      "start": 61.44,
+      "end": 61.6,
+      "text": "tell",
+      "confidence": 1.0
+    },
+    {
+      "start": 61.6,
+      "end": 61.88,
+      "text": "us",
+      "confidence": 1.0
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 61.88,
+  "error": null
+}

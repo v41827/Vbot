@@ -1,0 +1,362 @@
+{
+  "text": "We  are  recording  right  now  and checking  for the  live  transcript.  Okay,  I'm seeing  distress,  anxiety,  depression  . That's  kind of  glitchy.  That's  distracting.  I'm not  distressed.  I'm very  happy.  Guy,  because we  are  short on  time.  We  are  stressing  . Keep  going  . Um  , interesting. I'm  neutral. I'm  so  sad.  I  hate  I don't  hate  life  , but  it's not  giving  suggestions.",
+  "words": [
+    {
+      "start": 0.88,
+      "end": 1.0,
+      "text": "We",
+      "confidence": 0.9
+    },
+    {
+      "start": 1.04,
+      "end": 1.24,
+      "text": "are",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.24,
+      "end": 1.64,
+      "text": "recording",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.64,
+      "end": 1.84,
+      "text": "right",
+      "confidence": 1.0
+    },
+    {
+      "start": 1.84,
+      "end": 2.32,
+      "text": "now",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.32,
+      "end": 2.48,
+      "text": "and",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.48,
+      "end": 2.76,
+      "text": "checking",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.76,
+      "end": 2.92,
+      "text": "for",
+      "confidence": 1.0
+    },
+    {
+      "start": 2.92,
+      "end": 3.04,
+      "text": "the",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.04,
+      "end": 3.28,
+      "text": "live",
+      "confidence": 1.0
+    },
+    {
+      "start": 3.32,
+      "end": 4.28,
+      "text": "transcript",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.56,
+      "end": 4.88,
+      "text": "Okay",
+      "confidence": 1.0
+    },
+    {
+      "start": 4.88,
+      "end": 5.04,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.04,
+      "end": 5.28,
+      "text": "seeing",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.28,
+      "end": 5.64,
+      "text": "distress",
+      "confidence": 1.0
+    },
+    {
+      "start": 5.64,
+      "end": 6.24,
+      "text": "anxiety",
+      "confidence": 1.0
+    },
+    {
+      "start": 6.28,
+      "end": 7.12,
+      "text": "depression",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.56,
+      "end": 7.8,
+      "text": "That's",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.8,
+      "end": 7.96,
+      "text": "kind",
+      "confidence": 1.0
+    },
+    {
+      "start": 7.96,
+      "end": 8.04,
+      "text": "of",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.08,
+      "end": 8.6,
+      "text": "glitchy",
+      "confidence": 1.0
+    },
+    {
+      "start": 8.88,
+      "end": 9.36,
+      "text": "That's",
+      "confidence": 0.97
+    },
+    {
+      "start": 9.4,
+      "end": 10.12,
+      "text": "distracting",
+      "confidence": 0.89
+    },
+    {
+      "start": 10.68,
+      "end": 10.8,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.8,
+      "end": 10.92,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 10.96,
+      "end": 11.32,
+      "text": "distressed",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.32,
+      "end": 11.52,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.52,
+      "end": 11.68,
+      "text": "very",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.68,
+      "end": 11.88,
+      "text": "happy",
+      "confidence": 1.0
+    },
+    {
+      "start": 11.92,
+      "end": 12.24,
+      "text": "Guy",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.36,
+      "end": 12.72,
+      "text": "because",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.72,
+      "end": 12.88,
+      "text": "we",
+      "confidence": 1.0
+    },
+    {
+      "start": 12.88,
+      "end": 13.16,
+      "text": "are",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.2,
+      "end": 13.44,
+      "text": "short",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.44,
+      "end": 13.6,
+      "text": "on",
+      "confidence": 1.0
+    },
+    {
+      "start": 13.6,
+      "end": 13.88,
+      "text": "time",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.16,
+      "end": 14.28,
+      "text": "We",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.32,
+      "end": 14.44,
+      "text": "are",
+      "confidence": 1.0
+    },
+    {
+      "start": 14.44,
+      "end": 15.0,
+      "text": "stressing",
+      "confidence": 0.92
+    },
+    {
+      "start": 15.56,
+      "end": 15.72,
+      "text": "Keep",
+      "confidence": 0.82
+    },
+    {
+      "start": 15.72,
+      "end": 16.12,
+      "text": "going",
+      "confidence": 1.0
+    },
+    {
+      "start": 16.8,
+      "end": 17.12,
+      "text": "Um",
+      "confidence": 0.73
+    },
+    {
+      "start": 19.0,
+      "end": 19.4,
+      "text": "interesting",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.4,
+      "end": 19.52,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 19.56,
+      "end": 20.16,
+      "text": "neutral",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.2,
+      "end": 20.44,
+      "text": "I'm",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.44,
+      "end": 20.68,
+      "text": "so",
+      "confidence": 1.0
+    },
+    {
+      "start": 20.68,
+      "end": 21.16,
+      "text": "sad",
+      "confidence": 1.0
+    },
+    {
+      "start": 21.52,
+      "end": 21.68,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 21.68,
+      "end": 22.0,
+      "text": "hate",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.2,
+      "end": 22.36,
+      "text": "I",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.36,
+      "end": 22.56,
+      "text": "don't",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.56,
+      "end": 22.76,
+      "text": "hate",
+      "confidence": 1.0
+    },
+    {
+      "start": 22.76,
+      "end": 23.12,
+      "text": "life",
+      "confidence": 1.0
+    },
+    {
+      "start": 23.16,
+      "end": 23.56,
+      "text": "but",
+      "confidence": 0.52
+    },
+    {
+      "start": 24.08,
+      "end": 24.24,
+      "text": "it's",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.24,
+      "end": 24.4,
+      "text": "not",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.4,
+      "end": 24.6,
+      "text": "giving",
+      "confidence": 1.0
+    },
+    {
+      "start": 24.6,
+      "end": 25.24,
+      "text": "suggestions",
+      "confidence": 1.0
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 25.24,
+  "error": null
+}

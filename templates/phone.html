@@ -2,23 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<meta name="theme-color" content="#1c1c1e" />
-<title>Voice awareness — phone</title>
-<link rel="stylesheet" href="/static/css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#F6F2EA" />
+<title>Buzzline — phone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body, #root { margin: 0; padding: 0; width: 100%; height: 100%; background: #F6F2EA; }
+  * { box-sizing: border-box; }
+  ::selection { background: #F4D9C7; }
+  body {
+    font-family: 'Geist', system-ui, sans-serif; color: #141413;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Arm overlay — shows until the user taps once to enable vibration. */
+  #arm-overlay {
+    position: fixed; inset: 0; z-index: 60;
+    background: #141413; color: #F6F2EA;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px; padding: 40px; text-align: center;
+  }
+  #arm-overlay.hidden { display: none; }
+  #arm-overlay .title { font-family: 'Instrument Serif', serif; font-size: 48px; letter-spacing: -1px; line-height: 1; }
+  #arm-overlay .sub { font-size: 14px; color: #8A857D; max-width: 280px; line-height: 1.5; }
+  #arm-overlay button {
+    margin-top: 12px; padding: 16px 36px; border-radius: 999px;
+    background: #D97757; color: #fff; border: none; font-size: 16px;
+    font-family: 'Geist', system-ui, sans-serif; font-weight: 500;
+    box-shadow: 0 4px 16px rgba(217,119,87,0.4);
+    cursor: pointer;
+  }
+  #arm-overlay .conn {
+    position: fixed; top: 24px; left: 24px;
+    display: flex; align-items: center; gap: 8px; font-size: 12px; color: #8A857D;
+    letter-spacing: 0.3px;
+  }
+  #arm-overlay .conn .dot {
+    width: 8px; height: 8px; border-radius: 999px; background: #3A3835;
+  }
+  #arm-overlay .conn .dot.on { background: #2D5F3F; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+
+<script type="text/babel" src="/ui/tokens.jsx"></script>
+<script type="text/babel" src="/ui/atoms.jsx"></script>
+<script type="text/babel" src="/ui/orb.jsx"></script>
+<script type="text/babel" src="/ui/buzz-screen.jsx"></script>
 </head>
-<body class="phone">
-<div id="phone-bg" class="phone-bg"></div>
-<div class="phone-content">
-  <div class="phone-status">
-    <span id="phone-connection" class="dot"></span>
-    <span id="phone-connection-label">Connecting…</span>
-  </div>
-  <div class="phone-big" id="phone-big">Ready</div>
-  <div class="phone-hint">Keep this screen awake. Tap once to arm vibration.</div>
-  <button id="phone-arm" class="btn primary big">Tap to arm</button>
-  <button id="phone-test" class="btn ghost">Test buzz</button>
+<body>
+<div id="arm-overlay">
+  <div class="conn"><span id="conn-dot" class="dot"></span><span id="conn-label">Connecting…</span></div>
+  <div class="title">buzz</div>
+  <div class="sub">Keep this screen awake. Tap once to arm vibration.</div>
+  <button id="btn-arm">Tap to arm</button>
 </div>
-<script src="/static/js/phone.js"></script>
+
+<div id="root"></div>
+
+<script type="text/babel" src="/static/js/ui-phone.jsx"></script>
 </body>
 </html>

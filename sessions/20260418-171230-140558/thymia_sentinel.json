@@ -1,0 +1,1458 @@
+{
+  "policy_results": [
+    {
+      "t": 426608.720806333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 2,
+        "timestamp": 1776528754.3311572,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 1,
+          "timestamp": " 2s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The current segment contains only a fragment of text and no biomarker data, so there is no information to assess mood or wellbeing. The system remains in a baseline state and can proceed with a gentle, open\u2011ended inquiry about the user\u2019s feelings or interests.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_yet_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Ask a friendly, open question to learn more about how the user is feeling or what they\u2019d like to talk about.",
+            "for_human_reviewer": "No concerns identified at this point.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "initial",
+            "segment_number": 1,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The current segment contains only a fragment of text and no biomarker data, so there is no information to assess mood or wellbeing. The system remains in a baseline state and can proceed with a gentle, open\u2011ended inquiry about the user\u2019s feelings or interests.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_yet_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Ask a friendly, open question to learn more about how the user is feeling or what they\u2019d like to talk about.",
+              "for_human_reviewer": "No concerns identified at this point.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426609.624362916,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 4,
+        "timestamp": 1776528755.2568219,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 2,
+          "timestamp": " 3s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "No biomarkers or mood cues are present in this brief exchange, so there is no indication of emotional distress or need for special attention.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "unknown"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_yet_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation as usual; no special prompts needed at this time.",
+            "for_human_reviewer": "No concerns to flag; conversation is neutral and brief.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 2,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "No biomarkers or mood cues are present in this brief exchange, so there is no indication of emotional distress or need for special attention.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "unknown"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_yet_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation as usual; no special prompts needed at this time.",
+              "for_human_reviewer": "No concerns to flag; conversation is neutral and brief.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426610.950153291,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 6,
+        "timestamp": 1776528756.5683694,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 3,
+          "timestamp": " 4s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The current segment contains only a brief statement about recording activity, with no mood or wellness information provided. Without biomarker data or expressed emotions, there is no indication of distress or need for additional support.",
+          "biomarker_summary": {
+            "interpretation": "none"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "activities"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation naturally. No special attention to wellbeing is required at this moment.",
+            "for_human_reviewer": "No concerns to note; the segment contains no mood or biomarker information.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 3,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The current segment contains only a brief statement about recording activity, with no mood or wellness information provided. Without biomarker data or expressed emotions, there is no indication of distress or need for additional support.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "none",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "activities"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation naturally. No special attention to wellbeing is required at this moment.",
+              "for_human_reviewer": "No concerns to note; the segment contains no mood or biomarker information.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426612.117166958,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 8,
+        "timestamp": 1776528757.7408414,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 4,
+          "timestamp": " 6s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user\u2019s recent messages are brief and do not contain any content that suggests mood or wellbeing concerns. No biomarker data is available for this segment, so we cannot detect any emotional signals. The conversation is currently focused on a technical or procedural context, and the user has not yet discussed how they are feeling.",
+          "biomarker_summary": {
+            "interpretation": "no data"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "technical",
+              "background"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation naturally and look for a gentle opening to ask how the user is feeling if the topic shifts toward personal experiences.",
+            "for_human_reviewer": "No immediate concerns; monitor for any future mood disclosures or biomarker signals.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 4,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user\u2019s recent messages are brief and do not contain any content that suggests mood or wellbeing concerns. No biomarker data is available for this segment, so we cannot detect any emotional signals. The conversation is currently focused on a technical or procedural context, and the user has not yet discussed how they are feeling.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "no data",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "technical",
+                "background"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation naturally and look for a gentle opening to ask how the user is feeling if the topic shifts toward personal experiences.",
+              "for_human_reviewer": "No immediate concerns; monitor for any future mood disclosures or biomarker signals.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426613.247957333,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 10,
+        "timestamp": 1776528758.8740168,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 5,
+          "timestamp": " 7s",
+          "level": 0,
+          "alert": "none",
+          "confidence": "low",
+          "concerns": [],
+          "rationale": "The user is simply describing the recording process; no mood or emotional content is evident, and no biomarkers are provided. Therefore, there is no indication of distress or need for additional attention at this moment.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": false,
+            "topics": [
+              "recording",
+              "live transcript"
+            ],
+            "user_insight": "unknown"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_not_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": true,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there's anything they'd like to share.",
+            "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood indicators.",
+            "urgency": "routine"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 5,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 0,
+              "alert": "none",
+              "confidence": "low"
+            },
+            "concerns": [],
+            "rationale": "The user is simply describing the recording process; no mood or emotional content is evident, and no biomarkers are provided. Therefore, there is no indication of distress or need for additional attention at this moment.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": false,
+              "topics": [
+                "recording",
+                "live transcript"
+              ],
+              "user_insight": "unknown"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_not_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": true,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Maintain a friendly tone and, when the conversation naturally shifts, gently ask how the user is feeling or if there's anything they'd like to share.",
+              "for_human_reviewer": "No immediate concerns; continue monitoring for any emerging mood indicators.",
+              "urgency": "routine"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426615.135649291,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 12,
+        "timestamp": 1776528760.7663424,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 6,
+          "timestamp": " 8s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "low",
+          "concerns": [
+            "User explicitly mentions noticing distress"
+          ],
+          "rationale": "The user has stated they are seeing distress, but no quantitative biomarker data or further elaboration is provided. This suggests a potential area for gentle inquiry while remaining supportive.",
+          "biomarker_summary": {
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "recording",
+              "live transcript",
+              "self-reported distress"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_discussed",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s comment about distress and invite them to share more if they feel comfortable. Offer a warm, non\u2011judgmental response and let them know you\u2019re listening.",
+            "for_human_reviewer": "Note that the user has indicated distress but has not provided further detail; keep an eye on subsequent segments for additional context.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 6,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "low"
+            },
+            "concerns": [
+              "User explicitly mentions noticing distress"
+            ],
+            "rationale": "The user has stated they are seeing distress, but no quantitative biomarker data or further elaboration is provided. This suggests a potential area for gentle inquiry while remaining supportive.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "recording",
+                "live transcript",
+                "self-reported distress"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_discussed",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s comment about distress and invite them to share more if they feel comfortable. Offer a warm, non\u2011judgmental response and let them know you\u2019re listening.",
+              "for_human_reviewer": "Note that the user has indicated distress but has not provided further detail; keep an eye on subsequent segments for additional context.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426617.072854625,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 14,
+        "timestamp": 1776528762.704422,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 7,
+          "timestamp": " 10s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User explicitly mentions feeling distress, anxiety, and depression",
+            "No objective biomarker data available to quantify severity"
+          ],
+          "rationale": "The user has openly identified feelings of distress, anxiety, and depression. Without numeric biomarker support, we treat this as a self\u2011reported mood discussion and remain attentive, offering a supportive tone.",
+          "biomarker_summary": {
+            "interpretation": "unknown"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "recording",
+              "live transcript"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s mention of distress, anxiety, and depression with a gentle, validating response. Invite them to share more about how they\u2019re feeling if they wish, and keep the tone warm and supportive.",
+            "for_human_reviewer": "Note that the user has self\u2011reported these emotions; no clinical data is available. Continue to monitor for further elaboration or changes in tone.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 7,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User explicitly mentions feeling distress, anxiety, and depression",
+              "No objective biomarker data available to quantify severity"
+            ],
+            "rationale": "The user has openly identified feelings of distress, anxiety, and depression. Without numeric biomarker support, we treat this as a self\u2011reported mood discussion and remain attentive, offering a supportive tone.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "unknown",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "recording",
+                "live transcript"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s mention of distress, anxiety, and depression with a gentle, validating response. Invite them to share more about how they\u2019re feeling if they wish, and keep the tone warm and supportive.",
+              "for_human_reviewer": "Note that the user has self\u2011reported these emotions; no clinical data is available. Continue to monitor for further elaboration or changes in tone.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426618.70952225,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 16,
+        "timestamp": 1776528764.3406978,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 8,
+          "timestamp": " 12s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User has explicitly mentioned feeling distress, anxiety, and depression.",
+            "No objective biomarker data is available for this segment."
+          ],
+          "rationale": "The user\u2019s own words indicate that they are experiencing mood concerns. Without numeric biomarker values, we treat this as a self\u2011reported mood discussion that aligns with a moderate level of attentiveness. The conversation does not contain any alarming or clinical language, so a supportive approach is appropriate.",
+          "biomarker_summary": {
+            "interpretation": "unknown"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "self\u2011report of mood"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "concordance",
+            "agreement_level": "n/a",
+            "mismatch_type": "none",
+            "mismatch_severity": "none"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s feelings with warmth and curiosity. You might say, \u2018It sounds like you\u2019re noticing a lot of stress and sadness right now. Would you like to talk more about what\u2019s on your mind?\u2019 Keep the tone gentle and supportive, and avoid any clinical or prescriptive language.",
+            "for_human_reviewer": "The user has self\u2011reported distress, anxiety, and depression. No biomarker data is available, but the user\u2019s statement suggests a moderate level of concern. No urgent escalation is required at this time.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 8,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User has explicitly mentioned feeling distress, anxiety, and depression.",
+              "No objective biomarker data is available for this segment."
+            ],
+            "rationale": "The user\u2019s own words indicate that they are experiencing mood concerns. Without numeric biomarker values, we treat this as a self\u2011reported mood discussion that aligns with a moderate level of attentiveness. The conversation does not contain any alarming or clinical language, so a supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "unknown",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "self\u2011report of mood"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "concordance",
+              "agreement_level": "n/a",
+              "mismatch_type": "none",
+              "mismatch_severity": "none"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s feelings with warmth and curiosity. You might say, \u2018It sounds like you\u2019re noticing a lot of stress and sadness right now. Would you like to talk more about what\u2019s on your mind?\u2019 Keep the tone gentle and supportive, and avoid any clinical or prescriptive language.",
+              "for_human_reviewer": "The user has self\u2011reported distress, anxiety, and depression. No biomarker data is available, but the user\u2019s statement suggests a moderate level of concern. No urgent escalation is required at this time.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426620.871114083,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 18,
+        "timestamp": 1776528766.4576387,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 9,
+          "timestamp": " 13s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User has explicitly mentioned feeling distress, anxiety, and depression.",
+            "Voice emotion is largely neutral, which may suggest a subtle mismatch between verbal self\u2011report and vocal tone."
+          ],
+          "rationale": "The user has openly discussed mood concerns, but the available biomarker data is limited to a neutral vocal tone. This indicates a need for attentive listening and gentle exploration rather than a clinical assessment.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "technical setup",
+              "self\u2011report of mood"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "mismatch",
+            "agreement_level": "low",
+            "mismatch_type": "none",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re noticing some distress and anxiety. How are you feeling right now?\" Validate their experience and keep the tone warm and supportive.",
+            "for_human_reviewer": "Note that the user has self\u2011reported mood concerns but vocal tone remains neutral; continue to monitor for any changes in self\u2011report or vocal indicators.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 9,
+            "timestamp": "13s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User has explicitly mentioned feeling distress, anxiety, and depression.",
+              "Voice emotion is largely neutral, which may suggest a subtle mismatch between verbal self\u2011report and vocal tone."
+            ],
+            "rationale": "The user has openly discussed mood concerns, but the available biomarker data is limited to a neutral vocal tone. This indicates a need for attentive listening and gentle exploration rather than a clinical assessment.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "technical setup",
+                "self\u2011report of mood"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "mismatch",
+              "agreement_level": "low",
+              "mismatch_type": "none",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle check\u2011in: \"It sounds like you\u2019re noticing some distress and anxiety. How are you feeling right now?\" Validate their experience and keep the tone warm and supportive.",
+              "for_human_reviewer": "Note that the user has self\u2011reported mood concerns but vocal tone remains neutral; continue to monitor for any changes in self\u2011report or vocal indicators.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426622.776594541,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 20,
+        "timestamp": 1776528768.4038897,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 10,
+          "timestamp": " 15s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User has explicitly mentioned feeling distress, anxiety, and depression.",
+            "Voice emotion data shows a predominantly neutral tone with minimal sadness."
+          ],
+          "rationale": "The user has brought up mood concerns, but the real\u2011time voice signals remain calm. This suggests a mild mismatch that may reflect social presentation or a brief moment of calm while discussing difficult feelings. The agent should remain attentive and supportive without assuming clinical severity.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "technical setup",
+              "live transcript"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "mood_discussed",
+            "agreement_level": "low",
+            "mismatch_type": "mismatch",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s mention of distress, anxiety, and depression with a gentle, validating tone. Invite them to share more if they feel comfortable, and let them know you\u2019re here to listen. Keep the conversation calm and supportive, offering a gentle check\u2011in about how they\u2019re coping with the situation.",
+            "for_human_reviewer": "User has self\u2011reported mood concerns but voice emotion is neutral. No urgent escalation needed; continue to monitor for any changes in self\u2011report or biomarker trends.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 10,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User has explicitly mentioned feeling distress, anxiety, and depression.",
+              "Voice emotion data shows a predominantly neutral tone with minimal sadness."
+            ],
+            "rationale": "The user has brought up mood concerns, but the real\u2011time voice signals remain calm. This suggests a mild mismatch that may reflect social presentation or a brief moment of calm while discussing difficult feelings. The agent should remain attentive and supportive without assuming clinical severity.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "technical setup",
+                "live transcript"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "mood_discussed",
+              "agreement_level": "low",
+              "mismatch_type": "mismatch",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s mention of distress, anxiety, and depression with a gentle, validating tone. Invite them to share more if they feel comfortable, and let them know you\u2019re here to listen. Keep the conversation calm and supportive, offering a gentle check\u2011in about how they\u2019re coping with the situation.",
+              "for_human_reviewer": "User has self\u2011reported mood concerns but voice emotion is neutral. No urgent escalation needed; continue to monitor for any changes in self\u2011report or biomarker trends.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426624.275173083,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 22,
+        "timestamp": 1776528769.893526,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 11,
+          "timestamp": " 17s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User mentions distress, anxiety, and depression but also states they are not distressed.",
+            "Voice emotion remains largely neutral with minimal sadness, suggesting a possible mismatch between self\u2011reported mood and vocal tone."
+          ],
+          "rationale": "The user has brought up mood terms but the vocal signal is calm and the user denies feeling distressed. This pattern is consistent with a mild minimization or a social presentation of mood. No clinical thresholds are crossed, so a gentle, attentive approach is appropriate.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "self\u2011report of mood, technical glitch"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s mention of distress and gently ask how they\u2019re actually feeling right now. Offer a supportive tone and let them know it\u2019s okay to share more if they wish. Keep the conversation light and avoid any clinical language.",
+            "for_human_reviewer": "Note the potential mismatch between self\u2011reported mood and vocal tone; no urgent follow\u2011up is required at this time.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 11,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User mentions distress, anxiety, and depression but also states they are not distressed.",
+              "Voice emotion remains largely neutral with minimal sadness, suggesting a possible mismatch between self\u2011reported mood and vocal tone."
+            ],
+            "rationale": "The user has brought up mood terms but the vocal signal is calm and the user denies feeling distressed. This pattern is consistent with a mild minimization or a social presentation of mood. No clinical thresholds are crossed, so a gentle, attentive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "self\u2011report of mood, technical glitch"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s mention of distress and gently ask how they\u2019re actually feeling right now. Offer a supportive tone and let them know it\u2019s okay to share more if they wish. Keep the conversation light and avoid any clinical language.",
+              "for_human_reviewer": "Note the potential mismatch between self\u2011reported mood and vocal tone; no urgent follow\u2011up is required at this time.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426626.381693208,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 24,
+        "timestamp": 1776528772.0129857,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 12,
+          "timestamp": " 19s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User mentions distress, anxiety, and depression while also stating they feel very happy.",
+            "Voice emotion is overwhelmingly neutral with minimal sadness, indicating a possible mismatch between expressed mood and vocal tone."
+          ],
+          "rationale": "The user has openly discussed feelings of distress and also claims to be very happy, which suggests a social presentation or minimization of underlying discomfort. The voice biomarker shows a calm, neutral tone, reinforcing this mismatch. No clinical thresholds are exceeded, so a Level 1 attentive approach is appropriate.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "recording",
+              "mood"
+            ],
+            "user_insight": "fair"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Acknowledge the user\u2019s mention of distress and happiness, express gentle curiosity about how they\u2019re truly feeling, and keep the tone warm and supportive. Offer a listening space without pushing for details.",
+            "for_human_reviewer": "Note the conflicting self-reports and neutral vocal tone; a follow\u2011up question about how they are coping could be helpful.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 12,
+            "timestamp": "19s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User mentions distress, anxiety, and depression while also stating they feel very happy.",
+              "Voice emotion is overwhelmingly neutral with minimal sadness, indicating a possible mismatch between expressed mood and vocal tone."
+            ],
+            "rationale": "The user has openly discussed feelings of distress and also claims to be very happy, which suggests a social presentation or minimization of underlying discomfort. The voice biomarker shows a calm, neutral tone, reinforcing this mismatch. No clinical thresholds are exceeded, so a Level 1 attentive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "recording",
+                "mood"
+              ],
+              "user_insight": "fair"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Acknowledge the user\u2019s mention of distress and happiness, express gentle curiosity about how they\u2019re truly feeling, and keep the tone warm and supportive. Offer a listening space without pushing for details.",
+              "for_human_reviewer": "Note the conflicting self-reports and neutral vocal tone; a follow\u2011up question about how they are coping could be helpful.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426627.84031275,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 26,
+        "timestamp": 1776528773.4450228,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 13,
+          "timestamp": " 21s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User mentions distress, anxiety, and depression but also states feeling very happy",
+            "Voice emotion remains neutral with minimal sadness",
+            "Possible mismatch between self\u2011reported mood and vocal tone"
+          ],
+          "rationale": "The user has brought up feelings of distress, anxiety, and depression, yet also claims to be very happy and not distressed. This suggests a mild minimization or social presentation. The voice remains calm and neutral, indicating no overt vocal distress. With no quantitative biomarker data beyond the neutral tone, we remain attentive but not urgent.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "recording",
+              "live transcript",
+              "self\u2011reported emotions"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question such as, \"It sounds like you\u2019re noticing a lot of different feelings. How are you really feeling right now?\" Validate the user\u2019s expression of happiness while acknowledging the earlier mention of distress. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note the potential mismatch between self\u2011reported mood and vocal tone. No immediate escalation needed, but continue to monitor for any changes in self\u2011report or vocal indicators.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 13,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User mentions distress, anxiety, and depression but also states feeling very happy",
+              "Voice emotion remains neutral with minimal sadness",
+              "Possible mismatch between self\u2011reported mood and vocal tone"
+            ],
+            "rationale": "The user has brought up feelings of distress, anxiety, and depression, yet also claims to be very happy and not distressed. This suggests a mild minimization or social presentation. The voice remains calm and neutral, indicating no overt vocal distress. With no quantitative biomarker data beyond the neutral tone, we remain attentive but not urgent.",
+            "biomarker_summary": {
+              "depression_probability": 0.0,
+              "anxiety_probability": 0.0,
+              "distress": 0.0,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "recording",
+                "live transcript",
+                "self\u2011reported emotions"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question such as, \"It sounds like you\u2019re noticing a lot of different feelings. How are you really feeling right now?\" Validate the user\u2019s expression of happiness while acknowledging the earlier mention of distress. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note the potential mismatch between self\u2011reported mood and vocal tone. No immediate escalation needed, but continue to monitor for any changes in self\u2011report or vocal indicators.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426629.9384855,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 28,
+        "timestamp": 1776528775.5686119,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 14,
+          "timestamp": " 22s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User mentions distress, anxiety, and depression while also stating they are happy and not distressed.",
+            "Voice emotion remains neutral with minimal sadness, indicating a possible mismatch between self\u2011reported mood and vocal tone."
+          ],
+          "rationale": "The user has brought up feelings of distress, anxiety, and depression, but also claims to be very happy and not distressed. Voice data shows a calm, neutral tone with almost no sadness. This suggests a mild mismatch or possible minimization of negative feelings. The agent should remain attentive and gently explore how the user is truly feeling without pressing for details.",
+          "biomarker_summary": {
+            "neutral": 0.98,
+            "sad": 0.01,
+            "<unk>": 0.01,
+            "interpretation": "minimal"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "activity description",
+              "technical glitch"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Offer a gentle, open question such as, \"It sounds like you\u2019re juggling a lot\u2014how are you feeling right now?\" Validate the user\u2019s expression of happiness while acknowledging the earlier mention of distress. Keep the tone warm and non\u2011judgmental.",
+            "for_human_reviewer": "Note that the user has self\u2011reported distress but also claims to be happy, with a neutral vocal tone. No urgent action required, but maintain a supportive stance.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 14,
+            "timestamp": "22s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User mentions distress, anxiety, and depression while also stating they are happy and not distressed.",
+              "Voice emotion remains neutral with minimal sadness, indicating a possible mismatch between self\u2011reported mood and vocal tone."
+            ],
+            "rationale": "The user has brought up feelings of distress, anxiety, and depression, but also claims to be very happy and not distressed. Voice data shows a calm, neutral tone with almost no sadness. This suggests a mild mismatch or possible minimization of negative feelings. The agent should remain attentive and gently explore how the user is truly feeling without pressing for details.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "activity description",
+                "technical glitch"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Offer a gentle, open question such as, \"It sounds like you\u2019re juggling a lot\u2014how are you feeling right now?\" Validate the user\u2019s expression of happiness while acknowledging the earlier mention of distress. Keep the tone warm and non\u2011judgmental.",
+              "for_human_reviewer": "Note that the user has self\u2011reported distress but also claims to be happy, with a neutral vocal tone. No urgent action required, but maintain a supportive stance.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    },
+    {
+      "t": 426631.506705416,
+      "result": {
+        "type": "POLICY_RESULT",
+        "policy": "safety_analysis",
+        "policy_name": "demo_wellbeing_awareness",
+        "triggered_at_turn": 30,
+        "timestamp": 1776528777.1375334,
+        "result": {
+          "type": "safety_analysis",
+          "segment_number": 15,
+          "timestamp": " 25s",
+          "level": 1,
+          "alert": "aware",
+          "confidence": "medium",
+          "concerns": [
+            "User mentions distress, anxiety, and depression while voice emotion is predominantly happy",
+            "Possible minimization or social presentation of negative feelings"
+          ],
+          "rationale": "The user\u2019s words suggest awareness of some negative emotions, yet the real\u2011time voice signals show a high level of happiness and very low sadness. This mismatch indicates that the user may be downplaying or masking discomfort. The overall tone remains upbeat, and no other elevated biomarkers are present, so a gentle, supportive approach is appropriate.",
+          "biomarker_summary": {
+            "fearful": 0.01,
+            "happy": 0.86,
+            "neutral": 0.05,
+            "sad": 0.07,
+            "<unk>": 0.01,
+            "interpretation": "minimal sad, notably happy"
+          },
+          "conversation_context": {
+            "mood_discussed": true,
+            "topics": [
+              "recording process",
+              "time constraints"
+            ],
+            "user_insight": "limited"
+          },
+          "concordance_analysis": {
+            "scenario": "minimization",
+            "agreement_level": "low",
+            "mismatch_type": "minimization",
+            "mismatch_severity": "mild"
+          },
+          "flags": {
+            "suicidal_content": false,
+            "severe_mismatch": false,
+            "mood_not_yet_discussed": false,
+            "critical_symptoms": false
+          },
+          "recommended_actions": {
+            "for_agent": "Continue the conversation with warmth. Acknowledge the user\u2019s mention of distress and invite them to share more if they feel comfortable, while respecting their expressed happiness. Keep the tone supportive and non\u2011judgmental.",
+            "for_human_reviewer": "Note the mismatch between self\u2011reported mood and voice emotion. No urgent follow\u2011up is required, but maintain a gentle check\u2011in if the user\u2019s tone changes.",
+            "urgency": "attentive"
+          },
+          "raw_response": {
+            "analysis_type": "update",
+            "segment_number": 15,
+            "timestamp": "0-60s",
+            "classification": {
+              "level": 1,
+              "alert": "aware",
+              "confidence": "medium"
+            },
+            "concerns": [
+              "User mentions distress, anxiety, and depression while voice emotion is predominantly happy",
+              "Possible minimization or social presentation of negative feelings"
+            ],
+            "rationale": "The user\u2019s words suggest awareness of some negative emotions, yet the real\u2011time voice signals show a high level of happiness and very low sadness. This mismatch indicates that the user may be downplaying or masking discomfort. The overall tone remains upbeat, and no other elevated biomarkers are present, so a gentle, supportive approach is appropriate.",
+            "biomarker_summary": {
+              "depression_probability": null,
+              "anxiety_probability": null,
+              "distress": null,
+              "interpretation": "minimal sad, notably happy",
+              "critical_symptoms": []
+            },
+            "conversation_context": {
+              "mood_discussed": true,
+              "topics": [
+                "recording process",
+                "time constraints"
+              ],
+              "user_insight": "limited"
+            },
+            "concordance_analysis": {
+              "scenario": "minimization",
+              "agreement_level": "low",
+              "mismatch_type": "minimization",
+              "mismatch_severity": "mild"
+            },
+            "flags": {
+              "suicidal_content": false,
+              "severe_mismatch": false,
+              "mood_not_yet_discussed": false,
+              "critical_symptoms": false
+            },
+            "recommended_actions": {
+              "for_agent": "Continue the conversation with warmth. Acknowledge the user\u2019s mention of distress and invite them to share more if they feel comfortable, while respecting their expressed happiness. Keep the tone supportive and non\u2011judgmental.",
+              "for_human_reviewer": "Note the mismatch between self\u2011reported mood and voice emotion. No urgent follow\u2011up is required, but maintain a gentle check\u2011in if the user\u2019s tone changes.",
+              "urgency": "attentive"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "error": null
+}

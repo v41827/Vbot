@@ -3,59 +3,68 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Voice awareness — training</title>
-<link rel="stylesheet" href="/static/css/style.css" />
+<title>Buzzline — training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body, #root { margin: 0; padding: 0; width: 100%; height: 100%; background: #F6F2EA; }
+  * { box-sizing: border-box; }
+  ::selection { background: #F4D9C7; }
+  body { font-family: 'Geist', system-ui, sans-serif; color: #141413; }
+
+  /* lightweight on-screen debug for mobile, hidden by default */
+  #train-debug {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+    background: rgba(20,20,19,0.9); color: #EFE9DC;
+    font: 11px ui-monospace, SF Mono, Menlo, monospace;
+    padding: 6px 10px; max-height: 120px; overflow-y: auto; white-space: pre-wrap;
+    display: none;
+  }
+  #train-debug.show { display: block; }
+
+  /* error banner */
+  #train-error {
+    position: fixed; top: 10px; left: 50%; transform: translateX(-50%);
+    z-index: 10000;
+    background: #C85858; color: #fff;
+    padding: 10px 18px; border-radius: 999px;
+    font-size: 13px; font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+  }
+  #train-error.show { display: block; }
+
+  #loading-scrim {
+    position: fixed; inset: 0; background: #F6F2EA;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Instrument Serif', serif; font-size: 28px; color: #8A857D;
+    z-index: 100;
+  }
+  #loading-scrim.hidden { display: none; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+
+<script type="text/babel" src="/ui/tokens.jsx"></script>
+<script type="text/babel" src="/ui/atoms.jsx"></script>
+<script type="text/babel" src="/ui/orb.jsx"></script>
+<script type="text/babel" src="/ui/train-screen.jsx"></script>
 </head>
-<body class="train">
-<header class="top">
-  <div class="brand">
-    <div class="logo">◎</div>
-    <div>
-      <h1>Training mode</h1>
-      <p class="muted">Record a short session. We will review it with you.</p>
-    </div>
-  </div>
-  <nav>
-    <a class="pill" href="/">Live mode</a>
-  </nav>
-</header>
-
-<section class="train-grid">
-  <div class="panel prompt-panel">
-    <div class="panel-title">Today's prompt</div>
-    <p class="prompt-text" id="prompt-text">{{ prompt }}</p>
-    <button id="btn-new-prompt" class="btn ghost small">Pick another prompt</button>
-  </div>
-
-  <div class="panel record-panel">
-    <div class="panel-title">Your turn</div>
-    <video id="preview" class="preview" muted playsinline autoplay></video>
-    <div class="mic-picker">
-      <label for="cam-device" class="muted small">Camera</label>
-      <select id="cam-device" class="select"></select>
-    </div>
-    <div class="mic-picker">
-      <label for="mic-device" class="muted small">Microphone</label>
-      <select id="mic-device" class="select"></select>
-    </div>
-    <div id="tip" class="tip">Press record when you are ready.</div>
-    <div class="record-controls">
-      <button id="btn-record" class="btn primary big">Start recording</button>
-      <button id="btn-stop" class="btn" disabled>Stop</button>
-      <span id="timer" class="timer">00:00</span>
-    </div>
-    <div class="mini-meter">
-      <div id="mini-bar" class="mini-bar"></div>
-    </div>
-    <p id="train-status" class="muted small"></p>
-  </div>
-</section>
+<body>
+<div id="loading-scrim">Warming up…</div>
+<div id="root"></div>
+<div id="train-error"></div>
+<div id="train-debug"></div>
 
 <script>
-  window.TRAINING_PROMPTS = {{ config.training.prompts | tojson }};
   window.TRAINING_MIN = {{ config.training.min_duration_seconds }};
   window.TRAINING_MAX = {{ config.training.max_duration_seconds }};
+  window.TRAINING_PROMPTS = {{ config.training.prompts | tojson }};
 </script>
-<script src="/static/js/train.js"></script>
+
+<script type="text/babel" src="/static/js/ui-train.jsx"></script>
 </body>
 </html>

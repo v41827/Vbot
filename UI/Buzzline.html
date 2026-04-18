@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Buzzline — real-time speech coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  html, body { margin: 0; padding: 0; background: #f0eee9; }
+  * { box-sizing: border-box; }
+  #root { width: 100%; height: 100%; }
+  ::selection { background: #F4D9C7; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tokens.jsx"></script>
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="orb.jsx"></script>
+<script type="text/babel" src="atoms.jsx"></script>
+<script type="text/babel" src="stream.jsx"></script>
+<script type="text/babel" src="train-screen.jsx"></script>
+<script type="text/babel" src="buzz-screen.jsx"></script>
+<script type="text/babel" src="review-screen.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const TWEAKS = /*EDITMODE-BEGIN*/{
+  "accent": "terracotta",
+  "motion": "moderate",
+  "defaultScenario": "pitch"
+}/*EDITMODE-END*/;
+
+function App() {
+  const [scenario, setScenario] = React.useState(TWEAKS.defaultScenario || 'standup');
+  const [playing, setPlaying] = React.useState(true);
+  const [tweaksOpen, setTweaksOpen] = React.useState(false);
+  const [tweaks, setTweaks] = React.useState(TWEAKS);
+
+  // Tweaks plumbing
+  React.useEffect(() => {
+    const onMsg = (e) => {
+      const d = e.data;
+      if (!d || typeof d !== 'object') return;
+      if (d.type === '__activate_edit_mode') setTweaksOpen(true);
+      if (d.type === '__deactivate_edit_mode') setTweaksOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const setTweak = (k, v) => {
+    const next = { ...tweaks, [k]: v };
+    setTweaks(next);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [k]: v } }, '*');
+    if (k === 'defaultScenario') setScenario(v);
+  };
+
+  return (
+    <>
+      <DesignCanvas>
+        {/* ═══════════════════ HERO ═══════════════════ */}
+        <DCSection
+          title="Buzzline — real-time speech coach"
+          subtitle="V-Bot listens while you speak. A soft wearable nudges. Three surfaces, one system. Drag to pan, scroll / pinch to zoom."
+        >
+          <DCArtboard label="/ train · 1440 × 900 · interactive" width={1440} height={900}>
+            <TrainScreen
+              scenario={scenario}
+              setScenario={setScenario}
+              playing={playing}
+              setPlaying={setPlaying}
+            />
+          </DCArtboard>
+
+          <DCPostIt top={60} left={1460} width={220} rotate={3}>
+            The orb is the focal point. It breathes on voice level, squishes on pace, changes color on emotion. Everything else is periphery.
+          </DCPostIt>
+        </DCSection>
+
+        {/* ═══════════════════ PHONE ═══════════════════ */}
+        <DCSection
+          title="/ buzz — on your wrist & phone"
+          subtitle="Idle: calm readout, paired Buzz indicator. Flash: full-bleed takeover when V-Bot fires a nudge. The phone and wristband buzz together."
+        >
+          <DCArtboard label="idle · pair + ambient" width={402} height={874}>
+            <IOSDevice>
+              <BuzzScreen mode="idle" />
+            </IOSDevice>
+          </DCArtboard>
+          <DCArtboard label="flash · slow down" width={402} height={874}>
+            <IOSDevice dark>
+              <BuzzScreen mode="flash" nudge="pace" />
+            </IOSDevice>
+          </DCArtboard>
+          <DCArtboard label="flash · speak up" width={402} height={874}>
+            <IOSDevice dark>
+              <BuzzScreen mode="flash" nudge="volume" />
+            </IOSDevice>
+          </DCArtboard>
+          <DCArtboard label="flash · drop the um" width={402} height={874}>
+            <IOSDevice dark>
+              <BuzzScreen mode="flash" nudge="filler" />
+            </IOSDevice>
+          </DCArtboard>
+          <DCArtboard label="flash · breathe" width={402} height={874}>
+            <IOSDevice dark>
+              <BuzzScreen mode="flash" nudge="breathe" />
+            </IOSDevice>
+          </DCArtboard>
+
+          <DCPostIt top={-20} left={1260} width={240} rotate={-2}>
+            Four nudge types, each its own color. No text on first fire — just the word. Haptic pattern differs per nudge so you learn them without looking.
+          </DCPostIt>
+        </DCSection>
+
+        {/* ═══════════════════ REVIEW ═══════════════════ */}
+        <DCSection
+          title="Review — after the session"
+          subtitle="Video + transcript is hero; charts flank. V-Bot writes three concrete things for next time. Never a list of 12 — three, specific, actionable."
+        >
+          <DCArtboard label="/ session · 1440 × 900" width={1440} height={900}>
+            <ReviewScreen />
+          </DCArtboard>
+        </DCSection>
+
+        {/* ═══════════════════ SYSTEM NOTES ═══════════════════ */}
+        <DCSection
+          title="System"
+          subtitle="The design language in one frame."
+        >
+          <DCArtboard label="tokens" width={900} height={580}>
+            <SystemFrame />
+          </DCArtboard>
+          <DCArtboard label="streaming model" width={520} height={580}>
+            <StreamingNotesFrame />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+
+      {/* Tweaks panel */}
+      {tweaksOpen && (
+        <div style={{
+          position: 'fixed', bottom: 20, right: 20, zIndex: 1000,
+          width: 280, background: '#FBF8F1',
+          border: `1px solid rgba(20,20,19,0.14)`, borderRadius: 20,
+          padding: 20, fontFamily: '"Geist", system-ui, sans-serif',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.06), 0 24px 64px rgba(0,0,0,0.12)',
+        }}>
+          <div style={{
+            fontSize: 11, color: '#8A857D', textTransform: 'uppercase',
+            letterSpacing: 1.2, marginBottom: 12, fontWeight: 500,
+          }}>Tweaks</div>
+
+          <div style={{ marginBottom: 16 }}>
+            <div style={{ fontSize: 12, color: '#3A3835', marginBottom: 8 }}>Default scenario</div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              {['standup', 'interview', 'pitch'].map(s => (
+                <button key={s} onClick={() => setTweak('defaultScenario', s)} style={{
+                  flex: 1, padding: '8px 10px', borderRadius: 10, border: 'none',
+                  background: tweaks.defaultScenario === s ? '#141413' : '#EFE9DC',
+                  color: tweaks.defaultScenario === s ? '#F6F2EA' : '#3A3835',
+                  fontSize: 11, cursor: 'pointer', fontFamily: 'inherit',
+                  textTransform: 'capitalize',
+                }}>{s}</button>
+              ))}
+            </div>
+          </div>
+
+          <div style={{ marginBottom: 4 }}>
+            <div style={{ fontSize: 12, color: '#3A3835', marginBottom: 8 }}>Playing</div>
+            <button onClick={() => setPlaying(p => !p)} style={{
+              width: '100%', padding: '8px 10px', borderRadius: 10, border: 'none',
+              background: playing ? '#2D5F3F' : '#EFE9DC',
+              color: playing ? '#fff' : '#3A3835',
+              fontSize: 12, cursor: 'pointer', fontFamily: 'inherit',
+            }}>{playing ? '▶ Stream running' : '⏸ Paused'}</button>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function SystemFrame() {
+  const Sw = ({ c, name, hex }) => (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+      <div style={{ width: 36, height: 36, background: c, borderRadius: 10, border: '1px solid rgba(20,20,19,0.08)' }} />
+      <div>
+        <div style={{ fontSize: 12, fontWeight: 500 }}>{name}</div>
+        <div style={{ fontSize: 10, color: '#8A857D', fontFamily: T.mono }}>{hex}</div>
+      </div>
+    </div>
+  );
+  return (
+    <div style={{
+      width: '100%', height: '100%', background: T.cream, padding: 40,
+      fontFamily: T.sans, color: T.ink,
+    }}>
+      <div style={{ fontFamily: T.display, fontSize: 36, letterSpacing: -0.8, marginBottom: 4 }}>
+        The voice is cream, terracotta, and ink.
+      </div>
+      <div style={{ fontSize: 13, color: T.inkMuted, marginBottom: 28 }}>
+        Instrument Serif for editorial weight. Geist for UI. JetBrains Mono for numbers & timestamps.
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 40 }}>
+        <div>
+          <div style={{ fontSize: 11, color: T.inkMuted, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 12 }}>Surfaces</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 24 }}>
+            <Sw c={T.cream} name="Cream" hex="#F6F2EA" />
+            <Sw c={T.paper} name="Paper" hex="#FBF8F1" />
+            <Sw c={T.paperDeep} name="Paper deep" hex="#EFE9DC" />
+            <Sw c={T.ink} name="Ink" hex="#141413" />
+          </div>
+          <div style={{ fontSize: 11, color: T.inkMuted, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 12 }}>Accents</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+            <Sw c={T.terracotta} name="Terracotta" hex="#D97757" />
+            <Sw c={T.forest} name="Forest" hex="#2D5F3F" />
+            <Sw c={T.amber} name="Amber" hex="#E3A951" />
+            <Sw c={T.rose} name="Rose" hex="#C85858" />
+          </div>
+        </div>
+        <div>
+          <div style={{ fontSize: 11, color: T.inkMuted, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 12 }}>Type</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{ fontFamily: T.display, fontSize: 44, lineHeight: 0.95, letterSpacing: -1.2 }}>
+              Breathe.<br/>You have time.
+            </div>
+            <div style={{ height: 1, background: T.line }} />
+            <div>
+              <div style={{ fontSize: 11, color: T.inkMuted, marginBottom: 2 }}>Display · Instrument Serif</div>
+              <div style={{ fontSize: 11, color: T.inkMuted, marginBottom: 2 }}>UI · Geist</div>
+              <div style={{ fontSize: 11, color: T.inkMuted, fontFamily: T.mono }}>162 wpm · −24 dB · 0:48</div>
+            </div>
+            <div style={{ height: 1, background: T.line, marginTop: 8 }} />
+            <div style={{ fontSize: 11, color: T.inkMuted, textTransform: 'uppercase', letterSpacing: 1, marginTop: 8, marginBottom: 8 }}>Motion</div>
+            <div style={{ fontSize: 13, color: T.inkSoft, lineHeight: 1.5 }}>
+              The orb breathes at 72 bpm resting. Level pulses are 80ms ease-out. Coaching text fades word-by-word at 90ms. Nothing snaps.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StreamingNotesFrame() {
+  return (
+    <div style={{
+      width: '100%', height: '100%', background: T.paper, padding: 36,
+      fontFamily: T.sans, color: T.ink,
+    }}>
+      <div style={{ fontFamily: T.display, fontSize: 28, letterSpacing: -0.6, marginBottom: 20, lineHeight: 1.1 }}>
+        Streaming visuals,<br/>not streaming text.
+      </div>
+      <div style={{ fontSize: 13, color: T.inkSoft, lineHeight: 1.6, marginBottom: 20 }}>
+        Continuous signals become shapes. Discrete events become words.
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        {[
+          { sig: 'dBFS', rate: '60 Hz', target: 'orb radius + waveform' },
+          { sig: 'WPM', rate: '1 Hz', target: 'orb squish + pace dial' },
+          { sig: 'emotion', rate: '3 Hz', target: 'orb color wash' },
+          { sig: 'transcript partial', rate: 'token', target: 'underlined tail' },
+          { sig: 'transcript final', rate: 'utterance', target: 'settled text' },
+          { sig: 'coach nudge', rate: 'on-fire', target: 'pill + kinetic text + buzz' },
+          { sig: 'biomarkers', rate: '15 s', target: 'periphery card' },
+        ].map((r, i) => (
+          <div key={i} style={{
+            display: 'flex', gap: 12, alignItems: 'baseline',
+            paddingBottom: 10, borderBottom: `1px solid ${T.line}`,
+          }}>
+            <div style={{ fontFamily: T.mono, fontSize: 11, color: T.ink, minWidth: 120 }}>{r.sig}</div>
+            <div style={{ fontFamily: T.mono, fontSize: 10, color: T.inkMuted, minWidth: 60 }}>{r.rate}</div>
+            <div style={{ fontSize: 12, color: T.inkSoft, flex: 1 }}>→ {r.target}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+</body>
+</html>
