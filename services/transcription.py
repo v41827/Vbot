@@ -17,9 +17,16 @@ log = logging.getLogger(__name__)
 
 
 class SpeechmaticsTranscription:
-    def __init__(self, api_key: str | None = None, language: str = "en"):
+    def __init__(
+        self,
+        api_key: str | None = None,
+        language: str = "en",
+        operating_point: str = "standard",
+    ):
         self.api_key = api_key or os.getenv("SPEECHMATICS_API_KEY", "")
         self.language = language
+        op = (operating_point or "standard").strip().lower()
+        self.operating_point = op if op in {"standard", "enhanced"} else "standard"
 
     async def transcribe(self, audio_path: str) -> TranscriptionResult:
         path = Path(audio_path)
@@ -68,15 +75,30 @@ class SpeechmaticsTranscription:
         # reject it. If you see a 4xx response switch to operating_point="standard".
         config = BatchTranscriptionConfig(
             language=self.language,
-            operating_point="enhanced",
+            operating_point=self.operating_point,
         )
-        log.info("[speechmatics] submitting batch job url=%s op=%s", settings.url, "enhanced")
+        log.info("[speechmatics] submitting batch job url=%s op=%s", settings.url, self.operating_point)
 
         started = time.monotonic()
         try:
             import asyncio
             result = await asyncio.to_thread(self._run_batch, path, settings, config)
         except Exception as exc:
+            if self.operating_point == "enhanced" and _looks_like_config_rejection(exc):
+                log.warning("[speechmatics] enhanced rejected; retrying with standard operating point")
+                fallback_config = BatchTranscriptionConfig(
+                    language=self.language,
+                    operating_point="standard",
+                )
+                try:
+                    import asyncio
+                    result = await asyncio.to_thread(self._run_batch, path, settings, fallback_config)
+                except Exception:
+                    pass
+                else:
+                    elapsed = time.monotonic() - started
+                    log.info("[speechmatics] fallback completed in %.1fs", elapsed)
+                    return result
             elapsed = time.monotonic() - started
             log.exception("[speechmatics] batch failed after %.1fs", elapsed)
             return TranscriptionResult(text="", error=f"{type(exc).__name__}: {exc}")
@@ -210,3 +232,12 @@ def _parse_speechmatics_json(payload: dict) -> TranscriptionResult:
     text = " ".join(text_parts)
     log.info("[speechmatics] parsed words=%d duration=%.2fs", len(words), duration)
     return TranscriptionResult(text=text, words=words, duration_seconds=duration)
+
+
+def _looks_like_config_rejection(exc: Exception) -> bool:
+    response = getattr(exc, "response", None)
+    status_code = getattr(response, "status_code", None)
+    if status_code in (400, 403):
+        return True
+    text = str(exc).lower()
+    return "400" in text or "403" in text or "entitlement" in text

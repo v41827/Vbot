@@ -5,6 +5,7 @@ import asyncio
 import json
 import logging
 import os
+import subprocess
 import wave
 from pathlib import Path
 
@@ -34,6 +35,13 @@ async def process_session(session_dir: str, config: dict) -> dict:
     if audio_path is None:
         raise FileNotFoundError(f"No audio.wav or audio.webm in {folder}")
     log.info("[process] audio file: %s (size=%d bytes)", audio_path, audio_path.stat().st_size)
+    speechmatics_audio = _ensure_speechmatics_audio(audio_path)
+    if speechmatics_audio != audio_path:
+        log.info(
+            "[process] converted audio for speechmatics: %s -> %s",
+            audio_path.name,
+            speechmatics_audio.name,
+        )
 
     video_file = _find_video(folder)
     log.info("[process] video file: %s", video_file)
@@ -53,6 +61,7 @@ async def process_session(session_dir: str, config: dict) -> dict:
 
     transcription = SpeechmaticsTranscription(
         language=config["speechmatics"].get("language", "en"),
+        operating_point=config["speechmatics"].get("operating_point", "standard"),
     )
     emotion_svc = OllamaEmotion(host=host, model=model)
     biomarker_svc = ThymiaBiomarker()
@@ -64,7 +73,7 @@ async def process_session(session_dir: str, config: dict) -> dict:
 
     log.info("[process] -------- STAGE 1: Speechmatics transcription --------")
     stage_start = _time.monotonic()
-    transcript: TranscriptionResult = await transcription.transcribe(str(audio_path))
+    transcript: TranscriptionResult = await transcription.transcribe(str(speechmatics_audio))
     log.info(
         "[process] transcription done in %.1fs text_len=%d words=%d error=%s",
         _time.monotonic() - stage_start,
@@ -149,6 +158,50 @@ def _find_video(folder: Path) -> str | None:
         if p.exists():
             return name
     return None
+
+
+def _ensure_speechmatics_audio(audio_path: Path) -> Path:
+    """Convert unsupported training uploads (e.g. webm) into wav for batch STT."""
+    suffix = audio_path.suffix.lower()
+    supported = {".wav", ".mp3", ".aac", ".ogg", ".mpeg", ".amr", ".m4a", ".mp4", ".flac"}
+    if suffix in supported:
+        return audio_path
+
+    if suffix != ".webm":
+        log.warning("[process] unsupported audio extension for Speechmatics: %s", suffix or "<none>")
+        return audio_path
+
+    wav_path = audio_path.with_name("audio.wav")
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(audio_path),
+        "-vn",
+        "-ac",
+        "1",
+        "-ar",
+        "16000",
+        "-c:a",
+        "pcm_s16le",
+        str(wav_path),
+    ]
+    try:
+        log.info("[process] converting webm -> wav with ffmpeg")
+        completed = subprocess.run(cmd, check=True, capture_output=True, text=True)
+        if completed.stderr:
+            log.info("[process] ffmpeg: %s", completed.stderr.strip()[:500])
+        return wav_path if wav_path.exists() else audio_path
+    except FileNotFoundError:
+        log.error("[process] ffmpeg not found; cannot convert webm for Speechmatics")
+        return audio_path
+    except subprocess.CalledProcessError as exc:
+        log.error(
+            "[process] ffmpeg conversion failed exit=%s stderr=%s",
+            exc.returncode,
+            (exc.stderr or "")[:500],
+        )
+        return audio_path
 
 
 def _load_volume(path: Path) -> list[dict]:
