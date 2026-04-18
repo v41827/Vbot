@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Voice awareness — training</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body class="train">
+<header class="top">
+  <div class="brand">
+    <div class="logo">◎</div>
+    <div>
+      <h1>Training mode</h1>
+      <p class="muted">Record a short session. We will review it with you.</p>
+    </div>
+  </div>
+  <nav>
+    <a class="pill" href="/">Live mode</a>
+  </nav>
+</header>
+
+<section class="train-grid">
+  <div class="panel prompt-panel">
+    <div class="panel-title">Today's prompt</div>
+    <p class="prompt-text" id="prompt-text">{{ prompt }}</p>
+    <button id="btn-new-prompt" class="btn ghost small">Pick another prompt</button>
+  </div>
+
+  <div class="panel record-panel">
+    <div class="panel-title">Your turn</div>
+    <video id="preview" class="preview" muted playsinline autoplay></video>
+    <div class="mic-picker">
+      <label for="cam-device" class="muted small">Camera</label>
+      <select id="cam-device" class="select"></select>
+    </div>
+    <div class="mic-picker">
+      <label for="mic-device" class="muted small">Microphone</label>
+      <select id="mic-device" class="select"></select>
+    </div>
+    <div id="tip" class="tip">Press record when you are ready.</div>
+    <div class="record-controls">
+      <button id="btn-record" class="btn primary big">Start recording</button>
+      <button id="btn-stop" class="btn" disabled>Stop</button>
+      <span id="timer" class="timer">00:00</span>
+    </div>
+    <div class="mini-meter">
+      <div id="mini-bar" class="mini-bar"></div>
+    </div>
+    <p id="train-status" class="muted small"></p>
+  </div>
+</section>
+
+<script>
+  window.TRAINING_PROMPTS = {{ config.training.prompts | tojson }};
+  window.TRAINING_MIN = {{ config.training.min_duration_seconds }};
+  window.TRAINING_MAX = {{ config.training.max_duration_seconds }};
+</script>
+<script src="/static/js/train.js"></script>
+</body>
+</html>

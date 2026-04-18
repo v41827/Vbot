@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Voice awareness — dashboard</title>
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body class="dashboard">
+<header class="top">
+  <div class="brand">
+    <div class="logo">◎</div>
+    <div>
+      <h1>Voice awareness</h1>
+      <p class="muted">Live mode</p>
+    </div>
+  </div>
+  <nav>
+    <a class="pill" href="/train">Training mode</a>
+  </nav>
+</header>
+
+<section class="live-grid">
+  <div class="panel meter-panel">
+    <div class="panel-title">Live volume</div>
+    <div id="meter" class="meter">
+      <div id="meter-bar" class="meter-bar"></div>
+      <div id="meter-ambient" class="meter-marker ambient"></div>
+      <div id="meter-speaking" class="meter-marker speaking"></div>
+      <div id="meter-loud" class="meter-marker loud"></div>
+      <div id="meter-quiet" class="meter-marker quiet"></div>
+    </div>
+    <div class="meter-readout">
+      <div><span class="muted">Now</span><strong id="dbfs-now">—</strong></div>
+      <div><span class="muted">Ambient</span><strong id="dbfs-ambient">—</strong></div>
+      <div><span class="muted">State</span><strong id="state-label">idle</strong></div>
+    </div>
+    <div class="mic-picker">
+      <label for="mic-device" class="muted small">Input device</label>
+      <select id="mic-device" class="select"></select>
+    </div>
+    <div class="meter-controls">
+      <button id="btn-mic" class="btn primary">Start microphone</button>
+      <button id="btn-calibrate" class="btn">Calibrate ambient</button>
+      <button id="btn-reset" class="btn ghost">Reset</button>
+      <button id="btn-test-loud" class="btn ghost">Test loud buzz</button>
+      <button id="btn-test-quiet" class="btn ghost">Test quiet buzz</button>
+    </div>
+    <p id="status-line" class="muted small"></p>
+  </div>
+
+  <div class="panel phone-panel">
+    <div class="panel-title">Phone link</div>
+    <p class="muted small">Scan from the presenter's phone. Same wifi or hotspot.</p>
+    <img class="qr" src="/qr" alt="QR code to phone page" />
+    <div class="phone-url">{{ phone_url }}</div>
+    <div class="status-chips">
+      <div class="chip" id="chip-phones">Phones: 0</div>
+      <div class="chip" id="chip-sources">Sources: 0</div>
+      <div class="chip" id="chip-dashboards">Dashboards: 1</div>
+    </div>
+  </div>
+
+  <div class="panel log-panel">
+    <div class="panel-title">Recent activity</div>
+    <ul id="log" class="log"></ul>
+  </div>
+</section>
+
+<div id="flash-overlay" class="flash-overlay"></div>
+<script src="/static/js/dashboard.js"></script>
+</body>
+</html>

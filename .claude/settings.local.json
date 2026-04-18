@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m py_compile app.py test_training.py services/__init__.py services/protocols.py services/transcription.py services/emotion.py services/biomarker.py services/coaching.py services/coaching_live.py services/training_processor.py)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('config.json'\\)\\); print\\('CONFIG OK'\\)\")",
+      "Bash(node --check static/js/dashboard.js)",
+      "Bash(node --check static/js/phone.js)",
+      "Bash(node --check static/js/train.js)",
+      "Bash(node --check static/js/review.js)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('config.json'\\)\\)\")",
+      "Bash(python3 -c \"import json; c=json.load\\(open\\('config.json'\\)\\); print\\('coaching:', json.dumps\\(c['coaching']\\)\\)\")",
+      "Bash(python3 -c \"import fastapi, uvicorn, ollama, speechmatics, qrcode, aiofiles, httpx, dotenv, numpy; print\\('deps OK'\\)\")",
+      "Bash(lsof -nP -iTCP:8000 -sTCP:LISTEN)",
+      "Bash(python3 -m py_compile app.py)",
+      "Bash(node --check /Users/danionhughes/Documents/Hackathon/static/js/train.js)"
+    ]
+  }
+}
