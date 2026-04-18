@@ -12,7 +12,8 @@
       "Bash(python3 -c \"import fastapi, uvicorn, ollama, speechmatics, qrcode, aiofiles, httpx, dotenv, numpy; print\\('deps OK'\\)\")",
       "Bash(lsof -nP -iTCP:8000 -sTCP:LISTEN)",
       "Bash(python3 -m py_compile app.py)",
-      "Bash(node --check /Users/danionhughes/Documents/Hackathon/static/js/train.js)"
+      "Bash(node --check /Users/danionhughes/Documents/Hackathon/static/js/train.js)",
+      "Bash(python3 -m py_compile app.py services/transcription.py services/training_processor.py services/emotion.py services/biomarker.py services/coaching.py)"
     ]
   }
 }

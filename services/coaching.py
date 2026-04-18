@@ -63,6 +63,7 @@ class OllamaCoaching:
         biomarker: BiomarkerResult,
         volume_timeline: list[dict[str, float]],
     ) -> CoachingReport:
+        import time as _time
         client = self._client_inst()
         volume_stats = _volume_stats(volume_timeline)
         payload = {
@@ -77,21 +78,31 @@ class OllamaCoaching:
             "biomarker": biomarker.to_dict(),
             "volume_stats": volume_stats,
         }
+        serialized = json.dumps(payload)
+        log.info(
+            "[coaching] calling ollama model=%s num_predict=%d payload_len=%d transcript_len=%d",
+            self.model, self.max_tokens, len(serialized), len(transcript.text or ""),
+        )
 
+        started = _time.monotonic()
         try:
             resp = await client.chat(
                 model=self.model,
                 messages=[
                     {"role": "system", "content": _SYSTEM},
-                    {"role": "user", "content": json.dumps(payload)},
+                    {"role": "user", "content": serialized},
                 ],
                 options={"num_predict": self.max_tokens, "temperature": 0.4},
                 format="json",
             )
             raw = _message_content(resp)
+            log.info("[coaching] ollama response in %.1fs, raw_len=%d preview=%r",
+                     _time.monotonic() - started, len(raw), raw[:200])
             data = _parse_json_object(raw)
+            log.info("[coaching] parsed keys=%s tips=%d score=%s",
+                     list(data.keys()), len(data.get("tips", []) or []), data.get("score"))
         except Exception as exc:
-            log.exception("ollama coaching failed")
+            log.exception("[coaching] ollama coaching failed after %.1fs", _time.monotonic() - started)
             return CoachingReport(summary="", error=str(exc))
 
         tips = [

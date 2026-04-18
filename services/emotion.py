@@ -50,17 +50,23 @@ class OllamaEmotion:
         audio_path: str,
         transcript: TranscriptionResult,
     ) -> EmotionResult:
+        import time as _time
+        log.info("[emotion] analyse() words=%d text_preview=%r", len(transcript.words), (transcript.text or "")[:120])
         if not transcript.words:
+            log.warning("[emotion] no words in transcript, returning empty timeline")
             return EmotionResult(error="no words in transcript")
 
         chunks = _chunk_words(transcript.words, _CHUNK_SECONDS)
+        log.info("[emotion] built %d chunks from %d words (~%.1fs each)", len(chunks), len(transcript.words), _CHUNK_SECONDS)
         if not chunks:
             return EmotionResult(error="no chunks")
 
         client = self._client_inst()
         fragments = [f"[{i + 1}] {c['text']}" for i, c in enumerate(chunks)]
         user_msg = "Fragments:\n" + "\n".join(fragments)
+        log.info("[emotion] calling ollama model=%s num_predict=%d", self.model, self.max_tokens)
 
+        started = _time.monotonic()
         try:
             resp = await client.chat(
                 model=self.model,
@@ -72,9 +78,12 @@ class OllamaEmotion:
                 format="json",
             )
             raw = _message_content(resp)
+            log.info("[emotion] ollama response in %.1fs, raw_len=%d preview=%r",
+                     _time.monotonic() - started, len(raw), raw[:200])
             data = _extract_labels(raw)
+            log.info("[emotion] parsed %d label entries", len(data))
         except Exception as exc:
-            log.exception("ollama emotion failed")
+            log.exception("[emotion] ollama emotion failed after %.1fs", _time.monotonic() - started)
             return EmotionResult(
                 timeline=[
                     EmotionPoint(t=c["t"], label="neutral", valence=0.0, arousal=0.3)

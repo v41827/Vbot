@@ -452,26 +452,41 @@ async def train_submit(
     session_id = time.strftime("%Y%m%d-%H%M%S") + "-" + uuid.uuid4().hex[:6]
     folder = SESSIONS_DIR / session_id
     folder.mkdir(parents=True, exist_ok=True)
+    log.info(
+        "[submit] new session %s audio=%s(%s) video=%s(%s)",
+        session_id,
+        audio.filename,
+        audio.content_type,
+        video.filename if video else None,
+        video.content_type if video else None,
+    )
 
     audio_ext = _pick_ext(audio.filename, audio.content_type, default="webm")
     audio_path = folder / f"audio.{audio_ext}"
+    audio_bytes = await audio.read()
     async with aiofiles.open(audio_path, "wb") as f:
-        await f.write(await audio.read())
+        await f.write(audio_bytes)
+    log.info("[submit] wrote %s (%d bytes)", audio_path, len(audio_bytes))
 
     if video is not None and video.filename:
         video_ext = _pick_ext(video.filename, video.content_type, default="webm")
         video_path = folder / f"video.{video_ext}"
+        video_bytes = await video.read()
         async with aiofiles.open(video_path, "wb") as f:
-            await f.write(await video.read())
+            await f.write(video_bytes)
+        log.info("[submit] wrote %s (%d bytes)", video_path, len(video_bytes))
 
     try:
         volume_timeline = json.loads(volume) if volume else []
     except json.JSONDecodeError:
+        log.warning("[submit] could not parse volume JSON, defaulting to empty")
         volume_timeline = []
     (folder / "volume.json").write_text(json.dumps(volume_timeline))
+    log.info("[submit] volume_timeline points=%d", len(volume_timeline))
 
     if transcript_hint:
         (folder / "transcript_hint.txt").write_text(transcript_hint)
+        log.info("[submit] transcript_hint len=%d", len(transcript_hint))
 
     (folder / "status.json").write_text(json.dumps({"status": "processing"}))
     background.add_task(_process_session_bg, session_id)
@@ -481,12 +496,16 @@ async def train_submit(
 
 async def _process_session_bg(session_id: str) -> None:
     folder = SESSIONS_DIR / session_id
+    log.info("[bg] start processing session %s", session_id)
     try:
         await process_session(str(folder), CONFIG)
         (folder / "status.json").write_text(json.dumps({"status": "ready"}))
+        log.info("[bg] session %s marked READY", session_id)
     except Exception as exc:
-        log.exception("session %s failed", session_id)
-        (folder / "status.json").write_text(json.dumps({"status": "failed", "error": str(exc)}))
+        log.exception("[bg] session %s FAILED: %s", session_id, exc)
+        (folder / "status.json").write_text(
+            json.dumps({"status": "failed", "error": f"{type(exc).__name__}: {exc}"})
+        )
 
 
 @app.get("/session/{session_id}")

@@ -33,33 +33,45 @@ class ThymiaBiomarker:
         transcript: TranscriptionResult,
     ) -> BiomarkerResult:
         fallback = _transcript_biomarkers(transcript)
+        log.info(
+            "[thymia] analyse() file=%s key_set=%s transcript_words=%d fallback_pace=%s fallback_filler=%s",
+            audio_path,
+            bool(self.api_key),
+            len(transcript.words),
+            fallback.pace_wpm,
+            fallback.filler_rate,
+        )
 
         if not self.api_key:
+            log.warning("[thymia] no API key, returning transcript fallback only")
             fallback.error = "missing THYMIA_API_KEY, used transcript fallback"
             return fallback
 
+        url = f"{self.api_base}/v1/analyse"
+        log.info("[thymia] POST %s", url)
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
                 with open(audio_path, "rb") as f:
                     files = {"audio": (os.path.basename(audio_path), f, "audio/wav")}
                     headers = {"Authorization": f"Bearer {self.api_key}"}
-                    resp = await client.post(
-                        f"{self.api_base}/v1/analyse",
-                        files=files,
-                        headers=headers,
-                    )
+                    resp = await client.post(url, files=files, headers=headers)
+            log.info("[thymia] response status=%d content_type=%s bytes=%d",
+                     resp.status_code, resp.headers.get("content-type", ""), len(resp.content))
             if resp.status_code >= 400:
-                log.warning("thymia returned %s: %s", resp.status_code, resp.text[:200])
-                fallback.error = f"thymia {resp.status_code}, used transcript fallback"
+                log.warning("[thymia] error body: %r", resp.text[:400])
+                fallback.error = f"thymia {resp.status_code}: {resp.text[:200]}, used transcript fallback"
                 return fallback
-
             payload = resp.json()
+            log.info("[thymia] parsed payload keys=%s", list(payload.keys()) if isinstance(payload, dict) else type(payload).__name__)
         except Exception as exc:
-            log.exception("thymia call failed")
+            log.exception("[thymia] call failed")
             fallback.error = f"thymia error: {exc}, used transcript fallback"
             return fallback
 
-        return _merge_thymia(payload, fallback)
+        merged = _merge_thymia(payload, fallback)
+        log.info("[thymia] merged pace=%s filler=%s pitch=%s jitter=%s shimmer=%s",
+                 merged.pace_wpm, merged.filler_rate, merged.pitch_mean_hz, merged.jitter, merged.shimmer)
+        return merged
 
 
 def _transcript_biomarkers(transcript: TranscriptionResult) -> BiomarkerResult:
